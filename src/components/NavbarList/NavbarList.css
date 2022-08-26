@@ -1,0 +1,7 @@
+.navbar-list {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    flex-wrap: wrap;
+}

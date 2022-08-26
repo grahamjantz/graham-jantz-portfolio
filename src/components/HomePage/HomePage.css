@@ -1,0 +1,31 @@
+.home-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.main-comp {
+    height: 80%;
+    z-index: 10;
+}
+
+.hero-title {
+    animation: fadeIn 4s ease;
+}
+
+.hero-subtitle {
+    font-weight: 300;
+    font-style: italic;
+    animation: slideIn 3s ease-in;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0 }
+    100% { opacity: 1;}
+}
+
+@keyframes slideIn {
+    0% { margin-left: -3000px; }
+    100% { margin-left: 0; }
+}
