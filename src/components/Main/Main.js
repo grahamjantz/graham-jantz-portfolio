@@ -1,7 +1,5 @@
-import { React, useState } from 'react'
+import React from 'react'
 import './Main.css'
-import HomePage from '../HomePage/HomePage'
-import Portfolio from '../PortfolioPage/PortfolioPage'
 
 const Main = ({ page }) => {
   
