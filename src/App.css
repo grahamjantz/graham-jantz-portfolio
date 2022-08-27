@@ -10,13 +10,13 @@
     height: 100vh;
     display: grid;
     grid-template-rows: 75px 1fr 75px;
-    background-color: #e0e0e0;
+    /* background-color: #e0e0e0; */
     font-family: 'Open Sans';
     text-align: center;
 }
 
 .component {
-    /* border: 1px solid black; */
+    /* border: 1px solid black; */ 
     display: flex;
     justify-content: center;
 }

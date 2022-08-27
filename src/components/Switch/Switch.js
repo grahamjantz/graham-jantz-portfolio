@@ -4,7 +4,7 @@ import styled  from "@emotion/styled"
 
 
 
-const Switch = () => {
+const Switch = ({ changeTheme }) => {
   const [switchButtonPosition, setSwitchButtonPosition] = useState('5px');
 
   const ThemeSwitch = styled.div`
@@ -21,9 +21,10 @@ const Switch = () => {
       background-color: #ffffffb2;
       border-radius: 50px;
       margin-left: ${switchButtonPosition};
+      z-index: 10;
   `;
 
-    const handleClick = (position) => {
+    const handleClick = () => {
       if (switchButtonPosition === '5px') {
         setSwitchButtonPosition('55px')
       } else if (switchButtonPosition === '55px') {
@@ -32,8 +33,8 @@ const Switch = () => {
     }
   return (
     <div>
-        <ThemeSwitch onClick={handleClick}>
-          <SwitchButton></SwitchButton>
+        <ThemeSwitch onClick={changeTheme}>
+          <SwitchButton onClick={handleClick}></SwitchButton>
         </ThemeSwitch>
     </div>
   )

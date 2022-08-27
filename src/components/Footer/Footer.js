@@ -4,11 +4,11 @@ import Switch from '../Switch/Switch';
 import './Footer.css'
 import { FaLinkedinIn, FaEnvelope, FaGithub } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ({ changeTheme }) => {
   return (
     <div className='component'>
       <div className='footer-container'>
-        <Switch />
+        <Switch changeTheme={changeTheme}/>
         <div className='footer-nav'>
           <Button text = {FaLinkedinIn()} />
           <Button text = {FaEnvelope()}/>
