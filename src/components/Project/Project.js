@@ -1,18 +1,11 @@
 import React from 'react'
 import './Project.css'
-import styled from '@emotion/styled'
 import LaptopImage from '../LaptopImage/LaptopImage'
 import { FaLink, FaGithub } from "react-icons/fa";
 import Button from '../Button/Button';
 import grahamAndMaddy from '../../images/grahamandmaddy.png'
 
 const Project = ({ title, src, liveLink, repoLink, description }) => {
-    const StyledImage = styled.div`
-        width: 100%;
-        height: 600px;
-        
-        background-color: red;
-    `;
   return (
     <div className='project-container'>
         <figure className='image'>

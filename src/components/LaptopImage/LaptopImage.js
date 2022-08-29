@@ -14,7 +14,7 @@ const LaptopImage = ({ src }) => {
     `;
   return (
     <StyledLaptop>
-        <img src={src} />
+        <img src={src} alt="laptop"/>
     </StyledLaptop>
   )
 }
