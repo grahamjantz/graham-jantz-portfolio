@@ -3,7 +3,7 @@ import './Header.css'
 import NavbarList from '../NavbarList/NavbarList'
 import Button from '../Button/Button'
 
-const Header = ({ renderHomePage, renderPortfolioPage, renderAboutPage, renderContactPage }) => {
+const Header = ({ renderHomePage, renderPortfolioPage, renderAboutPage, renderContactPage, toggleTheme, changeTheme }) => {
   return (
     <div className='component'>
         <header className='nav'>
@@ -13,7 +13,10 @@ const Header = ({ renderHomePage, renderPortfolioPage, renderAboutPage, renderCo
               renderHomePage={renderHomePage}
               renderPortfolioPage={renderPortfolioPage}
               renderAboutPage={renderAboutPage}
-              renderContactPage={renderContactPage}/>
+              renderContactPage={renderContactPage}
+              toggleTheme={toggleTheme} 
+              changeTheme={changeTheme}
+              />
           </nav>
         </header>
     </div>
@@ -21,3 +24,4 @@ const Header = ({ renderHomePage, renderPortfolioPage, renderAboutPage, renderCo
 }
 
 export default Header
+

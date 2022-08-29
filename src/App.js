@@ -69,7 +69,10 @@ function App() {
           renderHomePage={renderHomePage}
           renderPortfolioPage={renderPortfolioPage}
           renderAboutPage={renderAboutPage}
-          renderContactPage={renderContactPage}/>
+          renderContactPage={renderContactPage}
+          toggleTheme={toggleTheme} 
+          changeTheme={changeTheme}
+          />
         {/* <Main page={page}/> */}
         <div className='org-squ-container'>
           <div className='org-square'></div>
@@ -80,11 +83,11 @@ function App() {
         <div className='blu-rec-container2'>
           <div className='blu-rectangle2'></div>
         </div>
-        <HomePage />
-        <AboutPage />
-        <PortfolioPage />
-        <ContactPage />
-        <Footer toggleTheme={toggleTheme} changeTheme={changeTheme}/>
+        <HomePage className='comp' />
+        <AboutPage className='comp' />
+        <PortfolioPage className='comp' />
+        <ContactPage className='comp' />
+        <Footer className='comp' />
     </StyledApp>
   );
 }

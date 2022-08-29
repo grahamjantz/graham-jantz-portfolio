@@ -5,36 +5,37 @@ import styled  from "@emotion/styled"
 
 
 const Switch = ({ changeTheme, toggleTheme }) => {
-  const [switchButtonPosition, setSwitchButtonPosition] = useState('5px');
+  const [switchButtonPosition, setSwitchButtonPosition] = useState('2px');
 
   const ThemeSwitch = styled.div`
-    height: 50px;
-    width: 100px;
+    height: 24px;
+    width: 48px;
     background-color: #bebebe;
-    border-radius: 50px;
+    border-radius: 24px;
     display: flex;
     align-items: center;
   `;
   const SwitchButton = styled.span`
-      height: 40px;
-      width: 40px;
+      height: 18px;
+      width: 18px;
       background-color: #ffffffb2;
-      border-radius: 50px;
+      border-radius: 24px;
       margin-left: ${switchButtonPosition};
       z-index: 10;
   `;
 
     const handleClick = () => {
-      if (switchButtonPosition === '5px') {
-        setSwitchButtonPosition('55px')
-      } else if (switchButtonPosition === '55px') {
-        setSwitchButtonPosition('5px')
+      if (switchButtonPosition === '2px') {
+        setSwitchButtonPosition('27px')
+      } else if (switchButtonPosition === '27px') {
+        setSwitchButtonPosition('2px')
       }
+      toggleTheme()
     }
   return (
     <div>
-        <ThemeSwitch onClick={toggleTheme}>
-          <SwitchButton onClick={handleClick}></SwitchButton>
+        <ThemeSwitch onClick={handleClick}>
+          <SwitchButton ></SwitchButton>
         </ThemeSwitch>
     </div>
   )
