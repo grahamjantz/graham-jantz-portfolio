@@ -1,5 +1,4 @@
 import React from 'react'
-import NavbarList from '../NavbarList/NavbarList'
 import './HomePage.css'
 
 const HomePage = ({ renderHomePage, renderPortfolioPage, renderAboutPage, renderContactPage }) => {
