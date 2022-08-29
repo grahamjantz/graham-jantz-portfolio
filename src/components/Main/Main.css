@@ -9,6 +9,7 @@
     position: absolute;
     left: 0;
     bottom: 50px;
+    z-index: 10;
 }
 
 .org-square {
@@ -30,6 +31,28 @@
 }
 
 .blu-rectangle {
+    width: 400px;
+    height: 600px;
+    background-color: #04c1faad;
+    position: absolute;
+    transform: rotate(30deg);
+    right: -250px;
+    bottom: -400px;
+    overflow: hidden;
+}
+
+.blu-rec-container2 {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    bottom: -400px;
+    transform: rotateZ(180deg);
+    transform: rotateX(180deg);
+}
+
+.blu-rectangle2 {
     width: 400px;
     height: 600px;
     background-color: #04c1faad;

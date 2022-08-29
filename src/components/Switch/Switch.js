@@ -4,7 +4,7 @@ import styled  from "@emotion/styled"
 
 
 
-const Switch = ({ changeTheme }) => {
+const Switch = ({ changeTheme, toggleTheme }) => {
   const [switchButtonPosition, setSwitchButtonPosition] = useState('5px');
 
   const ThemeSwitch = styled.div`
@@ -33,7 +33,7 @@ const Switch = ({ changeTheme }) => {
     }
   return (
     <div>
-        <ThemeSwitch onClick={changeTheme}>
+        <ThemeSwitch onClick={toggleTheme}>
           <SwitchButton onClick={handleClick}></SwitchButton>
         </ThemeSwitch>
     </div>

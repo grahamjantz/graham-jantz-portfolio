@@ -7,9 +7,9 @@
 
 .App {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     display: grid;
-    grid-template-rows: 75px 1fr 75px;
+    grid-template-rows: 75px 100vh repeat(3, 500px) 75px;
     /* background-color: #e0e0e0; */
     font-family: 'Open Sans';
     text-align: center;
@@ -19,4 +19,5 @@
     /* border: 1px solid black; */ 
     display: flex;
     justify-content: center;
+    background-color: transparent;
 }

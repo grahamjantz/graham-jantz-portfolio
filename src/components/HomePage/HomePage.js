@@ -11,11 +11,11 @@ const HomePage = ({ renderHomePage, renderPortfolioPage, renderAboutPage, render
             <h1 className='hero-title'>Hey, I'm Graham Jantz</h1>
             <h2 className='hero-subtitle'>{'<a front-end developer />'}</h2>
           </div>
-          <NavbarList 
+          {/* <NavbarList 
                     renderHomePage={renderHomePage}
                     renderPortfolioPage={renderPortfolioPage}
                     renderAboutPage={renderAboutPage}
-                    renderContactPage={renderContactPage}/>
+                    renderContactPage={renderContactPage}/> */}
         </div>
     </div>
   )

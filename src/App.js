@@ -8,23 +8,9 @@ import HomePage from './components/HomePage/HomePage';
 import PortfolioPage from './components/PortfolioPage/PortfolioPage';
 import AboutPage from './components/AboutPage/AboutPage';
 import ContactPage from './components/ContactPage/ContactPage';
+import { lightTheme, darkTheme } from './themes'
 
 function App() {
-  const [page, setPage] = useState(<HomePage />);
-  const [appBackground, setAppBackground] = useState('#e0e0e0')
-
-  const StyledApp = styled.span`
-    background-color: ${appBackground};
-  `;
-
-  const changeTheme = () => {
-    if (appBackground === '#e0e0e0') {
-      setAppBackground('#050505')
-    } else if (appBackground === '#050505') {
-      setAppBackground('#e0e0e0')
-    }
-  }
-
   const renderHomePage = () => {
     setPage(<HomePage 
                 renderHomePage={renderHomePage}
@@ -41,6 +27,41 @@ function App() {
   const renderContactPage = () => {
     setPage(<ContactPage />)
   }
+  const [page, setPage] = useState(<HomePage
+                                      renderHomePage={renderHomePage}
+                                      renderPortfolioPage={renderPortfolioPage}
+                                      renderAboutPage={renderAboutPage}
+                                      renderContactPage={renderContactPage} />);
+  const [appBackground, setAppBackground] = useState(lightTheme.body)
+  const [appColor, setAppColor] = useState(lightTheme.color);
+  const [theme, setTheme] = useState(lightTheme);
+
+  const toggleTheme = () => {
+    console.log(theme)
+
+    if (theme === lightTheme) {
+      setTheme(darkTheme)
+    } else if (theme === darkTheme){
+      setTheme(lightTheme)
+    }
+
+    console.log(theme)
+  }
+
+  const StyledApp = styled.span`
+  background-color: ${theme.body};
+  color: ${theme.color};
+  `;
+
+  const changeTheme = () => {
+    if (appBackground === lightTheme.body) {
+      setAppBackground(darkTheme.body)
+      setAppColor(darkTheme.color)
+    } else if (appBackground === darkTheme.body) {
+      setAppBackground(lightTheme.body)
+      setAppColor(lightTheme.color)
+    }
+  }
 
   return (
     <StyledApp className='App'>
@@ -49,8 +70,21 @@ function App() {
           renderPortfolioPage={renderPortfolioPage}
           renderAboutPage={renderAboutPage}
           renderContactPage={renderContactPage}/>
-        <Main page={page}/>
-        <Footer changeTheme={changeTheme}/>
+        {/* <Main page={page}/> */}
+        <div className='org-squ-container'>
+          <div className='org-square'></div>
+        </div>
+        <div className='blu-rec-container'>
+          <div className='blu-rectangle'></div>
+        </div>
+        <div className='blu-rec-container2'>
+          <div className='blu-rectangle2'></div>
+        </div>
+        <HomePage />
+        <AboutPage />
+        <PortfolioPage />
+        <ContactPage />
+        <Footer toggleTheme={toggleTheme} changeTheme={changeTheme}/>
     </StyledApp>
   );
 }
