@@ -10,22 +10,22 @@ import ContactPage from './components/ContactPage/ContactPage';
 import { lightTheme, darkTheme } from './themes'
 
 function App() {
-  const renderHomePage = () => {
-    setPage(<HomePage 
-                renderHomePage={renderHomePage}
-                renderPortfolioPage={renderPortfolioPage}
-                renderAboutPage={renderAboutPage}
-                renderContactPage={renderContactPage}/>)
-  }
-  const renderPortfolioPage = () => {
-    setPage(<PortfolioPage />)
-  }
-  const renderAboutPage = () => {
-    setPage(<AboutPage />)
-  }
-  const renderContactPage = () => {
-    setPage(<ContactPage />)
-  }
+  // const renderHomePage = () => {
+  //   setPage(<HomePage 
+  //               renderHomePage={renderHomePage}
+  //               renderPortfolioPage={renderPortfolioPage}
+  //               renderAboutPage={renderAboutPage}
+  //               renderContactPage={renderContactPage}/>)
+  // }
+  // const renderPortfolioPage = () => {
+  //   setPage(<PortfolioPage />)
+  // }
+  // const renderAboutPage = () => {
+  //   setPage(<AboutPage />)
+  // }
+  // const renderContactPage = () => {
+  //   setPage(<ContactPage />)
+  // }
   // const [page, setPage] = useState(<HomePage
   //                                     renderHomePage={renderHomePage}
   //                                     renderPortfolioPage={renderPortfolioPage}
