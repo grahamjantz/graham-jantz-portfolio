@@ -4,7 +4,7 @@ import './AboutPage.css'
 const AboutPage = () => {
   return (
       <div className="about-container">
-        <h1 className="about-hero-section-title about-margin">About Me</h1>
+        <h2 className="about-hero-section-title about-margin">About Me</h2>
         <div className="about-hero-image"></div>
         <div className="about-bio">
           <p className="bio about-margin">I am a trained musician looking to change careers and become a Front-End Web Developer! I have a degree in music from the University of Lethbridge and Diploma in Percussion Studies from Red Deer College.</p>

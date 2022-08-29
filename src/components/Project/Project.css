@@ -1,0 +1,47 @@
+.project-container {
+    width: 100%;
+    height: 750px;
+    margin: 2em 0;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px 50px 1fr;
+    grid-template-areas: 
+                    "image title"
+                    "image links"
+                    "image description";
+}
+
+figure {
+    width: 50%;
+    height: fit-content;
+}
+
+figcaption {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.title {
+    grid-area: title;
+}
+.image {
+    grid-area: image;
+}
+.description {
+    grid-area: description;
+}
+.links {
+    grid-area: links;
+    display: flex;
+    justify-content: space-around;
+}
+
+.live-site-link , .github-repo-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 0.5em;
+    border-radius: 20px;
+}

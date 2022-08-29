@@ -9,7 +9,7 @@
     width: 100vw;
     height: auto;
     display: grid;
-    grid-template-rows: 75px 100vh repeat(6, auto) 75px;
+    grid-template-rows: 75px 100vh repeat(3, auto) 75px;
     /* background-color: #e0e0e0; */
     font-family: 'Open Sans';
     text-align: center;

@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import './App.css'
+import './components/Main/Main.css'
 import styled from '@emotion/styled'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
@@ -10,29 +11,7 @@ import ContactPage from './components/ContactPage/ContactPage';
 import { lightTheme, darkTheme } from './themes'
 
 function App() {
-  // const renderHomePage = () => {
-  //   setPage(<HomePage 
-  //               renderHomePage={renderHomePage}
-  //               renderPortfolioPage={renderPortfolioPage}
-  //               renderAboutPage={renderAboutPage}
-  //               renderContactPage={renderContactPage}/>)
-  // }
-  // const renderPortfolioPage = () => {
-  //   setPage(<PortfolioPage />)
-  // }
-  // const renderAboutPage = () => {
-  //   setPage(<AboutPage />)
-  // }
-  // const renderContactPage = () => {
-  //   setPage(<ContactPage />)
-  // }
-  // const [page, setPage] = useState(<HomePage
-  //                                     renderHomePage={renderHomePage}
-  //                                     renderPortfolioPage={renderPortfolioPage}
-  //                                     renderAboutPage={renderAboutPage}
-  //                                     renderContactPage={renderContactPage} />);
   const [appBackground, setAppBackground] = useState(lightTheme.body)
-  // const [appColor, setAppColor] = useState(lightTheme.color);
   const [theme, setTheme] = useState(lightTheme);
 
   const toggleTheme = () => {
@@ -55,20 +34,14 @@ function App() {
   const changeTheme = () => {
     if (appBackground === lightTheme.body) {
       setAppBackground(darkTheme.body)
-      // setAppColor(darkTheme.color)
     } else if (appBackground === darkTheme.body) {
       setAppBackground(lightTheme.body)
-      // setAppColor(lightTheme.color)
     }
   }
 
   return (
     <StyledApp className='App'>
         <Header 
-          // renderHomePage={renderHomePage}
-          // renderPortfolioPage={renderPortfolioPage}
-          // renderAboutPage={renderAboutPage}
-          // renderContactPage={renderContactPage}
           toggleTheme={toggleTheme} 
           changeTheme={changeTheme}
           />
