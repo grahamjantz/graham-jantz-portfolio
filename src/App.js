@@ -65,10 +65,10 @@ function App() {
   return (
     <StyledApp className='App'>
         <Header 
-          renderHomePage={renderHomePage}
-          renderPortfolioPage={renderPortfolioPage}
-          renderAboutPage={renderAboutPage}
-          renderContactPage={renderContactPage}
+          // renderHomePage={renderHomePage}
+          // renderPortfolioPage={renderPortfolioPage}
+          // renderAboutPage={renderAboutPage}
+          // renderContactPage={renderContactPage}
           toggleTheme={toggleTheme} 
           changeTheme={changeTheme}
           />
