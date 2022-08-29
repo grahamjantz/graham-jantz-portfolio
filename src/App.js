@@ -2,7 +2,6 @@ import {useState} from 'react'
 import './App.css'
 import styled from '@emotion/styled'
 import Header from './components/Header/Header'
-import Main from './components/Main/Main'
 import Footer from './components/Footer/Footer'
 import HomePage from './components/HomePage/HomePage';
 import PortfolioPage from './components/PortfolioPage/PortfolioPage';
@@ -27,13 +26,13 @@ function App() {
   const renderContactPage = () => {
     setPage(<ContactPage />)
   }
-  const [page, setPage] = useState(<HomePage
-                                      renderHomePage={renderHomePage}
-                                      renderPortfolioPage={renderPortfolioPage}
-                                      renderAboutPage={renderAboutPage}
-                                      renderContactPage={renderContactPage} />);
+  // const [page, setPage] = useState(<HomePage
+  //                                     renderHomePage={renderHomePage}
+  //                                     renderPortfolioPage={renderPortfolioPage}
+  //                                     renderAboutPage={renderAboutPage}
+  //                                     renderContactPage={renderContactPage} />);
   const [appBackground, setAppBackground] = useState(lightTheme.body)
-  const [appColor, setAppColor] = useState(lightTheme.color);
+  // const [appColor, setAppColor] = useState(lightTheme.color);
   const [theme, setTheme] = useState(lightTheme);
 
   const toggleTheme = () => {
@@ -56,10 +55,10 @@ function App() {
   const changeTheme = () => {
     if (appBackground === lightTheme.body) {
       setAppBackground(darkTheme.body)
-      setAppColor(darkTheme.color)
+      // setAppColor(darkTheme.color)
     } else if (appBackground === darkTheme.body) {
       setAppBackground(lightTheme.body)
-      setAppColor(lightTheme.color)
+      // setAppColor(lightTheme.color)
     }
   }
 
