@@ -1,10 +1,7 @@
 .nav-btn {
-    padding: 0.5em 1em;
     background-color: transparent;
     border-radius: 50px;
     border: 2px solid transparent;
-    box-shadow: -3px -3px 7px #ffffffb2, 
-         3px 3px 5px #bebebe;
 }
 
 .nav-btn:hover {
@@ -14,6 +11,12 @@
 
 .nav-btn:active {
     background-color: transparent;
-    box-shadow: inset 3px 3px 5px #bebebe,
-            -3px -3px 7px #ffffffb2;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 0.5em 1em;
 }

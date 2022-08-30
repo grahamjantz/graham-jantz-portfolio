@@ -44,6 +44,11 @@ function App() {
         <Header 
           toggleTheme={toggleTheme} 
           changeTheme={changeTheme}
+          themeColor={theme.color}
+          themeBody={theme.body}
+          themeBoxShadow1={theme.boxShadow1}
+          themeBoxShadow2={theme.boxShadow2}
+          switchButtonPosition={theme.switchButtonPosition}
           />
         {/* <Main page={page}/> */}
         <div className='org-squ-container'>
@@ -57,7 +62,11 @@ function App() {
         </div>
         <HomePage className='comp' />
         <AboutPage className='comp' />
-        <PortfolioPage className='comp' />
+        <PortfolioPage 
+          className='comp' 
+          themeColor={theme.color}
+          themeBoxShadow1={theme.boxShadow1}
+          themeBoxShadow2={theme.boxShadow2}/>
         <ContactPage className='comp' />
         <Footer className='comp' />
     </StyledApp>

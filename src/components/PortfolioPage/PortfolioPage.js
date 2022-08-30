@@ -1,8 +1,9 @@
 import React from 'react'
 import Project from '../Project/Project'
 import styled from '@emotion/styled'
+import grahamAndMaddy from '../../images/grahamandmaddy.png'
 
-const Portfolio = () => {
+const Portfolio = ({ themeColor, themeBoxShadow1, themeBoxShadow2 }) => {
   const StyledProjects = styled.span`
     display: flex;
     flex-direction: column;
@@ -20,9 +21,12 @@ const Portfolio = () => {
         <Project 
           title='Project 1'
           description="This project was created as a personal wedding website using vanilla HTML, CSS, and, JavaScript."
-          src="./grahamandmaddy.png"
+          src={grahamAndMaddy}
           liveLink=""
           repoLink=""
+          themeColor={themeColor}
+          themeBoxShadow1={themeBoxShadow1}
+          themeBoxShadow2={themeBoxShadow2}
         />
       </StyledProjects>
     </div>

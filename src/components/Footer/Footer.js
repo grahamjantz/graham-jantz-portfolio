@@ -7,9 +7,9 @@ const Footer = ({ changeTheme, toggleTheme }) => {
   return (
     <div className='component'>
         <div className='footer-nav'>
-          <Button text = {FaLinkedinIn()} />
-          <Button text = {FaEnvelope()}/>
-          <Button text = {FaGithub()}/>
+          <Button icon = {<FaLinkedinIn/>} />
+          <Button icon = {<FaEnvelope/>}/>
+          <Button icon = {<FaGithub/>}/>
         </div>
     </div>
   )
