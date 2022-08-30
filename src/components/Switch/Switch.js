@@ -4,16 +4,23 @@ import styled  from "@emotion/styled"
 
 
 
-const Switch = ({ changeTheme, toggleTheme, switchButtonPosition, themeBody }) => {
+const Switch = ({ toggleTheme, switchButtonPosition, themeBoxShadow1, themeBoxShadow2 }) => {
   
 
   const ThemeSwitch = styled.div`
     height: 24px;
     width: 48px;
-    background-color: ${themeBody};
+    background-color: ${themeBoxShadow2};
     border-radius: 24px;
     display: flex;
     align-items: center;
+    box-shadow: -3px -3px 7px ${themeBoxShadow1}, 
+  3px 3px 5px ${themeBoxShadow2};
+
+  &:active {
+    box-shadow: inset 3px 3px 5px ${themeBoxShadow2},
+            -3px -3px 7px ${themeBoxShadow1};
+  }
   `;
   const SwitchButton = styled.span`
       height: 18px;

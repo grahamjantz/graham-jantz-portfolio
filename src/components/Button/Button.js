@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import React from 'react'
 import './Button.css'
 
-const Button = ({ text, handleClick, themeColor, icon, themeBoxShadow1, themeBoxShadow2 }) => {
+const Button = ({ text, handleClick, themeColor, icon, themeBoxShadow1, themeBoxShadow2, href, target }) => {
   const  StyledLink = styled.a`
   color: ${themeColor};
   `;
@@ -22,7 +22,7 @@ const Button = ({ text, handleClick, themeColor, icon, themeBoxShadow1, themeBox
         <StyledButton 
             onClick={handleClick}
             className='nav-btn'>
-          <StyledLink href="#">
+          <StyledLink href={href} target={target}>
           {icon}
           {text}
           </StyledLink>

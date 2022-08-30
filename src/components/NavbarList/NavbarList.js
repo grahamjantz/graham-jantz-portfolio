@@ -3,37 +3,43 @@ import Button from '../Button/Button'
 import './NavbarList.css'
 import Switch from '../Switch/Switch'
 
-const NavbarList = ({ renderHomePage, renderPortfolioPage, renderAboutPage, renderContactPage, toggleTheme, changeTheme, themeColor,themeBoxShadow1, themeBoxShadow2, switchButtonPosition, themeBody }) => {
+const NavbarList = ({ renderHomePage, renderPortfolioPage, renderAboutPage, renderContactPage, toggleTheme, themeColor,themeBoxShadow1, themeBoxShadow2, switchButtonPosition }) => {
 
   return (
     <div className='navbar-list'>
         <Button 
           text='home' 
+          href="#"
           handleClick={renderHomePage} 
           themeColor={themeColor}
           themeBoxShadow1={themeBoxShadow1}
           themeBoxShadow2={themeBoxShadow2}/>
         <Button 
           text='portfolio' 
-          handleClick={renderPortfolioPage} themeColor={themeColor}
+          href="#portfolio"
+          handleClick={renderPortfolioPage} 
+          themeColor={themeColor}
           themeBoxShadow1={themeBoxShadow1}
           themeBoxShadow2={themeBoxShadow2}/>
         <Button 
           text='about' 
+          href="#about"
           handleClick={renderAboutPage} 
           themeColor={themeColor}
           themeBoxShadow1={themeBoxShadow1}
           themeBoxShadow2={themeBoxShadow2}/>
         <Button 
           text='contact' 
-          handleClick={renderContactPage} themeColor={themeColor}
+          href="#contact"
+          handleClick={renderContactPage} 
+          themeColor={themeColor}
           themeBoxShadow1={themeBoxShadow1}
           themeBoxShadow2={themeBoxShadow2}/>
         <Switch 
           toggleTheme={toggleTheme} 
-          changeTheme={changeTheme}
           switchButtonPosition={switchButtonPosition}
-          themeBody={themeBody}
+          themeBoxShadow1={themeBoxShadow1}
+          themeBoxShadow2={themeBoxShadow2}
           />
     </div>
   )

@@ -9,8 +9,7 @@
 				"image image header header" 
 				"image image bio bio"
 				"skills skills bio bio"
-				"skills skills bio bio"
-				"connect connect connect connect";
+				"skills skills bio bio";
 	justify-items: center;
 	justify-content: center;
 	gap: 2em;
@@ -35,7 +34,6 @@
 	background-position: center;
 	border-radius: 50%;
 	grid-area: image;
-    box-shadow: 0px 0px 0px 8px white, 0px 0px 0px 15px #fa9804ad;
 }
 
 .about-bio {
@@ -83,7 +81,6 @@
 	padding: 0.5em;
 	line-height: 1.2em;
 	letter-spacing: 0.4em;
-	background-color: #04c1faad;
 	text-align: center;
 	border-radius: 10px;
     height: 80%;

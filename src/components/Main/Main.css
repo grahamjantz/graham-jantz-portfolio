@@ -5,7 +5,7 @@
 .org-squ-container {
     width: 300px;
     height: 400px;
-    overflow: hidden;
+    overflow: visible;
     position: absolute;
     left: 0;
     bottom: 50px;
@@ -15,10 +15,30 @@
 .org-square {
     width: 400px;
     height: 400px;
-    background-color: #fa9804ad;
     position: absolute;
     transform: rotate(45deg);
     left: -300px;
+}
+
+.org-squ-container:hover > .org-square {
+    animation: rotate 2s ease-in-out 0s infinite alternate forwards;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(45deg);
+    }
+    to {
+        transform: rotate(135deg);
+    }
+}
+
+.blu-rec-master-container {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .blu-rec-container {
@@ -63,6 +83,19 @@
     overflow: hidden;
 }
 
+.blu-rec-master-container:hover {
+    animation: slide 2s ease-in-out 0s infinite alternate forwards;
+}
+
+@keyframes slide {
+    from {
+        transform: translateY(0px)
+    }
+    to {
+        transform: translateY(-100px)
+    }
+}
+
 .main-comp {
     height: 100%;
     display: flex;
@@ -75,4 +108,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.org-square2 {
+    position: fixed;
+    top: 100;
+    z-index: 1;
+}
+.org-square3 {
+    top: 250%;
+}
+.org-square4 {
+    top: 300%;
 }

@@ -3,11 +3,17 @@ import './Project.css'
 import LaptopImage from '../LaptopImage/LaptopImage'
 import { FaLink, FaGithub } from "react-icons/fa";
 import Button from '../Button/Button';
+import styled from '@emotion/styled';
 
+const Project = ({ title, src, liveLink, repoLink, target, description, themeColor, themeBoxShadow1, themeBoxShadow2, themeBluRec, themeOrgSqu }) => {
 
-const Project = ({ title, src, liveLink, repoLink, description, themeColor, themeBoxShadow1, themeBoxShadow2 }) => {
+  const StyledProjectContainer = styled.div`
+    background-color: transparent;
+    position: relative;
+  `;
+
   return (
-    <div className='project-container'>
+    <StyledProjectContainer className='project-container'>
         <figure className='image'>
                 <LaptopImage src={src}/>
         </figure>
@@ -19,6 +25,7 @@ const Project = ({ title, src, liveLink, repoLink, description, themeColor, them
                 icon={<FaLink />}
                 text={'Live Site'}
                 href={liveLink}
+                target={target}
                 themeColor={themeColor}
                 themeBoxShadow1={themeBoxShadow1}
                 themeBoxShadow2={themeBoxShadow2}
@@ -28,15 +35,13 @@ const Project = ({ title, src, liveLink, repoLink, description, themeColor, them
                 icon={<FaGithub />}
                 text={'Github Repo'}
                 href={repoLink}
+                target={target}
                 themeColor={themeColor}
                 themeBoxShadow1={themeBoxShadow1}
                 themeBoxShadow2={themeBoxShadow2}
               />
-            <div className=''>
-                
-            </div>
         </figcaption>
-    </div>
+    </StyledProjectContainer>
   )
 }
 

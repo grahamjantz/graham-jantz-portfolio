@@ -3,7 +3,15 @@ export const lightTheme = {
     color: '#1c1c1c',
     boxShadow1: '#ffffffb2',
     boxShadow2: '#bebebe',
-    switchButtonPosition: '2px'
+    boxShadow3: '#9d9d9d',
+    boxShadow4: '#ededed',
+    switchButtonPosition: '2px',
+    // orgSquare: '#0567fbad',
+    // bluRectangle: '#fb3e05'
+    orgSquare: '#fa9804ad',
+    bluRectangle: '#04c1faad'
+    // orgSquare: '#ff0050',
+    // bluRectangle: '#00f2ea'
 }
 
 export const darkTheme = {
@@ -11,5 +19,11 @@ export const darkTheme = {
     color: '#e0e0e0',
     boxShadow1: '#0c0c0c',
     boxShadow2: '#2c2c2c',
-    switchButtonPosition: '27px'
+    boxShadow3: '#121212',
+    boxShadow4: '#262626',
+    switchButtonPosition: '27px',
+    // orgSquare: '#fa9804ad',
+    // bluRectangle: '#04c1faad'
+    orgSquare: '#ff0050',
+    bluRectangle: '#00f2ea'
 }
