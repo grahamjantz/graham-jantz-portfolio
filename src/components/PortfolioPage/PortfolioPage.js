@@ -1,9 +1,9 @@
 import React from 'react'
 import Project from '../Project/Project'
 import styled from '@emotion/styled'
-import grahamAndMaddyV2 from '../../images/grahamandmaddyV2.jpg'
-import waterfrontOfficialV2 from '../../images/waterfrontofficialV2.jpg'
-import reactPlayground from '../../images/reactplayground.jpg'
+import grahamAndMaddyV2 from '../../images/grahamandmaddyV3.png'
+import waterfrontOfficialV2 from '../../images/waterfrontofficialV3.png'
+import reactPlayground from '../../images/reactplaygroundV3.png'
 
 const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, themeBluRec, themeOrgSqu }) => {
   const StyledProjects = styled.span`

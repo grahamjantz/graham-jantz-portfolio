@@ -1,6 +1,5 @@
 import React from 'react'
 import './Project.css'
-import LaptopImage from '../LaptopImage/LaptopImage'
 import { FaLink, FaGithub } from "react-icons/fa";
 import Button from '../Button/Button';
 import styled from '@emotion/styled';
@@ -15,7 +14,7 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
   return (
     <StyledProjectContainer className='project-container'>
         <figure className='image'>
-                <LaptopImage src={src}/>
+                <img src={src} alt="mockup for project"/>
         </figure>
         <h3 className='title'>{title}</h3>
         <p className='description'>{description}</p>

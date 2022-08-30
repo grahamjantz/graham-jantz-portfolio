@@ -42,7 +42,7 @@
 .hero-image {
     width: 400px;
     height: 400px;
-    background-image: url('../../Hero_Image.png');
+    background-image: url('../../images/Hero_Image.png');
     background-size: cover;
     background-repeat: none;
 }
