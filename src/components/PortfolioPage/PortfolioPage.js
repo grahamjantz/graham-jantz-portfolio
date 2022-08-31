@@ -15,6 +15,11 @@ const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, th
     margin: 0 auto;
     align-items: center;
     z-index: 10;
+    gap: 10em;
+
+    @media only screen and (min-width: 1200px) {
+      gap: 5em;
+    }
   `;
   
   

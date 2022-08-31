@@ -5,7 +5,7 @@ export const lightTheme = {
     boxShadow2: '#bebebe',
     boxShadow3: '#9d9d9d',
     boxShadow4: '#ededed',
-    switchButtonPosition: '2px',
+    switchButtonPosition: '4px',
     // orgSquare: '#0567fbad',
     // bluRectangle: '#fb3e05'
     orgSquare: '#fa9804ad',
@@ -22,7 +22,7 @@ export const darkTheme = {
     boxShadow2: '#2c2c2c',
     boxShadow3: '#121212',
     boxShadow4: '#262626',
-    switchButtonPosition: '27px',
+    switchButtonPosition: '39px',
     // orgSquare: '#fa9804ad',
     // bluRectangle: '#04c1faad'
     orgSquare: '#ff0050',

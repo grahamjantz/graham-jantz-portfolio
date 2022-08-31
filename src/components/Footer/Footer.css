@@ -16,3 +16,9 @@
     z-index: 1;
     padding-top: 1em;
 }
+
+@media only screen and (max-width: 800px) {
+    .footer-nav {
+        width: 70%;
+    }
+}

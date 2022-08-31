@@ -2,6 +2,7 @@ import React from 'react'
 import './Header.css'
 import NavbarList from '../NavbarList/NavbarList'
 import Button from '../Button/Button'
+import SideSwitch from '../SideSwitch/SideSwitch'
 
 const Header = ({ renderHomePage, renderPortfolioPage, renderAboutPage, renderContactPage, toggleTheme, themeColor, themeBoxShadow1, themeBoxShadow2, switchButtonPosition }) => {
   return (
@@ -26,6 +27,13 @@ const Header = ({ renderHomePage, renderPortfolioPage, renderAboutPage, renderCo
               switchButtonPosition={switchButtonPosition}
               />
           </nav>
+          <SideSwitch 
+              toggleTheme={toggleTheme} 
+              switchButtonPosition={switchButtonPosition}
+              themeBoxShadow1={themeBoxShadow1}
+              themeBoxShadow2={themeBoxShadow2}
+              className='phone-switch'
+            />
         </header>
     </div>
   )

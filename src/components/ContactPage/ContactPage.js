@@ -6,15 +6,19 @@ import './ContactPage.css'
 
 const ContactPage = ({ themeColor, themeBoxShadow1, themeBoxShadow2, themeBluRec, themeOrgSqu }) => {
   const StyledInput = styled.input`
+  background-color: black;
   box-shadow: inset 3px 3px 5px ${themeBoxShadow1},
   inset -3px -3px 7px ${themeBoxShadow2};
   color: ${themeColor};
+  border: 1px solid ${themeBoxShadow1};
   `;
 
   const StyledTextarea = styled.textarea`
+  background-color: transparent;
   box-shadow: inset 3px 3px 5px ${themeBoxShadow1},
   inset -3px -3px 7px ${themeBoxShadow2};
   color: ${themeColor};
+  border: 1px solid ${themeBoxShadow1};
   `;
 
   const StyledOrgSqu = styled.div`
@@ -43,13 +47,13 @@ const ContactPage = ({ themeColor, themeBoxShadow1, themeBoxShadow2, themeBluRec
       <form className='contact'name="contact" method="POST" >
         <input type="hidden" name="form-name" value="contact" />
           <label>Your Name: 
-            <StyledInput type="text" name="name" />
+            <StyledInput type="text" name="name" placeholder='Name'/>
           </label>
           <label>Your Email: 
-            <StyledInput type="email" name="email" />
+            <StyledInput type="email" name="email" placeholder='Email'/>
           </label>
           <label>Message: 
-            <StyledTextarea name="message" />
+            <StyledTextarea name="message" placeholder='Message'/>
           </label>
           <Button 
             type="submit" 

@@ -20,3 +20,9 @@ a {
     gap: 1em;
     padding: 0.5em 1em;
 }
+
+@media only screen and (max-width: 650px) {
+    .nav-btn {
+        font-size: 1.2em;
+    }
+}

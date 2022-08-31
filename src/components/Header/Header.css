@@ -17,3 +17,13 @@
 .hero-badge a {
     text-decoration: none;
 }
+
+@media only screen and (max-width: 650px ) {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+}

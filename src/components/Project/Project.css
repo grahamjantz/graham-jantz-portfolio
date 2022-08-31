@@ -46,7 +46,7 @@ img {
     margin: 0.5em;
     animation: spin;
     animation-timing-function: linear;
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-play-state: paused;
 }
@@ -90,3 +90,60 @@ img {
         height: 25px;
     }
   }
+
+  @media only screen and (min-width: 1200px) {
+    img {
+        width: 150%;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .project-container {
+        height: 800px;
+        grid-template-columns: 1fr;
+        
+    }
+
+    h3 {
+        text-align: center;
+    }
+  }
+
+@media only screen and (max-width: 800px) {
+    .project-container {
+        height: 400px;
+        grid-template-rows: 50px repeat(2, 1fr) auto;
+        grid-template-areas: 
+                        "title"
+                        "image"
+                        "links"
+                        "description";
+    }
+    .links {
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .project-container {
+        width: 400px;
+        margin: 0 auto;
+    }
+    .triangle-container {
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .project-container {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .triangle-container {
+        margin: 0 auto;
+    }
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
