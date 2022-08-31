@@ -1,0 +1,37 @@
+.side-navbar-list {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    flex-wrap: wrap;
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+    .side-navbar-list {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 50;
+        height: 100%;
+        width: 300px;
+        padding: 50px 20px;
+    }
+}
+
+.line {
+    position: sticky;
+    background-color: red;
+    width: 20px;
+    height: 5px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    position: fixed;
+    width: 20px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

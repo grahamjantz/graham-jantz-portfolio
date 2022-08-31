@@ -20,6 +20,10 @@ const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, th
     @media only screen and (min-width: 1200px) {
       gap: 5em;
     }
+
+    @media only screen and (max-width: 800px) {
+      gap: 0;
+    }
   `;
   
   

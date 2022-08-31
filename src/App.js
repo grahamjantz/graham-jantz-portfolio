@@ -8,6 +8,7 @@ import PortfolioPage from './components/PortfolioPage/PortfolioPage';
 import AboutPage from './components/AboutPage/AboutPage';
 import ContactPage from './components/ContactPage/ContactPage';
 import { lightTheme, darkTheme } from './themes'
+import SideNavbarList from './components/SideNavbarList/SideNavbarList'
 
 function App() {
   const [theme, setTheme] = useState(lightTheme);
@@ -34,57 +35,67 @@ function App() {
   `;
 
   return (
-    <StyledApp className='App'>
-        <Header 
-          toggleTheme={toggleTheme} 
-          themeColor={theme.color}
-          themeBody={theme.body}
-          themeBoxShadow1={theme.boxShadow1}
-          themeBoxShadow2={theme.boxShadow2}
-          switchButtonPosition={theme.switchButtonPosition}
+    <div>
+      <SideNavbarList 
+        toggleTheme={toggleTheme} 
+        themeColor={theme.color}
+        themeBody={theme.body}
+        themeBoxShadow1={theme.boxShadow1}
+        themeBoxShadow2={theme.boxShadow2}
+        switchButtonPosition={theme.switchButtonPosition}
+      />
+      <StyledApp className='App'>
+          <Header 
+            toggleTheme={toggleTheme} 
+            themeColor={theme.color}
+            themeBody={theme.body}
+            themeBoxShadow1={theme.boxShadow1}
+            themeBoxShadow2={theme.boxShadow2}
+            switchButtonPosition={theme.switchButtonPosition}
+            />
+          <div className='org-squ-container'>
+            <StyledOrgSqu className='org-square'/>
+          </div>
+          <div className='blu-rec-master-container'>
+            <div className='blu-rec-container'>
+              <StyledBluRec className='blu-rectangle'/>
+            </div>
+            <div className='blu-rec-container2'>
+              <StyledBluRec className='blu-rectangle2'/>
+            </div>
+          </div>
+          <HomePage className='comp' />
+          <AboutPage 
+            className='comp'
+            themeBody={theme.body}
+            themeBluRec={theme.bluRectangle}
+            themeOrgSqu={theme.orgSquare}
           />
-        <div className='org-squ-container'>
-          <StyledOrgSqu className='org-square'/>
-        </div>
-        <div className='blu-rec-master-container'>
-          <div className='blu-rec-container'>
-            <StyledBluRec className='blu-rectangle'/>
-          </div>
-          <div className='blu-rec-container2'>
-            <StyledBluRec className='blu-rectangle2'/>
-          </div>
-        </div>
-        <HomePage className='comp' />
-        <AboutPage 
-          className='comp'
-          themeBody={theme.body}
-          themeBluRec={theme.bluRectangle}
-          themeOrgSqu={theme.orgSquare}
-        />
-        <PortfolioPage 
-          className='comp' 
-          themeBody={theme.body}
-          themeColor={theme.color}
-          themeBoxShadow1={theme.boxShadow1}
-          themeBoxShadow2={theme.boxShadow2}
-          themeBluRec={theme.bluRectangle}
-          themeOrgSqu={theme.orgSquare}
-        />
-        <ContactPage 
-          className='comp' 
-          themeColor={theme.color}
-          themeBoxShadow1={theme.boxShadow3}
-          themeBoxShadow2={theme.boxShadow4}
-          themeBluRec={theme.bluRectangle}
-          themeOrgSqu={theme.orgSquare}
-        />
-        <Footer 
-          className='comp'
-          themeBoxShadow1={theme.boxShadow1}
-          themeBoxShadow2={theme.boxShadow2}
-          themeColor={theme.color}
-        />
-    </StyledApp>
+          <PortfolioPage 
+            className='comp' 
+            themeBody={theme.body}
+            themeColor={theme.color}
+            themeBoxShadow1={theme.boxShadow1}
+            themeBoxShadow2={theme.boxShadow2}
+            themeBluRec={theme.bluRectangle}
+            themeOrgSqu={theme.orgSquare}
+          />
+          <ContactPage 
+            className='comp' 
+            themeColor={theme.color}
+            themeBoxShadow1={theme.boxShadow3}
+            themeBoxShadow2={theme.boxShadow4}
+            themeBluRec={theme.bluRectangle}
+            themeOrgSqu={theme.orgSquare}
+          />
+          <Footer 
+            className='comp'
+            themeBoxShadow1={theme.boxShadow1}
+            themeBoxShadow2={theme.boxShadow2}
+            themeColor={theme.color}
+          />
+      </StyledApp>
+    </div>
   );
 }
 

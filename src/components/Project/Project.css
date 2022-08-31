@@ -55,24 +55,35 @@ img {
     width: 100%;
     height: auto;
     display: flex;
+    flex-direction: row;
     padding-top: 1em;
     padding-right: 2em;
     justify-content: flex-end;
+    animation: gap 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+.triangle-container:hover {
+    animation-play-state: running;
 }
 
 .triangle:hover {
     animation-play-state: running;
 }
 
-@keyframes spin {
-    from { transform: rotateZ(0deg) }
-    to { transform: rotateZ(360deg) }
+@keyframes gap {
+    0% { gap: 0 }
+    100% { gap: 50px }
 }
 
 .links {
     grid-area: links;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .live-site-link , .github-repo-link {
@@ -112,16 +123,34 @@ img {
 @media only screen and (max-width: 800px) {
     .project-container {
         height: 400px;
-        grid-template-rows: 50px repeat(2, 1fr) auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 1fr auto;
         grid-template-areas: 
-                        "title"
-                        "image"
-                        "links"
-                        "description";
+                        "title title"
+                        "image links"
+                        "image description";
     }
+
+    .project-container h3 {
+        text-align: center;
+    }
+
     .links {
         flex-direction: column;
         gap: 1em;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .project-container {
+        height: 800px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 50px 100px 1fr;
+        grid-template-areas: 
+                        "image"
+                        "title"
+                        "links"
+                        "description";
     }
 }
 

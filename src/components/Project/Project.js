@@ -48,6 +48,7 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
     
     @media only screen and (max-width: 800px) {
       width: 300px;
+      height: 150px;
     }
 
     @media only screen and (max-width: 700px) {
@@ -59,10 +60,14 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
       left: 30px;
       top: 300px;
     }
+
+    @media only screen and (max-width: 400px) {
+      top: 200px;
+    }
   `;
 
   return (
-    <div style={{display: 'flex', flexDirection: 'column', height: 'auto', marginBottom: '2em'}}>
+    <div style={{display: 'flex', flexDirection: 'column', height: 'auto' }}>
     <StyledRectangle></StyledRectangle>
     <StyledProjectContainer className='project-container'>
       

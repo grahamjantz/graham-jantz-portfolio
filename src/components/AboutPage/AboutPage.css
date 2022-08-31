@@ -103,7 +103,7 @@
 						"skills"
 						"bio"
 						"bio";
-		gap: 5em;
+		gap: 3em;
 	}
 	.about-section-skills {
 		flex-direction: row;

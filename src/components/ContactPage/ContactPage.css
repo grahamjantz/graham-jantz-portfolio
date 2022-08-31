@@ -164,6 +164,12 @@
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .contact-org-square {
+        left: -300px;
+    }
+}
+
 @media only screen and (max-width: 750px) {
     .contact {
         width: 500px;
@@ -178,10 +184,14 @@
         width: 75px;
     }
 
+    .contact-blu-rectangle, .contact-blu-rectangle2 {
+        right: -330px;
+    }
+
     .contact-org-square {
         width: 300px;
         height: 300px;
-        left: -250px;
+        left: -350px;
         top: -100px;
     }    
 }
