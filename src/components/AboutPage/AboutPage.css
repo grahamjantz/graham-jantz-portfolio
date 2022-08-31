@@ -92,3 +92,21 @@
 .about-section-skills li:first-of-type {
 	text-decoration: underline;
 }
+
+@media only screen and (max-width: 900px) {
+	.about-container {
+		grid-template-rows: auto;
+		grid-template-areas: 
+						"header header header header"
+						"image image skills skills"
+						"bio bio bio bio"
+						"bio bio bio bio";
+	}
+	.about-section-skills {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.about-section-skills li {
+		height: 40px;
+	}
+}

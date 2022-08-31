@@ -1,6 +1,5 @@
 import {useState} from 'react'
 import './App.css'
-import './components/Main/Main.css'
 import styled from '@emotion/styled'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
@@ -31,6 +30,7 @@ function App() {
   `;
   const StyledBluRec = styled.div`
     background-color: ${theme.bluRectangle};
+    border-bottom: 1px solid ${theme.bluRectangle};
   `;
 
   return (
@@ -75,6 +75,8 @@ function App() {
           themeColor={theme.color}
           themeBoxShadow1={theme.boxShadow3}
           themeBoxShadow2={theme.boxShadow4}
+          themeBluRec={theme.bluRectangle}
+          themeOrgSqu={theme.orgSquare}
         />
         <Footer 
           className='comp'

@@ -1,7 +1,8 @@
 .contact-container {
     width: 100%;
-    display: grid;
-    grid-template-rows: 100px 1fr;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5em;
 }
 
 .contact {
@@ -38,4 +39,143 @@
     align-items: center;
     width: 60em;
     gap: 2em;
+}
+
+.contact-org-squ-container {
+    width: 300px;
+    height: 400px;
+    overflow: visible;
+    position: relative;
+    left: 0;
+    bottom: 50px;
+    z-index: 10;
+}
+
+.contact-org-square {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    transform: rotate(45deg);
+    left: -300px;
+    animation: rotate 2s ease-in-out 0s infinite alternate forwards;
+    animation-play-state: paused;
+}
+
+.contact-org-square:hover  {
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(45deg);
+    }
+    to {
+        transform: rotate(135deg);
+    }
+}
+
+.contact-blu-rec-master-container {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    animation: slide 2s ease-in-out 0s infinite alternate forwards;
+    animation-play-state: paused;
+}
+
+.contact-blu-rec-master-container:hover {
+    animation-play-state: running;
+}
+
+.contact-blu-rec-container {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.contact-blu-rectangle {
+    width: 400px;
+    height: 600px;
+    background-color: #04c1faad;
+    position: absolute;
+    transform: rotate(30deg);
+    right: -250px;
+    bottom: -400px;
+    overflow: hidden;
+}
+
+.contact-blu-rec-container2 {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    bottom: -400px;
+    transform: rotateZ(180deg);
+    transform: rotateX(180deg);
+}
+
+.contact-blu-rectangle2 {
+    width: 400px;
+    height: 600px;
+    background-color: #04c1faad;
+    position: absolute;
+    transform: rotate(30deg);
+    right: -250px;
+    bottom: -400px;
+    overflow: hidden;
+}
+
+@keyframes slide {
+    from {
+        transform: translateY(0px)
+    }
+    to {
+        transform: translateY(-100px)
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .contact input, .contact textarea {
+        width: 490px;
+    }
+
+    .contact-blu-rec-container, .contact-blu-rec-container2 {
+        width: 150px;
+    }
+
+    .contact-org-square {
+        width: 300px;
+        height: 300px;
+        left: -200px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .contact {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .contact input, .contact textarea {
+        width: 490px;
+    }
+
+    .contact-blu-rec-container, .contact-blu-rec-container2 {
+        width: 75px;
+    }
+
+    .contact-org-square {
+        width: 300px;
+        height: 300px;
+        left: -200px;
+    }
 }

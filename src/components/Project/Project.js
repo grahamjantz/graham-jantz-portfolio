@@ -11,13 +11,64 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
     position: relative;
   `;
 
+  const StyledTriangle = styled.div`
+    width: 100%;
+    height: 100%;
+    background-image:
+      linear-gradient(to bottom right, transparent 50%, ${themeOrgSqu} 0),
+      linear-gradient(to top right, ${themeOrgSqu} 50%, transparent 0);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: left, right;
+    transform: rotate(90deg);
+
+    @media only screen and (max-width: 800px) {
+      width: 50%;
+      height: 50%;
+    }
+  `;
+
+  const StyledRectangle = styled.div`
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top: 280px;
+    margin: 0;
+    transform: rotate(150deg);
+    background-image:
+      linear-gradient(to bottom right, transparent 50%, ${themeBluRec} 0),
+      linear-gradient(to top right, ${themeBluRec} 50%, transparent 0);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: left, right;
+
+    @media only screen and (max-width: 1000px) {
+      width: 400px;
+    }
+    
+    @media only screen and (max-width: 800px) {
+      width: 300px;
+      top: 250px;
+    }
+  `;
+
   return (
+    <div>
+    <StyledRectangle></StyledRectangle>
     <StyledProjectContainer className='project-container'>
+      
         <figure className='image'>
                 <img src={src} alt="mockup for project"/>
         </figure>
         <h3 className='title'>{title}</h3>
-        <p className='description'>{description}</p>
+          <div className='description'>
+            <p>{description}</p>    
+            <div className='triangle-container'>
+              <div className='triangle'><StyledTriangle /></div>
+              <div className='triangle'><StyledTriangle /></div>
+              <div className='triangle'><StyledTriangle /></div>
+            </div>
+          </div>
         <figcaption className='links'>
             <Button 
                 className='live-site-link' 
@@ -41,6 +92,7 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
               />
         </figcaption>
     </StyledProjectContainer>
+    </div>
   )
 }
 

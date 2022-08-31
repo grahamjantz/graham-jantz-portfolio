@@ -9,7 +9,8 @@ export const lightTheme = {
     // orgSquare: '#0567fbad',
     // bluRectangle: '#fb3e05'
     orgSquare: '#fa9804ad',
-    bluRectangle: '#04c1faad'
+    // bluRectangle: '#04c1faad'
+    bluRectangle: '#96362f'    
     // orgSquare: '#ff0050',
     // bluRectangle: '#00f2ea'
 }
@@ -25,5 +26,6 @@ export const darkTheme = {
     // orgSquare: '#fa9804ad',
     // bluRectangle: '#04c1faad'
     orgSquare: '#ff0050',
-    bluRectangle: '#00f2ea'
+    // bluRectangle: '#00f2ea'
+    bluRectangle: '#69C9D0'
 }
