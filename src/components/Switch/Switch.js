@@ -8,8 +8,8 @@ const Switch = ({ toggleTheme, switchButtonPosition, themeBoxShadow1, themeBoxSh
   
 
   const ThemeSwitch = styled.div`
-    height: 35px;
-    width: 70px;
+    height: 30px;
+    width: 60px;
     background-color: ${themeBoxShadow2};
     border-radius: 24px;
     display: flex;
@@ -22,8 +22,8 @@ const Switch = ({ toggleTheme, switchButtonPosition, themeBoxShadow1, themeBoxSh
   }
   `;
   const SwitchButton = styled.span`
-      height: 27px;
-      width: 27px;
+      height: 22px;
+      width: 22px;
       background-color: #ffffffb2;
       border-radius: 24px;
       margin-left: ${switchButtonPosition};

@@ -16,6 +16,10 @@
     gap: 2em;
 }
 
+.contact-container h2 {
+    margin-top: -200px;
+}
+
 .contact input {
     background-color: transparent;
     height: 2.2em;
@@ -139,11 +143,17 @@
     }
 }
 
+@media only screen and (max-width: 1500px) {
+    .contact-org-square {
+        width: 300px;
+        height: 300px;
+        left: -300px;
+    }
+}
 
 @media only screen and (max-width: 1200px) {
     .contact {
         width: 500px;
-        margin: 0 auto;
     }
 
     .contact input, .contact textarea {
@@ -164,9 +174,18 @@
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    .contact-container h2 {
+        margin-top: 0;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .contact-org-square {
         left: -300px;
+    }
+    .contact-container h2 {
+        margin-top: -200px;
     }
 }
 
@@ -210,7 +229,10 @@
         width: 50px;
         right: 0px;
     }
-
+    .contact-org-squ-container {
+        display: none;
+    }
+    
     .contact-org-square {
         width: 300px;
         height: 300px;

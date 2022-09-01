@@ -22,7 +22,7 @@ export const darkTheme = {
     boxShadow2: '#2c2c2c',
     boxShadow3: '#121212',
     boxShadow4: '#262626',
-    switchButtonPosition: '39px',
+    switchButtonPosition: '34px',
     // orgSquare: '#fa9804ad',
     // bluRectangle: '#04c1faad'
     orgSquare: '#ff0050',
