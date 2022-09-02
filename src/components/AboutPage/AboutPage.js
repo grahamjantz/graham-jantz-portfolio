@@ -1,14 +1,18 @@
 import styled from '@emotion/styled'
 import React from 'react'
 import './AboutPage.css'
+// import SkillList from '../SkillList/SkillList'
+import { FaHtml5, FaCss3Alt, FaReact, FaGitAlt } from "react-icons/fa";
+import { TbBrandJavascript } from "react-icons/tb"
 
 const AboutPage = ({ themeBluRec, themeOrgSqu, themeBody }) => {
-  const StyledList = styled.li`
-    background-color: ${themeOrgSqu};
+  const StyledList = styled.div`
+    background-color: ${themeBody};
+    color: ${themeBluRec}
   `;
 
   const StyledAboutHeroImage = styled.div`
-    box-shadow: 0px 0px 0px 8px ${themeBody}, 0px 0px 0px 15px ${themeBluRec};
+    box-shadow: 0px 0px 0px 8px ${themeBody}, 0px 0px 0px 10px ${themeOrgSqu};
   `;
 
   return (
@@ -22,12 +26,37 @@ const AboutPage = ({ themeBluRec, themeOrgSqu, themeBody }) => {
           <p className="bio about-margin">I look forward to an exciting career in web development, please reach out to me if you'd like to connect!</p>
         </div> 
         <ul className="about-section-skills">
-          <StyledList id="skills">Skills:</StyledList>
-          <StyledList id="html">HTML</StyledList>
-          <StyledList id="css">CSS</StyledList>
-          <StyledList id="java">JavaScript</StyledList>
-          <StyledList id="react">React</StyledList>
-          <StyledList id="git">Git / GitHub</StyledList>
+          {/* <SkillList /> */}
+          <li id="html">
+            <StyledList>
+              <FaHtml5 className='skill-icon'/>
+            </StyledList>
+            HTML
+          </li>
+          <li id="css">
+            <StyledList>
+              <FaCss3Alt className='skill-icon'/>
+            </StyledList>
+            CSS
+          </li>
+          <li id="java">
+            <StyledList>
+              <TbBrandJavascript className="skill-icon"/>
+            </StyledList>
+            JavaScript
+          </li>
+          <li id="react">
+            <StyledList>
+              <FaReact className='skill-icon'/>
+            </StyledList>
+            React
+          </li>
+          <li id="git">
+            <StyledList>
+              <FaGitAlt className='skill-icon' />
+            </StyledList>
+            Git / GitHub
+          </li>
         </ul>
       </div>
   )

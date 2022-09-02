@@ -46,7 +46,7 @@
 .about-section-skills {
 	display: flex;
     flex-direction: column;
-	margin-top: 1em;
+	margin-top: 2em;
     height: 15em;
 	justify-content: center;
 	align-items: center;
@@ -87,10 +87,12 @@
     text-align: center;
     display: flex;
     align-items: center;
+	font-weight: bold;
 }
 
-.about-section-skills li:first-of-type {
-	text-decoration: underline;
+.skill-icon {
+	font-size: 2em;
+	margin-right: 0.5em;
 }
 
 @media only screen and (max-width: 900px) {
