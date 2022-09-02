@@ -48,7 +48,6 @@ function App() {
         themeBody={theme.body}
         themeBoxShadow1={theme.boxShadow1}
         themeBoxShadow2={theme.boxShadow2}
-        switchButtonPosition={theme.switchButtonPosition}
       />
       <StyledApp className='App'>
           <Header 
@@ -59,6 +58,7 @@ function App() {
             themeBoxShadow2={theme.boxShadow2}
             switchClass={switchClass}
             slide={slide}
+            switchButtonPosition={theme.switchButtonPosition}
             />
           <div className='org-squ-container'>
             <StyledOrgSqu className='org-square'/>

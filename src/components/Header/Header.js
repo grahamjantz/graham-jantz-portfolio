@@ -4,7 +4,7 @@ import NavbarList from '../NavbarList/NavbarList'
 import Button from '../Button/Button'
 import SideSwitch from '../SideSwitch/SideSwitch'
 
-const Header = ({ toggleTheme, themeBody, themeColor, themeBoxShadow1, themeBoxShadow2, switchClass, slide }) => {
+const Header = ({ toggleTheme, themeBody, themeColor, themeBoxShadow1, themeBoxShadow2, switchClass, slide, switchButtonPosition }) => {
 
   return (
     <div className='component'>
@@ -31,6 +31,8 @@ const Header = ({ toggleTheme, themeBody, themeColor, themeBoxShadow1, themeBoxS
               themeBoxShadow1={themeBoxShadow1}
               themeBoxShadow2={themeBoxShadow2}
               className='phone-switch'
+              switchButtonPosition={switchButtonPosition}
+              slide={slide}
             />
         </header>
     </div>
