@@ -2,9 +2,13 @@ import React, { useState} from 'react'
 import Button from '../Button/Button'
 import './SideNavbarList.css'
 
-const SideNavbarList = ({ renderHomePage, renderPortfolioPage, renderAboutPage, renderContactPage, themeBody, themeColor,themeBoxShadow1, themeBoxShadow2 }) => {
+const SideNavbarList = ({ themeBody, themeColor,themeBoxShadow1, themeBoxShadow2, themeBoxShadow3 }) => {
 
   const [sideNavClass, setSideNavClass] = useState('inactive');
+
+  const slideIn = () => {
+    sideNavClass === 'inactive' ? setSideNavClass('active') : setSideNavClass('inactive')
+  }
 
   return (
     <div>
@@ -12,9 +16,7 @@ const SideNavbarList = ({ renderHomePage, renderPortfolioPage, renderAboutPage, 
           id="navMenu" 
           className={sideNavClass} 
           onClick={() => {
-            sideNavClass === 'inactive' ||
-            sideNavClass === '' 
-            ? setSideNavClass('active') : setSideNavClass('inactive')
+            slideIn();
         }}>
           <span style={{backgroundColor: themeColor}}></span>
           <span style={{backgroundColor: themeColor}}></span>
@@ -22,32 +24,36 @@ const SideNavbarList = ({ renderHomePage, renderPortfolioPage, renderAboutPage, 
         </div>
     <div 
       className={`side-navbar-list ${sideNavClass}`}
-      style={{backgroundColor: themeBody}}>
+      style={{
+        backgroundColor: themeBody,
+        boxShadow: `-3px -3px 7px ${themeBoxShadow3}, 3px 3px 5px ${themeBoxShadow3}`,
+        zIndex: 100
+        }}>
         <Button 
           text='home' 
-          href="#"
-          handleClick={renderHomePage} 
+          href="#home"
           themeColor={themeColor}
           themeBoxShadow1={themeBoxShadow1}
-          themeBoxShadow2={themeBoxShadow2}/>
+          themeBoxShadow2={themeBoxShadow2}
+          handleClick={slideIn}/>
         <Button 
           text='portfolio' 
           href="#portfolio"
-          handleClick={renderPortfolioPage} 
+          handleClick={slideIn} 
           themeColor={themeColor}
           themeBoxShadow1={themeBoxShadow1}
           themeBoxShadow2={themeBoxShadow2}/>
         <Button 
           text='about' 
           href="#about"
-          handleClick={renderAboutPage} 
+          handleClick={slideIn} 
           themeColor={themeColor}
           themeBoxShadow1={themeBoxShadow1}
           themeBoxShadow2={themeBoxShadow2}/>
         <Button 
           text='contact' 
           href="#contact"
-          handleClick={renderContactPage} 
+          handleClick={slideIn} 
           themeColor={themeColor}
           themeBoxShadow1={themeBoxShadow1}
           themeBoxShadow2={themeBoxShadow2}/>

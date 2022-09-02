@@ -8,18 +8,12 @@
 }
 
 .side-navbar-list.active {
-    transform: translateX(0px)
-    /* animation: slideIn 1.2s;
-    animation-direction: alternate;
-    animation-play-state: running;
-    left: 0px; */
+    transform: translateX(0px);
+    
 }
 
 .side-navbar-list.inactive {
-    transform: translateX(-300px)
-    /* animation: slideOut 1.2s;
-    animation-play-state: running;
-    left: -300px; */
+    transform: translateX(-330px);
 }
 
 @keyframes slideIn {
@@ -55,22 +49,13 @@
         display: none;
     }
 }
-/* 
-.menu {
-    position: fixed;
-    width: 20px;
-    height: 60px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-} */
 
 #navMenu:hover {
     cursor: pointer;
 }
 
 #navMenu {
-    z-index: 100;
+    z-index: 101;
     margin: 20px 15px;
     flex-direction: column;
     gap: 5px;

@@ -16,7 +16,7 @@ const HomePage = () => {
   `;
 
   return (
-    <div className='home-page'>
+    <div className='home-page' id='home'>
         <div className='main-comp'>
           <div className='main-header'>
             <StyledFadeDiv>

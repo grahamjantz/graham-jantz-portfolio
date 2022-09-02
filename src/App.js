@@ -48,6 +48,7 @@ function App() {
         themeBody={theme.body}
         themeBoxShadow1={theme.boxShadow1}
         themeBoxShadow2={theme.boxShadow2}
+        themeBoxShadow3={theme.boxShadow3}
       />
       <StyledApp className='App'>
           <Header 
