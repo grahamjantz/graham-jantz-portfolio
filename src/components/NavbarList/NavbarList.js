@@ -3,7 +3,7 @@ import Button from '../Button/Button'
 import './NavbarList.css'
 import Switch from '../Switch/Switch'
 
-const NavbarList = ({ renderHomePage, renderPortfolioPage, renderAboutPage, renderContactPage, toggleTheme, themeColor,themeBoxShadow1, themeBoxShadow2, switchButtonPosition }) => {
+const NavbarList = ({ renderHomePage, renderPortfolioPage, renderAboutPage, renderContactPage, toggleTheme, themeColor,themeBoxShadow1, themeBoxShadow2, switchClass }) => {
 
   return (
     <div className='navbar-list'>
@@ -37,7 +37,7 @@ const NavbarList = ({ renderHomePage, renderPortfolioPage, renderAboutPage, rend
           themeBoxShadow2={themeBoxShadow2}/>
         <Switch 
           toggleTheme={toggleTheme} 
-          switchButtonPosition={switchButtonPosition}
+          switchClass={switchClass}
           themeBoxShadow1={themeBoxShadow1}
           themeBoxShadow2={themeBoxShadow2}
           />

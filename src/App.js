@@ -12,12 +12,15 @@ import SideNavbarList from './components/SideNavbarList/SideNavbarList'
 
 function App() {
   const [theme, setTheme] = useState(lightTheme);
+  const [switchClass, setSwitchClass] = useState('inactive');
 
   const toggleTheme = () => {
     if (theme === lightTheme) {
       setTheme(darkTheme)
+      setSwitchClass('active');
     } else if (theme === darkTheme){
       setTheme(lightTheme)
+      setSwitchClass('inactive');
     }
   }
 
@@ -51,7 +54,7 @@ function App() {
             themeBody={theme.body}
             themeBoxShadow1={theme.boxShadow1}
             themeBoxShadow2={theme.boxShadow2}
-            switchButtonPosition={theme.switchButtonPosition}
+            switchClass={switchClass}
             />
           <div className='org-squ-container'>
             <StyledOrgSqu className='org-square'/>

@@ -26,9 +26,9 @@
     grid-area: subtitle;
     font-weight: 300;
     font-style: italic;
-    animation: slideIn 3s ease-in;
+    animation: slideIn 3s ease forwards;
 }
-
+/* 
 @keyframes fadeIn {
     0% { opacity: 0 }
     100% { opacity: 1;}
@@ -36,8 +36,8 @@
 
 @keyframes slideIn {
     0% { margin-left: -3000px; }
-    100% { margin-left: 0; }
-}
+    100% { margin-left: 0px; }
+} */
 
 .main-header {
     width: 50%;

@@ -148,6 +148,21 @@
     padding-top: 5em;
 }
 
+.switch-button {
+    height: 22px;
+      width: 22px;
+      background-color: #ffffffb2;
+      border-radius: 24px;
+      margin-left: 4px;
+      z-index: 10;
+      transition: all 1s ease;
+}
+
+.switch-button.active {
+    transform: translateX(30px);
+}
+
+
 @media only screen and (max-height: 500px) {
     .App {
         grid-template-rows: 75px 100vh 1200px 2000px 1000px 200px;

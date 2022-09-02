@@ -38,6 +38,7 @@ const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, th
             src={waterfrontOfficialV2}
             target="_blank"
             liveLink="https://www.waterfrontofficial.com"
+            repoLink="https://www.waterfrontofficial.com"
             themeColor={themeColor}
             themeBoxShadow1={themeBoxShadow1}
             themeBoxShadow2={themeBoxShadow2}
