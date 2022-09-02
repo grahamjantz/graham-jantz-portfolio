@@ -86,7 +86,7 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
         <figcaption className='links'>
             <Button 
                 className='live-site-link' 
-                icon={<FaLink />}
+                icon={<FaLink style={{ fontSize: '1.5em', marginRight: '0.5em'}}/>}
                 text={'Live Site'}
                 href={liveLink}
                 target={target}
@@ -96,7 +96,7 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
                 />
             <Button 
                 className='github-repo-link' 
-                icon={<FaGithub />}
+                icon={<FaGithub style={{ fontSize: '1.5em', marginRight: '0.5em'}}/>}
                 text={'Github Repo'}
                 href={repoLink}
                 target={target}
