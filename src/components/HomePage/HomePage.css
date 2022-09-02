@@ -12,13 +12,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
     height: 100%;
 }
 
 .hero-title {
     grid-area: title;
-    animation: fadeIn 4s ease;
     margin-bottom: 2em;
 }
 
@@ -26,18 +24,7 @@
     grid-area: subtitle;
     font-weight: 300;
     font-style: italic;
-    animation: slideIn 3s ease forwards;
 }
-/* 
-@keyframes fadeIn {
-    0% { opacity: 0 }
-    100% { opacity: 1;}
-}
-
-@keyframes slideIn {
-    0% { margin-left: -3000px; }
-    100% { margin-left: 0px; }
-} */
 
 .main-header {
     width: 50%;

@@ -4,7 +4,7 @@ import NavbarList from '../NavbarList/NavbarList'
 import Button from '../Button/Button'
 import SideSwitch from '../SideSwitch/SideSwitch'
 
-const Header = ({ renderHomePage, renderPortfolioPage, renderAboutPage, renderContactPage, toggleTheme, themeBody, themeColor, themeBoxShadow1, themeBoxShadow2, switchClass }) => {
+const Header = ({ toggleTheme, themeBody, themeColor, themeBoxShadow1, themeBoxShadow2, switchClass, slide }) => {
 
   return (
     <div className='component'>
@@ -13,19 +13,16 @@ const Header = ({ renderHomePage, renderPortfolioPage, renderAboutPage, renderCo
             <Button 
               text='GJ' 
               href="#"
-              handleClick={renderHomePage} themeColor={themeColor}
+              themeColor={themeColor}
               themeBoxShadow1={themeBoxShadow1}
               themeBoxShadow2={themeBoxShadow2}/>
             <NavbarList 
-              renderHomePage={renderHomePage}
-              renderPortfolioPage={renderPortfolioPage}
-              renderAboutPage={renderAboutPage}
-              renderContactPage={renderContactPage}
               toggleTheme={toggleTheme} 
               themeColor={themeColor}
               themeBoxShadow1={themeBoxShadow1}
               themeBoxShadow2={themeBoxShadow2}
               switchClass={switchClass}
+              slide={slide}
               />
           </nav>
           <SideSwitch 

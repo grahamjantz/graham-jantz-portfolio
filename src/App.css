@@ -148,19 +148,14 @@
     padding-top: 5em;
 }
 
-.switch-button {
-    height: 22px;
-      width: 22px;
-      background-color: #ffffffb2;
-      border-radius: 24px;
-      margin-left: 4px;
-      z-index: 10;
-      transition: all 1s ease;
+/* .switch-button {
+    
+    transition: all 1s ease;
 }
 
 .switch-button.active {
     transform: translateX(30px);
-}
+} */
 
 
 @media only screen and (max-height: 500px) {

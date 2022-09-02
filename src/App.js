@@ -13,14 +13,17 @@ import SideNavbarList from './components/SideNavbarList/SideNavbarList'
 function App() {
   const [theme, setTheme] = useState(lightTheme);
   const [switchClass, setSwitchClass] = useState('inactive');
+  const [slide, setSlide] = useState('0px')
 
   const toggleTheme = () => {
     if (theme === lightTheme) {
       setTheme(darkTheme)
       setSwitchClass('active');
+      setSlide('32px');
     } else if (theme === darkTheme){
       setTheme(lightTheme)
       setSwitchClass('inactive');
+      setSlide('0px');
     }
   }
 
@@ -55,6 +58,7 @@ function App() {
             themeBoxShadow1={theme.boxShadow1}
             themeBoxShadow2={theme.boxShadow2}
             switchClass={switchClass}
+            slide={slide}
             />
           <div className='org-squ-container'>
             <StyledOrgSqu className='org-square'/>

@@ -1,9 +1,28 @@
 import React from 'react'
 import './Switch.css'
+// import { slideOutLeft, slideOutRight } from 'react-animations'
+import styled/*, { keyframes }*/ from 'styled-components'
 
+const Switch = ({ toggleTheme, themeBoxShadow1, themeBoxShadow2, switchClass, slide }) => {
 
+  // const slideAnimation = keyframes`${slide}`;
+  // const StyledSlideDiv = styled.div`
+  //   animation: ${slideAnimation} .8s;
+  // `;
 
-const Switch = ({ toggleTheme, switchButtonPosition, themeBoxShadow1, themeBoxShadow2, switchClass }) => {
+  const StyledSwitch = styled.div`
+    height: 22px;
+    width: 22px;
+    background-color: #ffffffb2;
+    border-radius: 24px;
+    margin-left: 4px;
+    z-index: 10;
+    transition: all 0.8s ease;
+    
+    &.active{
+      transform: translateX(${slide});
+    }
+  `;
 
   return (
     <div>
@@ -20,9 +39,9 @@ const Switch = ({ toggleTheme, switchButtonPosition, themeBoxShadow1, themeBoxSh
           3px 3px 5px ${themeBoxShadow2}`
           }}  
         >
-          <div
+          <StyledSwitch
             className={`switch-button ${switchClass}`}>
-          </div>
+          </StyledSwitch>
         </div>
     </div>
   )
