@@ -1,50 +1,28 @@
-import React from 'react'
+import React, { useState} from 'react'
 import Button from '../Button/Button'
 import './SideNavbarList.css'
-import styled from '@emotion/styled'
-
-const showMenu = (item) => {
-  item.style.backgroundColor = 'var(--main-rust)';
-  item.style.animation = 'slideIn 1s';
-  item.style.top = '0px';
-}
 
 const SideNavbarList = ({ renderHomePage, renderPortfolioPage, renderAboutPage, renderContactPage, themeBody, themeColor,themeBoxShadow1, themeBoxShadow2 }) => {
 
-  let classname = 'inactive';
-
-  const StyledSideNavBarList = styled.div`
-    background-color: ${themeBody};
-    left: -300px;
-  `;
-
-  const StyledMenuButton = styled.div`
-    position: fixed;  
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin: 20px;
-  `;
-  
-  const StyledNavSpan = styled.span`
-    display: block;
-    width: 28px;
-    height: 3px;
-    border-radius: 9999px;
-    background-color: ${themeColor};
-  `;
+  const [sideNavClass, setSideNavClass] = useState('inactive');
 
   return (
     <div>
-      <StyledMenuButton id="navMenu" className={classname} onClick={() => {
-        console.log('hi')
-        classname === 'inactive' ? classname = 'active' : classname = 'inactive'
-      }}>
-        <StyledNavSpan/>
-        <StyledNavSpan/>
-        <StyledNavSpan/>
-      </StyledMenuButton>
-    <StyledSideNavBarList className='side-navbar-list'>
+        <div 
+          id="navMenu" 
+          className={sideNavClass} 
+          onClick={() => {
+            sideNavClass === 'inactive' ||
+            sideNavClass === '' 
+            ? setSideNavClass('active') : setSideNavClass('inactive')
+        }}>
+          <span style={{backgroundColor: themeColor}}></span>
+          <span style={{backgroundColor: themeColor}}></span>
+          <span style={{backgroundColor: themeColor}}></span>
+        </div>
+    <div 
+      className={`side-navbar-list ${sideNavClass}`}
+      style={{backgroundColor: themeBody}}>
         <Button 
           text='home' 
           href="#"
@@ -73,7 +51,7 @@ const SideNavbarList = ({ renderHomePage, renderPortfolioPage, renderAboutPage, 
           themeColor={themeColor}
           themeBoxShadow1={themeBoxShadow1}
           themeBoxShadow2={themeBoxShadow2}/>
-    </StyledSideNavBarList>
+    </div>
     </div>
   )
 }

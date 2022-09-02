@@ -58,8 +58,8 @@ img {
     flex-direction: row;
     padding-top: 1em;
     padding-right: 2em;
-    justify-content: flex-end;
-    animation: gap 2s;
+    justify-content: center;
+    animation: gap 1.5s;
     animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count: infinite;

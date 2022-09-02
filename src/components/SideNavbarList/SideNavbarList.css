@@ -4,7 +4,32 @@
     gap: 2em;
     align-items: center;
     flex-wrap: wrap;
-    display: none;
+    transition: all .8s ease-in-out;
+}
+
+.side-navbar-list.active {
+    transform: translateX(0px)
+    /* animation: slideIn 1.2s;
+    animation-direction: alternate;
+    animation-play-state: running;
+    left: 0px; */
+}
+
+.side-navbar-list.inactive {
+    transform: translateX(-300px)
+    /* animation: slideOut 1.2s;
+    animation-play-state: running;
+    left: -300px; */
+}
+
+@keyframes slideIn {
+    from { left: -300px }
+    to { left: 0px }
+}
+
+@keyframes slideOut {
+    from { left: 0px }
+    to { left: -300px }
 }
 
 @media only screen and (max-width: 650px) {
@@ -16,6 +41,18 @@
         height: 100%;
         width: 300px;
         padding: 50px 20px;
+    }
+    #navMenu {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    #navMenu {
+        display: none;
+    }
+    .side-navbar-list {
+        display: none;
     }
 }
 /* 
@@ -35,7 +72,6 @@
 #navMenu {
     z-index: 100;
     margin: 20px 15px;
-    display: flex;
     flex-direction: column;
     gap: 5px;
     position: fixed;
@@ -51,7 +87,7 @@
     transition: all .2s linear;
 }
 #navMenu.active {
-    transition-delay: 0.3s;
+    transition-delay: 0.1s;
     transform: rotate(45deg);
 }
 #navMenu.active > span:nth-child(2) {
@@ -59,11 +95,11 @@
 }
 #navMenu.active > span:nth-child(1), 
 #navMenu.active > span:nth-child(3) {
-    transition-delay: .2s;
+    transition-delay: .1s;
 }
 #navMenu.active > span:nth-child(1) {
-    transform: translateY(10px);
+    transform: translateY(8px);
 }
 #navMenu.active > span:nth-child(3) {
-    transform: translateY(-10px) rotate(90deg);
+    transform: translateY(-8px) rotate(90deg);
 }

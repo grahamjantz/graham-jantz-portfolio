@@ -4,7 +4,8 @@ import NavbarList from '../NavbarList/NavbarList'
 import Button from '../Button/Button'
 import SideSwitch from '../SideSwitch/SideSwitch'
 
-const Header = ({ renderHomePage, renderPortfolioPage, renderAboutPage, renderContactPage, toggleTheme, themeColor, themeBoxShadow1, themeBoxShadow2, switchButtonPosition }) => {
+const Header = ({ renderHomePage, renderPortfolioPage, renderAboutPage, renderContactPage, toggleTheme, themeBody, themeColor, themeBoxShadow1, themeBoxShadow2, switchButtonPosition }) => {
+
   return (
     <div className='component'>
         <header className='nav'>

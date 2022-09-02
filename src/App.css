@@ -24,7 +24,7 @@
 }
 
 .component {
-    overflow: clip;
+    width: 100%;
 }
 
 .component:last-of-type {
@@ -47,7 +47,7 @@
     height: 400px;
     position: absolute;
     transform: rotate(45deg);
-    left: -300px;
+    left: -330px;
     animation: rotate 2s ease-in-out 0s infinite alternate forwards;
     animation-play-state: paused;
 }
@@ -148,7 +148,22 @@
     padding-top: 5em;
 }
 
+@media only screen and (max-height: 500px) {
+    .App {
+        grid-template-rows: 75px 100vh 1200px 2000px 1000px 200px;
+    }
+
+    .org-square {
+        left: -400px;
+        top: 50px;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
+    .App {
+        grid-template-rows: 75px 100vh 1200px 2000px 1200px 200px;
+    }
+    
     .org-square {
         left: -400px;
     }
@@ -156,7 +171,7 @@
 
 @media only screen and (max-width: 900px) {
     .App {
-        grid-template-rows: 75px 100vh 1200px 2200px 1000px 200px;
+        grid-template-rows: 75px 100vh 1200px 2200px 1200px 200px;
     }
 }
 @media only screen and (max-width: 800px) {
@@ -183,10 +198,16 @@
 
 @media only screen and (max-width: 700px) {
     .App {
-        grid-template-rows: 75px 100vh 1500px 3500px 600px 200px;
+        grid-template-rows: 75px 100vh 1500px 3500px 1000px 200px;
     }
 }
 
+
+@media only screen and (max-width: 600px) {
+    .App {
+        grid-template-rows: 75px 100vh 1500px 3400px 600px 200px;
+    }
+}
 
 @media only screen and (max-width: 500px) {
     .App {

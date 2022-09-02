@@ -19,6 +19,7 @@
 .hero-title {
     grid-area: title;
     animation: fadeIn 4s ease;
+    margin-bottom: 2em;
 }
 
 .hero-subtitle {
@@ -49,6 +50,13 @@
     background-size: cover;
     background-repeat: none;
     margin-top: 5em;
+}
+
+@media only screen and (max-height: 500px) {
+    .hero-image{
+        width: 250px;
+        height: 250px;
+    }
 }
 
 @media only screen and (max-width:1000px) {
