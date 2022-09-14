@@ -5,46 +5,50 @@ import Switch from '../Switch/Switch'
 
 const NavbarList = ({ toggleTheme, themeColor,themeBoxShadow1, themeBoxShadow2, switchClass, slide }) => {
 
-	const ranNum = Math.floor(Math.random() * 10000);
+	const ranNum = () =>{ 
+		return Math.floor(Math.random() * 10000);
+	}
 	
 	const navButtonArr = [
 		{
 			text: 'home',
 			href: '#home',
-			id: ranNum
+			id: ranNum()
 		},
 		{
 			text: 'about',
 			href: '#about',
-			id: ranNum
+			id: ranNum()
 		},
 		{
 			text: 'portfolio',
 			href: '#portfolio',
-			id: ranNum
+			id: ranNum()
 		},
 		{
 			text: 'contact',
 			href: '#contact',
-			id: ranNum
+			id: ranNum()
 		}
 	];
 
-	const navbarList = navButtonArr.map((arrItem) => {
-		<li key={arrItem.id}>
-			<Button 
-				text=arrItem.text 
-				href=arrItem.href
-				themeColor={themeColor}
-				themeBoxShadow1={themeBoxShadow1}
-				themeBoxShadow2={themeBoxShadow2}
-			/>
-		</li>
+	const navbarMap = navButtonArr.map((arrItem) => {
+		return (
+			<li key={arrItem.id}>
+					<Button 
+						text={arrItem.text }
+						href={arrItem.href}
+						themeColor={themeColor}
+						themeBoxShadow1={themeBoxShadow1}
+						themeBoxShadow2={themeBoxShadow2}
+					/>
+			</li>
+		)
 	})
 	
 	return (
 		<ul className='navbar-list'>
-			{navbarList}
+			{navbarMap}
 			<Switch 
 				toggleTheme={toggleTheme} 
 				switchClass={switchClass}
