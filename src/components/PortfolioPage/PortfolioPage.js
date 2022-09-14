@@ -33,32 +33,32 @@ const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, th
       <h2 style={{ paddingTop: '5em' }}>Portfolio</h2>
       <StyledProjects>
         <Project 
-            title='Waterfront Official Band Website'
-            description={`This website was built for the band Waterfront using Wix. I built this site before I began learning to code and although I did not code this site I still learned a lot about site layout, button hover/active states and background images.`}
-            src={waterfrontOfficialV2}
+            title='G&M Wedding Website'
+            description="I originally built this site using simple HTML, CSS, and JavaScript, I have since fully rebuilt the site using React. This was due to long load times between pages. By utilizing React Router I was able to only rerender the information on each page without reloading the entire site, making it much faster and more efficient."
+            src={grahamAndMaddyV2}
+            liveLink="https://grahamandmaddy.com"
+            repoLink="https://github.com/grahamandmaddy/grahamandmaddy.github.io"
             target="_blank"
-            liveLink="https://www.waterfrontofficial.com"
-            repoLink="https://www.waterfrontofficial.com"
             themeColor={themeColor}
             themeBoxShadow1={themeBoxShadow1}
             themeBoxShadow2={themeBoxShadow2}
             themeBluRec={themeBluRec}
             themeOrgSqu={themeOrgSqu}
           />
-        
         <Project 
-          title='G&M Wedding Website'
-          description="This project was created as a personal wedding website using vanilla HTML, CSS, and, JavaScript. This site is built using individual files for each page. Which was a new concept for me at the time, so it was quite a learning curve but I learned a lot through online resources and styling tutorials."
-          src={grahamAndMaddyV2}
-          liveLink="https://grahamandmaddy.com"
-          repoLink="https://github.com/grahamandmaddy/grahamandmaddy.github.io"
-          target="_blank"
-          themeColor={themeColor}
-          themeBoxShadow1={themeBoxShadow1}
-          themeBoxShadow2={themeBoxShadow2}
-          themeBluRec={themeBluRec}
-          themeOrgSqu={themeOrgSqu}
-        />
+            title='Waterfront Official Band Website'
+            description={`This website was built for the band Waterfront using Wix. I built this site before I began learning to code and although I did not code this site I still learned a lot about site layout, button hover/active states and background images.`}
+            src={waterfrontOfficialV2}
+            target="_blank"
+            liveLink="https://www.waterfrontofficial.com"
+            repoLink="https://www.waterfrontofficial.com"
+            display='none'
+            themeColor={themeColor}
+            themeBoxShadow1={themeBoxShadow1}
+            themeBoxShadow2={themeBoxShadow2}
+            themeBluRec={themeBluRec}
+            themeOrgSqu={themeOrgSqu}
+          />
         <Project 
           title='React Playground'
           description="This project was created as a practice exercise in React. Each 'app' builds in complexity and functionality. This project was really helpful in learning how to use and pass props and the useState() hook."
