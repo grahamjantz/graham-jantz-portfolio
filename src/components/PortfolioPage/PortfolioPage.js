@@ -47,7 +47,7 @@ const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, th
           />
         <Project 
             title='Waterfront Official Band Website'
-            description={`This website was built for the band Waterfront using Wix. I built this site before I began learning to code and although I did not code this site I still learned a lot about site layout, button hover/active states and background images.`}
+            description={`This website was built for the band Waterfront using Wix. I built this site before I began learning to code and although I did not code this site I still learned a lot about site layout, button hover/active states and background images. This site is currently being rebuilt using React.`}
             src={waterfrontOfficialV2}
             target="_blank"
             liveLink="https://www.waterfrontofficial.com"
@@ -59,12 +59,25 @@ const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, th
             themeBluRec={themeBluRec}
             themeOrgSqu={themeOrgSqu}
           />
-        <Project 
+        {/* <Project 
           title='React Playground'
           description="This project was created as a practice exercise in React. Each 'app' builds in complexity and functionality. This project was really helpful in learning how to use and pass props and the useState() hook."
           src={reactPlayground}
           liveLink="https://graham-jantz-react-playground.netlify.app/"
           repoLink="https://github.com/grahamjantz/react-playground"
+          target="_blank"
+          themeColor={themeColor}
+          themeBoxShadow1={themeBoxShadow1}
+          themeBoxShadow2={themeBoxShadow2}
+          themeBluRec={themeBluRec}
+          themeOrgSqu={themeOrgSqu}
+        /> */}
+        <Project 
+          title='PokeDex'
+          description={`This project was created as a way to practice working with API's, I used the fetch API and the PokeAPI. I initially followed a tutorial by Fidal Mathew which can be found ${<a href="https://dev.to/fidalmathew/build-pokemon-finder-using-react-and-pokeapi-5b5k" target='_blank' rel="noreferrer">here</a>}. I then built upon this foundation adding the back, random, and next functionality as well as all the styling using the Pokemon brand colours.`}
+          src={reactPlayground}
+          liveLink="https://grahamjantz-pokedex.netlify.app/"
+          repoLink="https://github.com/grahamjantz/pokedex"
           target="_blank"
           themeColor={themeColor}
           themeBoxShadow1={themeBoxShadow1}
