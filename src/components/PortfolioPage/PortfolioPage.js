@@ -3,7 +3,7 @@ import Project from '../Project/Project'
 import styled from '@emotion/styled'
 import grahamAndMaddyV2 from '../../images/grahamandmaddyV3.png'
 import waterfrontOfficialV2 from '../../images/waterfrontofficialV3.png'
-import reactPlayground from '../../images/reactplaygroundV3.png'
+import pokedexLaptop from '../../images/pokedex.png'
 
 const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, themeBluRec, themeOrgSqu }) => {
   const StyledProjects = styled.span`
@@ -75,7 +75,7 @@ const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, th
         <Project 
           title='PokeDex'
           description={`This project was created as a way to practice working with API's, I used the fetch API and the PokeAPI. I initially followed a tutorial by Fidal Mathew which can be found ${<a href="https://dev.to/fidalmathew/build-pokemon-finder-using-react-and-pokeapi-5b5k" target='_blank' rel="noreferrer">here</a>}. I then built upon this foundation adding the back, random, and next functionality as well as all the styling using the Pokemon brand colours.`}
-          src={reactPlayground}
+          src={pokedexLaptop}
           liveLink="https://grahamjantz-pokedex.netlify.app/"
           repoLink="https://github.com/grahamjantz/pokedex"
           target="_blank"
