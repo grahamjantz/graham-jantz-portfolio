@@ -34,11 +34,7 @@ const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, th
       <StyledProjects>
         <Project 
           title='PokeDex'
-<<<<<<< HEAD
           description={`This project was created as a way to practice working with the fetch API and the PokeAPI. I initially followed a tutorial which can be found at the GitHub repo. I then built upon this foundation adding the button functionality, all the styling and the photo carousel for the pokemon. I completely rebuilt the app without relying on the tutorial, in order to reinforce what I learnt.`}
-=======
-          description={`This project was created as a way to practice working with API's, I used the fetch API and the PokeAPI. I initially followed a tutorial by Fidal Mathew which can be found ${<a href="https://dev.to/fidalmathew/build-pokemon-finder-using-react-and-pokeapi-5b5k" target='_blank' rel="noreferrer">here</a>}. I then built upon this foundation adding the back, random, and next functionality as well as all the styling using the Pokemon brand colours.`}
->>>>>>> 9834241 (changed pokedex photo, reordered projects)
           src={pokedexLaptop}
           liveLink="https://grahamjantz-pokedex.netlify.app/"
           repoLink="https://github.com/grahamjantz/pokedex"
