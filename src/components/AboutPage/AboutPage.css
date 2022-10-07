@@ -4,7 +4,7 @@
 	width: 70%;
 	height: auto;
 	grid-template-columns:repeat(2, 7.5em) repeat(2, 1fr);
-	grid-template-rows: repeat(5, 6em);
+	grid-template-rows: repeat(2, 7em) repeat(2, auto);
 	grid-template-areas:
 				"image image header header" 
 				"image image bio bio"

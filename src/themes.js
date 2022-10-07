@@ -1,5 +1,5 @@
 export const lightTheme = {
-    body: '#e0e0e0',
+    body: '#ffffff',
     color: '#1c1c1c',
     boxShadow1: '#ffffffb2',
     boxShadow2: '#bebebe',
@@ -10,9 +10,10 @@ export const lightTheme = {
     // bluRectangle: '#fb3e05'
     orgSquare: '#fa9804ad',
     // bluRectangle: '#04c1faad'
-    bluRectangle: '#96362f'    
+    bluRectangle: '#96362f', 
     // orgSquare: '#ff0050',
     // bluRectangle: '#00f2ea'
+    glass: 'rgba(255, 255, 255, 0.2)'
 }
 
 export const darkTheme = {
@@ -27,5 +28,6 @@ export const darkTheme = {
     // bluRectangle: '#04c1faad'
     orgSquare: '#ff0050',
     // bluRectangle: '#00f2ea'
-    bluRectangle: '#69C9D0'
+    bluRectangle: '#69C9D0',
+    glass: 'rgba(0, 0, 0, 0.5)'
 }

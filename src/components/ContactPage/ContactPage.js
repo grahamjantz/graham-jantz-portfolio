@@ -7,19 +7,22 @@ import './ContactPage.css'
 const ContactPage = ({ themeColor, themeBoxShadow1, themeBoxShadow2, themeBluRec, themeOrgSqu }) => {
   const StyledInput = styled.input`
   background-color: black;
-  box-shadow: inset 3px 3px 5px ${themeBoxShadow1},
-  inset -3px -3px 7px ${themeBoxShadow2};
+  
   color: ${themeColor};
   border: 1px solid ${themeBoxShadow1};
   `;
+  // taken from styled component above
+  // box-shadow: inset 3px 3px 5px ${themeBoxShadow1},
+  // inset -3px -3px 7px ${themeBoxShadow2};
 
   const StyledTextarea = styled.textarea`
   background-color: transparent;
-  box-shadow: inset 3px 3px 5px ${themeBoxShadow1},
-  inset -3px -3px 7px ${themeBoxShadow2};
   color: ${themeColor};
   border: 1px solid ${themeBoxShadow1};
   `;
+  // Taken from styled component above
+  // box-shadow: inset 3px 3px 5px ${themeBoxShadow1},
+  // inset -3px -3px 7px ${themeBoxShadow2};
 
   const StyledOrgSqu = styled.div`
     background-color: ${themeOrgSqu};

@@ -35,8 +35,8 @@ const Switch = ({ toggleTheme, themeBoxShadow1, themeBoxShadow2, switchClass, sl
             borderRadius: '24px',
             display: 'flex',
             alignItems: 'center',
-            boxShadow: `-3px -3px 7px ${themeBoxShadow1}, 
-          3px 3px 5px ${themeBoxShadow2}`
+          //   boxShadow: `-3px -3px 7px ${themeBoxShadow1}, 
+          // 3px 3px 5px ${themeBoxShadow2}`
           }}  
         >
           <StyledSwitch

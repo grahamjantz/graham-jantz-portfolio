@@ -100,6 +100,7 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
                 themeColor={themeColor}
                 themeBoxShadow1={themeBoxShadow1}
                 themeBoxShadow2={themeBoxShadow2}
+                bluRect={themeBluRec}
                 />
         </figcaption>
     </StyledProjectContainer>
@@ -134,6 +135,7 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
                 themeColor={themeColor}
                 themeBoxShadow1={themeBoxShadow1}
                 themeBoxShadow2={themeBoxShadow2}
+                bluRect={themeBluRec}
                 />
             <Button 
                 className='github-repo-link' 
@@ -145,6 +147,7 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
                 themeColor={themeColor}
                 themeBoxShadow1={themeBoxShadow1}
                 themeBoxShadow2={themeBoxShadow2}
+                bluRect={themeBluRec}
               />
         </figcaption>
     </StyledProjectContainer>

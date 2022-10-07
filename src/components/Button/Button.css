@@ -1,12 +1,15 @@
 .nav-btn {
+    height: 100%;
     background-color: transparent;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     border: 2px solid transparent;
+    font-size: 1em;
 }
+
 
 .nav-btn:hover {
     cursor: pointer;
-    text-decoration: underline;
+    
 }
 
 .nav-btn:active {
@@ -23,5 +26,7 @@ a {
 }
 
 @media only screen and (max-width: 650px) {
-    
+    .nav-btn {
+        height: 50px;
+    }
 }

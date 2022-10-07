@@ -60,6 +60,8 @@ function App() {
             switchClass={switchClass}
             slide={slide}
             switchButtonPosition={theme.switchButtonPosition}
+            bluRect={theme.bluRectangle}
+            glass={theme.glass}
             />
           <div className='org-squ-container'>
             <StyledOrgSqu className='org-square'/>

@@ -3,7 +3,7 @@ import Button from '../Button/Button'
 import './NavbarList.css'
 import Switch from '../Switch/Switch'
 
-const NavbarList = ({ toggleTheme, themeColor,themeBoxShadow1, themeBoxShadow2, switchClass, slide }) => {
+const NavbarList = ({ toggleTheme, themeColor,themeBoxShadow1, themeBoxShadow2, switchClass, slide, bluRect }) => {
 
 	const ranNum = () =>{ 
 		return Math.floor(Math.random() * 10000);
@@ -34,13 +34,14 @@ const NavbarList = ({ toggleTheme, themeColor,themeBoxShadow1, themeBoxShadow2, 
 
 	const navbarMap = navButtonArr.map((arrItem) => {
 		return (
-			<li key={arrItem.id}>
+			<li key={arrItem.id} style={{height: '100%', display: 'flex', alignItems: 'center'}}>
 					<Button 
 						text={arrItem.text }
 						href={arrItem.href}
 						themeColor={themeColor}
 						themeBoxShadow1={themeBoxShadow1}
 						themeBoxShadow2={themeBoxShadow2}
+						bluRect={bluRect}
 					/>
 			</li>
 		)
