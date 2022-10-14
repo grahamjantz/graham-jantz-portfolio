@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import React from 'react'
 import './Button.css'
 
-const Button = ({ text, handleClick, themeColor, icon, themeBoxShadow1, themeBoxShadow2, href, target, display, bluRect }) => {
+const Button = ({ text, handleClick, themeColor, icon, themeBoxShadow1, themeBoxShadow2, href, target, display, visibility, bluRect }) => {
 
   const  StyledLink = styled.a`
   color: ${themeColor};
@@ -11,7 +11,7 @@ const Button = ({ text, handleClick, themeColor, icon, themeBoxShadow1, themeBox
 
   const StyledButton = styled.button`
     border-color: ${themeColor};
-    visibility: ${display};
+    visibility: ${visibility};
 
    &.nav-btn:hover {
     border-bottom: 2px solid ${bluRect};

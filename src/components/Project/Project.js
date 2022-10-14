@@ -4,7 +4,7 @@ import { FaLink, FaGithub } from "react-icons/fa";
 import Button from '../Button/Button';
 import styled from '@emotion/styled';
 
-const Project = ({ title, src, liveLink, repoLink, target, description, themeColor, themeBoxShadow1, themeBoxShadow2, themeBluRec, themeOrgSqu, display }) => {
+const Project = ({ title, src, liveLink, repoLink, target, description, themeColor, themeBoxShadow1, themeBoxShadow2, themeBluRec, themeOrgSqu, display, visibility }) => {
 
   const StyledProjectContainer = styled.div`
     background-color: transparent;
@@ -78,7 +78,7 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
   */
   if (display === 'hidden') {
     return (
-      <div style={{display: 'flex', flexDirection: 'column', height: 'auto', alignItems: 'center'}}>
+      <div style={{display: 'flex', flexDirection: 'column', height: 'auto' }}>
     <StyledRectangle></StyledRectangle>
     <StyledProjectContainer className='project-container'>
       
@@ -106,13 +106,14 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
                 themeBoxShadow2={themeBoxShadow2}
                 bluRect={themeBluRec}
                 />
-              <Button 
-                visibility = 'hidden'
+            <Button 
+                visibility={visibility}
                 className='github-repo-link' 
                 icon={<FaGithub style={{ fontSize: '1.5em', marginRight: '0.5em'}}/>}
                 text={'Github Repo'}
                 href={repoLink}
                 target={target}
+                display={display}
                 themeColor={themeColor}
                 themeBoxShadow1={themeBoxShadow1}
                 themeBoxShadow2={themeBoxShadow2}
