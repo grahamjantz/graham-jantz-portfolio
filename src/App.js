@@ -59,6 +59,7 @@ function App() {
             switchButtonPosition={theme.switchButtonPosition}
             bluRect={theme.bluRectangle}
             glass={theme.glass}
+            glassBorder={theme.glassBorder}
             />
           {/* UNCOMMENT THIS TO BRING BACK SHAPES ON HOME PAGE
           

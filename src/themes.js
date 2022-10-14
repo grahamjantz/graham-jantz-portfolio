@@ -13,7 +13,8 @@ export const lightTheme = {
     bluRectangle: '#96362f', 
     // orgSquare: '#ff0050',
     // bluRectangle: '#00f2ea'
-    glass: 'rgba(255, 255, 255, 0.2)'
+    glass: 'rgba(255, 255, 255, 0.2)',
+    glassBorder: 'rgba(255, 255, 255, 0.3)'
 }
 
 export const darkTheme = {
@@ -29,5 +30,6 @@ export const darkTheme = {
     orgSquare: '#ff0050',
     // bluRectangle: '#00f2ea'
     bluRectangle: '#69C9D0',
-    glass: 'rgba(0, 0, 0, 0.5)'
+    glass: 'rgba(0, 0, 0, 0.5)',
+    glassBorder: '1px solid rgba( 50, 50, 50, 0.5 )'
 }

@@ -5,7 +5,7 @@ import Button from '../Button/Button'
 import SideSwitch from '../SideSwitch/SideSwitch'
 import SideNavbarList from '../SideNavbarList/SideNavbarList'
 
-const Header = ({ toggleTheme, themeBody, themeColor, themeBoxShadow1, themeBoxShadow2, themeBoxShadow3, switchClass, slide, switchButtonPosition, bluRect, glass }) => {
+const Header = ({ toggleTheme, themeBody, themeColor, themeBoxShadow1, themeBoxShadow2, themeBoxShadow3, switchClass, slide, switchButtonPosition, bluRect, glass,glassBorder }) => {
 
   const [sideNavClass, setSideNavClass] = useState('inactive');
 
@@ -25,7 +25,7 @@ const Header = ({ toggleTheme, themeBody, themeColor, themeBoxShadow1, themeBoxS
             <span style={{backgroundColor: themeColor}}></span>
             <span style={{backgroundColor: themeColor}}></span>
           </div>
-        <header className='nav' style={{background: glass}}>
+        <header className='nav' style={{background: glass, border: glassBorder}}>
           <nav className='navbar'>
             <Button 
               text='GJ' 
