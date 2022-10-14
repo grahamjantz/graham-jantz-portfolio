@@ -71,6 +71,9 @@
 	.about-section-skills {
 		justify-content: space-around;
 	}
+	.bio {
+		font-size: 0.9em;
+	}
 }
 
 
