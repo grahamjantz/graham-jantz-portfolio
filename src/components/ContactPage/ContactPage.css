@@ -37,6 +37,9 @@
     .contact-container {
         width: 70%;
     }
+    .contact input, .contact textarea, .contact label {
+        font-size: 0.9em;
+    }
 }
 
 
