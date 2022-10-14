@@ -1,4 +1,94 @@
 .about-container {
+	width: 100%;
+	height: fit-content;
+	display: grid;
+	justify-items: center;
+	gap: 2em;
+	grid-template-columns: 100%;
+	grid-template-rows: 150px repeat(3, auto);
+	grid-template-areas:
+					"title"
+					"image"
+					"skills"
+					"bio";
+}
+
+.about-hero-section-title {
+	grid-area: title;
+}
+
+.about-hero-image {
+	grid-area: image;
+	padding: 0;
+	border-radius: 500px;
+	width: 200px;
+	height: 200px;
+}
+
+.about-bio {
+	grid-area: bio;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+	font-size: 1.2em;
+}
+
+.about-section-skills {
+	grid-area: skills;
+	width: 250px;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+}
+.about-section-skills li{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	gap: 1em;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+.skill-icon {
+	font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .about-container {
     margin: 0 auto;
 	display: grid;
 	width: 70%;
@@ -130,4 +220,4 @@
 						"bio";
 	}
 	
-}
+} */

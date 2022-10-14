@@ -10,6 +10,9 @@ const Button = ({ text, handleClick, themeColor, icon, themeBoxShadow1, themeBox
   `;
 
   const StyledButton = styled.button`
+    border-radius: 50px;
+    border: 1px solid ${themeColor};
+
    &.nav-btn:hover {
     border-bottom: 2px solid ${bluRect};
    }

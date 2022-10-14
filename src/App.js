@@ -8,13 +8,16 @@ import PortfolioPage from './components/PortfolioPage/PortfolioPage';
 import AboutPage from './components/AboutPage/AboutPage';
 import ContactPage from './components/ContactPage/ContactPage';
 import { lightTheme, darkTheme } from './themes'
-import SideNavbarList from './components/SideNavbarList/SideNavbarList'
+
+const root = document.getElementById('root');
+
 
 function App() {
   const [theme, setTheme] = useState(lightTheme);
   const [switchClass, setSwitchClass] = useState('inactive');
   const [slide, setSlide] = useState('0px')
-
+  
+  
   const toggleTheme = () => {
     if (theme === lightTheme) {
       setTheme(darkTheme)
@@ -26,6 +29,7 @@ function App() {
       setSlide('0px');
     }
   }
+  root.style.backgroundColor = theme.body;
 
   const StyledApp = styled.span`
   background-color: ${theme.body};
@@ -41,15 +45,6 @@ function App() {
   `;
 
   return (
-    <div>
-      <SideNavbarList 
-        toggleTheme={toggleTheme} 
-        themeColor={theme.color}
-        themeBody={theme.body}
-        themeBoxShadow1={theme.boxShadow1}
-        themeBoxShadow2={theme.boxShadow2}
-        themeBoxShadow3={theme.boxShadow3}
-      />
       <StyledApp className='App'>
           <Header 
             toggleTheme={toggleTheme} 
@@ -57,6 +52,7 @@ function App() {
             themeBody={theme.body}
             themeBoxShadow1={theme.boxShadow1}
             themeBoxShadow2={theme.boxShadow2}
+            themeBoxShadow3={theme.boxShadow3}
             switchClass={switchClass}
             slide={slide}
             switchButtonPosition={theme.switchButtonPosition}
@@ -92,6 +88,7 @@ function App() {
           />
           <ContactPage 
             className='comp' 
+            themeBody={theme.body}
             themeColor={theme.color}
             themeBoxShadow1={theme.boxShadow3}
             themeBoxShadow2={theme.boxShadow4}
@@ -105,7 +102,6 @@ function App() {
             themeColor={theme.color}
           />
       </StyledApp>
-    </div>
   );
 }
 

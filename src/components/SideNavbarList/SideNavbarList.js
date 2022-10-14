@@ -1,27 +1,12 @@
-import React, { useState} from 'react'
+import React from 'react'
 import Button from '../Button/Button'
 import './SideNavbarList.css'
 
-const SideNavbarList = ({ themeBody, themeColor,themeBoxShadow1, themeBoxShadow2, themeBoxShadow3 }) => {
-
-  const [sideNavClass, setSideNavClass] = useState('inactive');
-
-  const slideIn = () => {
-    sideNavClass === 'inactive' ? setSideNavClass('active') : setSideNavClass('inactive')
-  }
+const SideNavbarList = ({ themeBody, themeColor,themeBoxShadow1, themeBoxShadow2, themeBoxShadow3, sideNavClass, slideIn }) => {
 
   return (
     <div>
-        <div 
-          id="navMenu" 
-          className={sideNavClass} 
-          onClick={() => {
-            slideIn();
-        }}>
-          <span style={{backgroundColor: themeColor}}></span>
-          <span style={{backgroundColor: themeColor}}></span>
-          <span style={{backgroundColor: themeColor}}></span>
-        </div>
+        
     <div 
       className={`side-navbar-list ${sideNavClass}`}
       style={{

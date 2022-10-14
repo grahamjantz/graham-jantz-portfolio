@@ -74,7 +74,7 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
   */
   if (display === 'none') {
     return (
-      <div style={{display: 'flex', flexDirection: 'column', height: 'auto' }}>
+      <div style={{display: 'flex', flexDirection: 'column', height: 'auto', alignItems: 'center'}}>
     <StyledRectangle></StyledRectangle>
     <StyledProjectContainer className='project-container'>
       

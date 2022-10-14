@@ -4,18 +4,19 @@ import Button from '../Button/Button';
 import './ContactPage.css'
 
 
-const ContactPage = ({ themeColor, themeBoxShadow1, themeBoxShadow2, themeBluRec, themeOrgSqu }) => {
+const ContactPage = ({ themeColor, themeBoxShadow1, themeBoxShadow2, themeBluRec, themeOrgSqu, themeBody }) => {
   const StyledInput = styled.input`
-  background-color: black;
-  
+  width: 100%;
+  background-color: ${themeBody};
   color: ${themeColor};
   border: 1px solid ${themeBoxShadow1};
   `;
   // taken from styled component above
   // box-shadow: inset 3px 3px 5px ${themeBoxShadow1},
   // inset -3px -3px 7px ${themeBoxShadow2};
-
+  
   const StyledTextarea = styled.textarea`
+  width: 100%;
   background-color: transparent;
   color: ${themeColor};
   border: 1px solid ${themeBoxShadow1};
@@ -24,18 +25,18 @@ const ContactPage = ({ themeColor, themeBoxShadow1, themeBoxShadow2, themeBluRec
   // box-shadow: inset 3px 3px 5px ${themeBoxShadow1},
   // inset -3px -3px 7px ${themeBoxShadow2};
 
-  const StyledOrgSqu = styled.div`
-    background-color: ${themeOrgSqu};
-  `;
-  const StyledBluRec = styled.div`
-    background-color: ${themeBluRec};
-    border-bottom: 1px solid ${themeBluRec};
-  `;
+  // const StyledOrgSqu = styled.div`
+  //   background-color: ${themeOrgSqu};
+  // `;
+  // const StyledBluRec = styled.div`
+  //   background-color: ${themeBluRec};
+  //   border-bottom: 1px solid ${themeBluRec};
+  // `;
 
 
   return (
     <div className='contact-container' id="contact">
-      <div className='contact-org-squ-container'>
+      {/* <div className='contact-org-squ-container'>
           <StyledOrgSqu className='contact-org-square'/>
         </div>
         <div className='contact-blu-rec-master-container'>
@@ -45,7 +46,7 @@ const ContactPage = ({ themeColor, themeBoxShadow1, themeBoxShadow2, themeBluRec
           <div className='contact-blu-rec-container2'>
             <StyledBluRec className='contact-blu-rectangle2'/>
           </div>
-        </div>
+        </div> */}
       <h2>Contact Me</h2>
       <form className='contact'name="contact" method="POST" >
         <input type="hidden" name="form-name" value="contact" />

@@ -1,4 +1,5 @@
 import React from 'react'
+import './PortfolioPage.css'
 import Project from '../Project/Project'
 import styled from '@emotion/styled'
 import grahamAndMaddyV2 from '../../images/grahamandmaddyV3.png'
@@ -14,7 +15,6 @@ const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, th
     height: fit-content;
     margin: 0 auto;
     align-items: center;
-    z-index: 10;
     gap: 10em;
 
     @media only screen and (min-width: 1200px) {
