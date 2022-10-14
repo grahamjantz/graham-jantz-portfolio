@@ -44,6 +44,7 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
 
     @media only screen and (min-width: 750px) {
       top: 370px;
+      left: 90px;
     }
 
     @media only screen and (max-width: 1000px) {

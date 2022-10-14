@@ -2,7 +2,7 @@
 	padding-top: 3em;
 	align-self: center;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1000px;
 	height: fit-content;
 	display: grid;
 	justify-items: center;
@@ -73,6 +73,9 @@
 	}
 	.bio {
 		font-size: 0.9em;
+	}
+	.about-bio {
+		width: 100%;
 	}
 }
 

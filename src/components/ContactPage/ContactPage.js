@@ -4,7 +4,7 @@ import Button from '../Button/Button';
 import './ContactPage.css'
 
 
-const ContactPage = ({ themeColor, themeBoxShadow1, themeBoxShadow2, themeBluRec, themeOrgSqu, themeBody }) => {
+const ContactPage = ({ themeColor, themeBoxShadow1, themeBoxShadow2, themeBody, bluRect }) => {
   const StyledInput = styled.input`
   width: 100%;
   background-color: ${themeBody};
@@ -65,6 +65,7 @@ const ContactPage = ({ themeColor, themeBoxShadow1, themeBoxShadow2, themeBluRec
             themeColor={themeColor}
             themeBoxShadow1={themeBoxShadow2}
             themeBoxShadow2={themeBoxShadow1}
+            bluRect={bluRect}
           />
       </form>
     </div>

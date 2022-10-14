@@ -4,20 +4,22 @@ import './Button.css'
 
 const Button = ({ text, handleClick, themeColor, icon, themeBoxShadow1, themeBoxShadow2, href, target, display, visibility, bluRect }) => {
 
+  
+  const StyledButton = styled.button`
+  border-color: ${themeColor};
+  visibility: ${visibility};
+  
+  &.nav-btn:hover {
+    border-bottom: 2px solid ${bluRect};
+  }
+  `;
+  
   const  StyledLink = styled.a`
   color: ${themeColor};
   height: 100%;
+  }
   `;
-
-  const StyledButton = styled.button`
-    border-color: ${themeColor};
-    visibility: ${visibility};
-
-   &.nav-btn:hover {
-    border-bottom: 2px solid ${bluRect};
-   }
-  `;
-
+  
   // box-shadow: -3px -3px 7px ${themeBoxShadow1}, 
   // 3px 3px 5px ${themeBoxShadow2};
 

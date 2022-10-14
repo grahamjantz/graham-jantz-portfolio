@@ -97,12 +97,14 @@ function App() {
             themeBoxShadow2={theme.boxShadow4}
             themeBluRec={theme.bluRectangle}
             themeOrgSqu={theme.orgSquare}
+            bluRect={theme.bluRectangle}
           />
           <Footer 
             className='comp'
             themeBoxShadow1={theme.boxShadow1}
             themeBoxShadow2={theme.boxShadow2}
             themeColor={theme.color}
+            bluRect={theme.bluRectangle}
           />
       </StyledApp>
   );

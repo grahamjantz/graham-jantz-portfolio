@@ -3,7 +3,7 @@ import Button from '../Button/Button'
 import './Footer.css'
 import { FaLinkedinIn, FaEnvelope, FaGithub } from "react-icons/fa";
 
-const Footer = ({ themeBoxShadow1, themeBoxShadow2, themeColor }) => {
+const Footer = ({ themeBoxShadow1, themeBoxShadow2, themeColor, bluRect }) => {
   return (
     <div className='component'>
         <div className='footer-nav'>
@@ -14,6 +14,7 @@ const Footer = ({ themeBoxShadow1, themeBoxShadow2, themeColor }) => {
             themeBoxShadow1={themeBoxShadow1}
             themeBoxShadow2={themeBoxShadow2}
             themeColor={themeColor}
+            bluRect={bluRect}
           />
           <Button 
             href="mailto:grahammrjantz@gmail.com"
@@ -21,6 +22,7 @@ const Footer = ({ themeBoxShadow1, themeBoxShadow2, themeColor }) => {
             themeBoxShadow1={themeBoxShadow1}
             themeBoxShadow2={themeBoxShadow2}
             themeColor={themeColor}
+            bluRect={bluRect}
           />
           <Button 
             href="https://github.com/grahamjantz"
@@ -29,6 +31,7 @@ const Footer = ({ themeBoxShadow1, themeBoxShadow2, themeColor }) => {
             themeBoxShadow1={themeBoxShadow1}
             themeBoxShadow2={themeBoxShadow2}
             themeColor={themeColor}
+            bluRect={bluRect}
           />
         </div>
     </div>
