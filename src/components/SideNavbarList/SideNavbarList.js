@@ -11,8 +11,7 @@ const SideNavbarList = ({ themeBody, themeColor,themeBoxShadow1, themeBoxShadow2
       className={`side-navbar-list ${sideNavClass}`}
       style={{
         backgroundColor: themeBody,
-        boxShadow: `-3px -3px 7px ${themeBoxShadow3}, 3px 3px 5px ${themeBoxShadow3}`,
-        zIndex: 100
+        boxShadow: `-3px -3px 7px ${themeBoxShadow3}, 3px 3px 5px ${themeBoxShadow3}`
         }}>
         <Button 
           text='home' 

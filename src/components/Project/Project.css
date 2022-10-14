@@ -6,7 +6,7 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: 50px 50px 1fr;
     grid-template-areas: 
-                    "image title"
+                    "title title"
                     "image links"
                     "image description";
     row-gap: 1em;
@@ -25,6 +25,8 @@ figcaption {
 
 .title {
     grid-area: title;
+    align-self: center;
+    justify-self: center;
 }
 .image {
     grid-area: image;
@@ -94,6 +96,13 @@ figcaption {
     gap: 1em;
     padding: 0.5em;
     border-radius: 20px;
+}
+
+@media only screen and (min-width: 750px) {
+    .triangle {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -178,5 +187,13 @@ figcaption {
         gap: 0;
         padding: 0 1em;
         width: 100%;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .project-container {
+        width: 80%;
+        font-size: 1em;
+        align-self: center;
     }
 }

@@ -16,11 +16,9 @@ const SideSwitch = ({ toggleTheme, switchButtonPosition, themeBoxShadow1, themeB
       margin-left: ${switchButtonPosition};
   `;
   return (
-    <div >
-        <ThemeSwitch onClick={toggleTheme} className='side-switch'>
-          <SwitchButton ></SwitchButton>
-        </ThemeSwitch>
-    </div>
+    <ThemeSwitch onClick={toggleTheme} className='side-switch'>
+      <SwitchButton ></SwitchButton>
+    </ThemeSwitch>
   )
 }
 

@@ -10,8 +10,8 @@ const Button = ({ text, handleClick, themeColor, icon, themeBoxShadow1, themeBox
   `;
 
   const StyledButton = styled.button`
-    border-radius: 50px;
-    border: 1px solid ${themeColor};
+    border-color: ${themeColor};
+    visibility: ${display};
 
    &.nav-btn:hover {
     border-bottom: 2px solid ${bluRect};
@@ -29,7 +29,8 @@ const Button = ({ text, handleClick, themeColor, icon, themeBoxShadow1, themeBox
   return (
       <StyledButton 
           onClick={handleClick}
-          className='nav-btn'>
+          className='nav-btn'
+        >
         <StyledLink href={href} target={target}>
         {icon}
         {text}

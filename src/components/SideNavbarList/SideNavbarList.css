@@ -27,7 +27,7 @@
     to { left: -300px }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 750px) {
     .side-navbar-list {
         display: flex;
         flex-direction: column;
@@ -42,7 +42,7 @@
     }
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 750px) {
     #navMenu {
         display: none;
     }

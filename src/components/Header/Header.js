@@ -15,27 +15,17 @@ const Header = ({ toggleTheme, themeBody, themeColor, themeBoxShadow1, themeBoxS
 
   return (
     <div className='component'>
-        <SideNavbarList 
-          toggleTheme={toggleTheme} 
-          themeColor={themeColor}
-          themeBody={themeBody}
-          themeBoxShadow1={themeBoxShadow1}
-          themeBoxShadow2={themeBoxShadow2}
-          themeBoxShadow3={themeBoxShadow3}
-          sideNavClass={sideNavClass}
-          slideIn={slideIn}
-        />
-        <header className='nav' style={{background: glass}}>
           <div 
             id="navMenu" 
             className={sideNavClass} 
             onClick={() => {
               slideIn();
-          }}>
+            }}>
             <span style={{backgroundColor: themeColor}}></span>
             <span style={{backgroundColor: themeColor}}></span>
             <span style={{backgroundColor: themeColor}}></span>
           </div>
+        <header className='nav' style={{background: glass}}>
           <nav className='navbar'>
             <Button 
               text='GJ' 
@@ -64,6 +54,16 @@ const Header = ({ toggleTheme, themeBody, themeColor, themeBoxShadow1, themeBoxS
               slide={slide}
             />
         </header>
+        <SideNavbarList 
+            toggleTheme={toggleTheme} 
+            themeColor={themeColor}
+            themeBody={themeBody}
+            themeBoxShadow1={themeBoxShadow1}
+            themeBoxShadow2={themeBoxShadow2}
+            themeBoxShadow3={themeBoxShadow3}
+            sideNavClass={sideNavClass}
+            slideIn={slideIn}
+          />
     </div>
   )
 }

@@ -36,13 +36,14 @@ function App() {
   color: ${theme.color};
   `;
 
-  const StyledOrgSqu = styled.div`
-    background-color: ${theme.orgSquare};
-  `;
-  const StyledBluRec = styled.div`
-    background-color: ${theme.bluRectangle};
-    border-bottom: 1px solid ${theme.bluRectangle};
-  `;
+  //UNCOMMENT THIS TO BRING BACK SHAPES ON HOME PAGE
+  // const StyledOrgSqu = styled.div`
+  //   background-color: ${theme.orgSquare};
+  // `;
+  // const StyledBluRec = styled.div`
+  //   background-color: ${theme.bluRectangle};
+  //   border-bottom: 1px solid ${theme.bluRectangle};
+  // `;
 
   return (
       <StyledApp className='App'>
@@ -59,6 +60,8 @@ function App() {
             bluRect={theme.bluRectangle}
             glass={theme.glass}
             />
+          {/* UNCOMMENT THIS TO BRING BACK SHAPES ON HOME PAGE
+          
           <div className='org-squ-container'>
             <StyledOrgSqu className='org-square'/>
           </div>
@@ -69,7 +72,7 @@ function App() {
             <div className='blu-rec-container2'>
               <StyledBluRec className='blu-rectangle2'/>
             </div>
-          </div>
+          </div> */}
           <HomePage className='comp' />
           <AboutPage 
             className='comp'

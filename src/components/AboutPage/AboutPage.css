@@ -1,5 +1,8 @@
 .about-container {
+	padding-top: 3em;
+	align-self: center;
 	width: 100%;
+	max-width: 1200px;
 	height: fit-content;
 	display: grid;
 	justify-items: center;
@@ -55,7 +58,20 @@
 	font-size: 2em;
 }
 
-
+@media only screen and (min-width: 750px) {
+	.about-container {
+		grid-template-columns: auto 1fr;
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas:
+					"image title" 
+					"image bio"
+					"skills bio"
+					"skills bio";
+	}
+	.about-section-skills {
+		justify-content: space-around;
+	}
+}
 
 
 
