@@ -8,13 +8,16 @@ import PortfolioPage from './components/PortfolioPage/PortfolioPage';
 import AboutPage from './components/AboutPage/AboutPage';
 import ContactPage from './components/ContactPage/ContactPage';
 import { lightTheme, darkTheme } from './themes'
-import SideNavbarList from './components/SideNavbarList/SideNavbarList'
+
+const root = document.getElementById('root');
+
 
 function App() {
   const [theme, setTheme] = useState(lightTheme);
   const [switchClass, setSwitchClass] = useState('inactive');
   const [slide, setSlide] = useState('0px')
-
+  
+  
   const toggleTheme = () => {
     if (theme === lightTheme) {
       setTheme(darkTheme)
@@ -26,30 +29,23 @@ function App() {
       setSlide('0px');
     }
   }
+  root.style.backgroundColor = theme.body;
 
   const StyledApp = styled.span`
   background-color: ${theme.body};
   color: ${theme.color};
   `;
 
-  const StyledOrgSqu = styled.div`
-    background-color: ${theme.orgSquare};
-  `;
-  const StyledBluRec = styled.div`
-    background-color: ${theme.bluRectangle};
-    border-bottom: 1px solid ${theme.bluRectangle};
-  `;
+  //UNCOMMENT THIS TO BRING BACK SHAPES ON HOME PAGE
+  // const StyledOrgSqu = styled.div`
+  //   background-color: ${theme.orgSquare};
+  // `;
+  // const StyledBluRec = styled.div`
+  //   background-color: ${theme.bluRectangle};
+  //   border-bottom: 1px solid ${theme.bluRectangle};
+  // `;
 
   return (
-    <div>
-      <SideNavbarList 
-        toggleTheme={toggleTheme} 
-        themeColor={theme.color}
-        themeBody={theme.body}
-        themeBoxShadow1={theme.boxShadow1}
-        themeBoxShadow2={theme.boxShadow2}
-        themeBoxShadow3={theme.boxShadow3}
-      />
       <StyledApp className='App'>
           <Header 
             toggleTheme={toggleTheme} 
@@ -57,12 +53,15 @@ function App() {
             themeBody={theme.body}
             themeBoxShadow1={theme.boxShadow1}
             themeBoxShadow2={theme.boxShadow2}
+            themeBoxShadow3={theme.boxShadow3}
             switchClass={switchClass}
             slide={slide}
             switchButtonPosition={theme.switchButtonPosition}
             bluRect={theme.bluRectangle}
             glass={theme.glass}
             />
+          {/* UNCOMMENT THIS TO BRING BACK SHAPES ON HOME PAGE
+          
           <div className='org-squ-container'>
             <StyledOrgSqu className='org-square'/>
           </div>
@@ -73,7 +72,7 @@ function App() {
             <div className='blu-rec-container2'>
               <StyledBluRec className='blu-rectangle2'/>
             </div>
-          </div>
+          </div> */}
           <HomePage className='comp' />
           <AboutPage 
             className='comp'
@@ -92,6 +91,7 @@ function App() {
           />
           <ContactPage 
             className='comp' 
+            themeBody={theme.body}
             themeColor={theme.color}
             themeBoxShadow1={theme.boxShadow3}
             themeBoxShadow2={theme.boxShadow4}
@@ -105,7 +105,6 @@ function App() {
             themeColor={theme.color}
           />
       </StyledApp>
-    </div>
   );
 }
 

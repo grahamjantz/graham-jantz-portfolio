@@ -1,4 +1,5 @@
 .side-navbar-list {
+    width: 300px;
     list-style: none;
     display: flex;
     gap: 2em;
@@ -13,7 +14,7 @@
 }
 
 .side-navbar-list.inactive {
-    transform: translateX(-330px);
+    transform: translateX(-400px);
 }
 
 @keyframes slideIn {
@@ -26,7 +27,7 @@
     to { left: -300px }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 750px) {
     .side-navbar-list {
         display: flex;
         flex-direction: column;
@@ -41,7 +42,7 @@
     }
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 750px) {
     #navMenu {
         display: none;
     }
@@ -50,41 +51,4 @@
     }
 }
 
-#navMenu:hover {
-    cursor: pointer;
-}
 
-#navMenu {
-    z-index: 101;
-    margin: 20px 15px;
-    flex-direction: column;
-    gap: 5px;
-    position: fixed;
-}
-#navMenu > span {
-    display: block;
-    width: 28px;
-    height: 3px;
-    border-radius: 9999px;
-}
-
-#navMenu, #navMenu > span {
-    transition: all .2s linear;
-}
-#navMenu.active {
-    transition-delay: 0.1s;
-    transform: rotate(45deg);
-}
-#navMenu.active > span:nth-child(2) {
-    width: 0;
-}
-#navMenu.active > span:nth-child(1), 
-#navMenu.active > span:nth-child(3) {
-    transition-delay: .1s;
-}
-#navMenu.active > span:nth-child(1) {
-    transform: translateY(8px);
-}
-#navMenu.active > span:nth-child(3) {
-    transform: translateY(-8px) rotate(90deg);
-}

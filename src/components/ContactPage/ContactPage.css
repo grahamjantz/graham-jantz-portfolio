@@ -1,4 +1,46 @@
 .contact-container {
+    margin: 4em 0;
+    align-self: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.contact {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+    gap: 1em;
+}
+
+.contact label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact input, .contact textarea {
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 20px;
+}
+
+.contact textarea {
+    height: 200px;
+}
+
+@media only screen and (min-width: 750px) {
+    .contact-container {
+        width: 70%;
+    }
+}
+
+
+/* .contact-container {
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -249,4 +291,4 @@
     .contact-blu-rectangle, .contact-blu-rectangle2 {
         right: -340px;
     }
-}
+} */

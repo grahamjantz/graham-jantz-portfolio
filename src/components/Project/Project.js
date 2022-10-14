@@ -4,7 +4,7 @@ import { FaLink, FaGithub } from "react-icons/fa";
 import Button from '../Button/Button';
 import styled from '@emotion/styled';
 
-const Project = ({ title, src, liveLink, repoLink, target, description, themeColor, themeBoxShadow1, themeBoxShadow2, themeBluRec, themeOrgSqu, display }) => {
+const Project = ({ title, src, liveLink, repoLink, target, description, themeColor, themeBoxShadow1, themeBoxShadow2, themeBluRec, themeOrgSqu, display, visibility }) => {
 
   const StyledProjectContainer = styled.div`
     background-color: transparent;
@@ -42,6 +42,10 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
     background-repeat: no-repeat;
     background-position: left, right;
 
+    @media only screen and (min-width: 750px) {
+      top: 370px;
+    }
+
     @media only screen and (max-width: 1000px) {
       width: 400px;
     }
@@ -72,7 +76,7 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
 
     YOU MISS 100% OF THE SHOTS YOU DON'T TAKE -WAYNE GRETZY -MICHAEL SCOTT
   */
-  if (display === 'none') {
+  if (display === 'hidden') {
     return (
       <div style={{display: 'flex', flexDirection: 'column', height: 'auto' }}>
     <StyledRectangle></StyledRectangle>
@@ -102,6 +106,19 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
                 themeBoxShadow2={themeBoxShadow2}
                 bluRect={themeBluRec}
                 />
+            <Button 
+                visibility={visibility}
+                className='github-repo-link' 
+                icon={<FaGithub style={{ fontSize: '1.5em', marginRight: '0.5em'}}/>}
+                text={'Github Repo'}
+                href={repoLink}
+                target={target}
+                display={display}
+                themeColor={themeColor}
+                themeBoxShadow1={themeBoxShadow1}
+                themeBoxShadow2={themeBoxShadow2}
+                bluRect={themeBluRec}
+              />
         </figcaption>
     </StyledProjectContainer>
     </div>

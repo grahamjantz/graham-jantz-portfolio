@@ -2,6 +2,7 @@ import React from 'react'
 import './HomePage.css'
 import { fadeInLeftBig, fadeIn } from 'react-animations'
 import styled, { keyframes } from 'styled-components'
+import heroImage from '../../images/Hero_Image.png'
 
 const HomePage = () => {
 
@@ -17,17 +18,15 @@ const HomePage = () => {
 
   return (
     <div className='home-page' id='home'>
-        <div className='main-comp'>
-          <div className='main-header'>
-            <StyledFadeDiv>
-              <h1 className='hero-title'>Hi, I'm Graham Jantz</h1>
-            </StyledFadeDiv>
-            <StyledSlideDiv>
-                <h2 className='hero-subtitle'>{'<a front-end developer />'}</h2>
-            </StyledSlideDiv>
-          </div>
-          <div className='hero-image'></div>
-        </div>
+      <div className='main-header'>
+        <StyledFadeDiv>
+          <h1 className='hero-title'>Hi, I'm Graham Jantz</h1>
+        </StyledFadeDiv>
+        <StyledSlideDiv>
+            <h2 className='hero-subtitle'>{'<a front-end developer />'}</h2>
+        </StyledSlideDiv>
+      </div>
+      <img src={heroImage} className='hero-image' alt=''/>
     </div>
   )
 }

@@ -1,13 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Header.css'
 import NavbarList from '../NavbarList/NavbarList'
 import Button from '../Button/Button'
 import SideSwitch from '../SideSwitch/SideSwitch'
+import SideNavbarList from '../SideNavbarList/SideNavbarList'
 
-const Header = ({ toggleTheme, themeBody, themeColor, themeBoxShadow1, themeBoxShadow2, switchClass, slide, switchButtonPosition, bluRect, glass }) => {
+const Header = ({ toggleTheme, themeBody, themeColor, themeBoxShadow1, themeBoxShadow2, themeBoxShadow3, switchClass, slide, switchButtonPosition, bluRect, glass }) => {
+
+  const [sideNavClass, setSideNavClass] = useState('inactive');
+
+  const slideIn = () => {
+    sideNavClass === 'inactive' ? setSideNavClass('active') : setSideNavClass('inactive')
+  }
 
   return (
     <div className='component'>
+          <div 
+            id="navMenu" 
+            className={sideNavClass} 
+            onClick={() => {
+              slideIn();
+            }}>
+            <span style={{backgroundColor: themeColor}}></span>
+            <span style={{backgroundColor: themeColor}}></span>
+            <span style={{backgroundColor: themeColor}}></span>
+          </div>
         <header className='nav' style={{background: glass}}>
           <nav className='navbar'>
             <Button 
@@ -37,6 +54,16 @@ const Header = ({ toggleTheme, themeBody, themeColor, themeBoxShadow1, themeBoxS
               slide={slide}
             />
         </header>
+        <SideNavbarList 
+            toggleTheme={toggleTheme} 
+            themeColor={themeColor}
+            themeBody={themeBody}
+            themeBoxShadow1={themeBoxShadow1}
+            themeBoxShadow2={themeBoxShadow2}
+            themeBoxShadow3={themeBoxShadow3}
+            sideNavClass={sideNavClass}
+            slideIn={slideIn}
+          />
     </div>
   )
 }
