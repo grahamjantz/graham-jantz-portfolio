@@ -19,7 +19,8 @@
 .org-squ-container {
     height: fit-content;
     position: absolute;
-    left: calc(-250px + (100vw * 0.1));
+    /* left: calc(-250px + (100vw * 0.1)); */
+    left: -100px;
     top: 30vh;
     transform: rotate(45deg);
     z-index: 0;
