@@ -7,6 +7,7 @@ import HomePage from './components/HomePage/HomePage';
 import PortfolioPage from './components/PortfolioPage/PortfolioPage';
 import AboutPage from './components/AboutPage/AboutPage';
 import ContactPage from './components/ContactPage/ContactPage';
+import Shapes from './components/Shapes/Shapes'
 import { lightTheme, darkTheme } from './themes'
 
 const root = document.getElementById('root');
@@ -15,8 +16,7 @@ const root = document.getElementById('root');
 function App() {
   const [theme, setTheme] = useState(lightTheme);
   const [switchClass, setSwitchClass] = useState('inactive');
-  const [slide, setSlide] = useState('0px')
-  
+  const [slide, setSlide] = useState('0px');
   
   const toggleTheme = () => {
     if (theme === lightTheme) {
@@ -31,21 +31,15 @@ function App() {
   }
   root.style.backgroundColor = theme.body;
 
+  // background-color: ${theme.body};
   const StyledApp = styled.span`
-  background-color: ${theme.body};
   color: ${theme.color};
   `;
 
-  //UNCOMMENT THIS TO BRING BACK SHAPES ON HOME PAGE
-  // const StyledOrgSqu = styled.div`
-  //   background-color: ${theme.orgSquare};
-  // `;
-  // const StyledBluRec = styled.div`
-  //   background-color: ${theme.bluRectangle};
-  //   border-bottom: 1px solid ${theme.bluRectangle};
-  // `;
 
   return (
+    <>    
+      <Shapes theme={theme}/>
       <StyledApp className='App'>
           <Header 
             toggleTheme={toggleTheme} 
@@ -61,20 +55,7 @@ function App() {
             glass={theme.glass}
             glassBorder={theme.glassBorder}
             />
-          {/* UNCOMMENT THIS TO BRING BACK SHAPES ON HOME PAGE
-          
-          <div className='org-squ-container'>
-            <StyledOrgSqu className='org-square'/>
-          </div>
-          <div className='blu-rec-master-container'>
-            <div className='blu-rec-container'>
-              <StyledBluRec className='blu-rectangle'/>
-            </div>
-            <div className='blu-rec-container2'>
-              <StyledBluRec className='blu-rectangle2'/>
-            </div>
-          </div> */}
-          <HomePage className='comp' />
+          <HomePage className='comp' theme={theme}/>
           <AboutPage 
             className='comp'
             themeBody={theme.body}
@@ -108,6 +89,7 @@ function App() {
             bluRect={theme.bluRectangle}
           />
       </StyledApp>
+    </>
   );
 }
 

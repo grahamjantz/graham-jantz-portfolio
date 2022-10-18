@@ -7,10 +7,65 @@
 }
 
 .App {
+    max-width: 100% !important;
     font-family: 'Open Sans';
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
+
+.org-squ-container {
+    height: fit-content;
+    position: absolute;
+    left: calc(-250px + (100vw * 0.1));
+    top: 30vh;
+    transform: rotate(45deg);
+    z-index: 0;
+    animation: rotate 2s ease-in-out 0s infinite alternate forwards;
+    animation-play-state: paused;
+}
+
+.org-square {
+    width: 200px;
+    height: 200px;
+}
+
+.org-square-container, .active  {
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(45deg);
+    }
+    to {
+        transform: rotate(135deg);
+    }
+}
+
+.blu-rec-master-container {
+    height: fit-content;
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    z-index: 0;
+    right: 0;
+    top: calc(100vh - 200px);
+}
+
+.blu-rectangle {
+    width: 100%;
+    height: 100%;
+}
+
+.blu-rectangle2 {
+    width: 100%;
+    height: 100%;
+    transform: rotateX(180deg);
+}
+
 /*
 .App {
     width: 100%;

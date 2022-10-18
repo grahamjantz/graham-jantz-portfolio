@@ -13,5 +13,7 @@ code {
 }
 
 #root {
-  overflow: hidden;
+  max-width: 100vw !important;
+  overflow-x: hidden;
+  position: absolute;
 }

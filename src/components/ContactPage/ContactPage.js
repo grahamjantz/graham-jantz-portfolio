@@ -4,10 +4,10 @@ import Button from '../Button/Button';
 import './ContactPage.css'
 
 
-const ContactPage = ({ themeColor, themeBoxShadow1, themeBoxShadow2, themeBody, bluRect }) => {
+const ContactPage = ({ themeColor, themeBoxShadow1, themeBoxShadow2, themeBody, bluRect, themeOrgSqu, themeBluRec }) => {
   const StyledInput = styled.input`
   width: 100%;
-  background-color: ${themeBody};
+  background-color: transparent;
   color: ${themeColor};
   border: 1px solid ${themeBoxShadow1};
   `;
@@ -25,28 +25,23 @@ const ContactPage = ({ themeColor, themeBoxShadow1, themeBoxShadow2, themeBody, 
   // box-shadow: inset 3px 3px 5px ${themeBoxShadow1},
   // inset -3px -3px 7px ${themeBoxShadow2};
 
-  // const StyledOrgSqu = styled.div`
-  //   background-color: ${themeOrgSqu};
-  // `;
-  // const StyledBluRec = styled.div`
-  //   background-color: ${themeBluRec};
-  //   border-bottom: 1px solid ${themeBluRec};
-  // `;
+  const StyledOrgSqu = styled.div`
+    background-color: ${themeOrgSqu};
+  `;
+  const StyledBluRec = styled.div`
+  background: linear-gradient(to top right, transparent 50%, ${themeBluRec} 50%); 
+  `;
 
 
   return (
     <div className='contact-container' id="contact">
-      {/* <div className='contact-org-squ-container'>
+      <div className='contact-org-squ-container'>
           <StyledOrgSqu className='contact-org-square'/>
         </div>
         <div className='contact-blu-rec-master-container'>
-          <div className='contact-blu-rec-container'>
-            <StyledBluRec className='contact-blu-rectangle'/>
-          </div>
-          <div className='contact-blu-rec-container2'>
-            <StyledBluRec className='contact-blu-rectangle2'/>
-          </div>
-        </div> */}
+          <StyledBluRec className='contact-blu-rectangle2'/>
+          <StyledBluRec className='contact-blu-rectangle'/>
+        </div>
       <h2>Contact Me</h2>
       <form className='contact'name="contact" method="POST" >
         <input type="hidden" name="form-name" value="contact" />

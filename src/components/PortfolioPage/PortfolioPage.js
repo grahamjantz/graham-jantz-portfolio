@@ -16,6 +16,7 @@ const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, th
     margin: 0 auto;
     align-items: center;
     gap: 10em;
+    padding-top: 5em;
 
     @media only screen and (min-width: 1200px) {
       gap: 5em;

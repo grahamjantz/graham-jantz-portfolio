@@ -28,47 +28,10 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
     }
   `;
 
-  const StyledRectangle = styled.div`
-    width: 500px;
-    height: 200px;
-    position: relative;
-    top: 280px;
-    margin: 0;
-    transform: rotate(150deg);
-    background-image:
-      linear-gradient(to bottom right, transparent 50%, ${themeBluRec} 0),
-      linear-gradient(to top right, ${themeBluRec} 50%, transparent 0);
-    background-size: 50% 100%;
-    background-repeat: no-repeat;
-    background-position: left, right;
-
-    @media only screen and (min-width: 750px) {
-      top: 370px;
-      left: 90px;
-    }
-
-    @media only screen and (max-width: 1000px) {
-      width: 400px;
-    }
-    
-    @media only screen and (max-width: 800px) {
-      width: 300px;
-      height: 150px;
-    }
-
-    @media only screen and (max-width: 700px) {
-      width: 500px;
-    }
-
-    @media only screen and (max-width: 500px) {
-      width: 300px;
-      left: 30px;
-      top: 300px;
-    }
-
-    @media only screen and (max-width: 400px) {
-      top: 200px;
-    }
+  const StyledProjectTriangle = styled.div`
+  background-image:
+  linear-gradient(to bottom right, transparent 50%, ${themeBluRec} 0),
+  linear-gradient(to top right, ${themeBluRec} 50%, transparent 0);
   `;
 
   /*
@@ -79,26 +42,17 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
   */
   if (display === 'hidden') {
     return (
-      <div style={{display: 'flex', flexDirection: 'column', height: 'auto' }}>
-    <StyledRectangle></StyledRectangle>
-    <StyledProjectContainer className='project-container'>
-      
-        <figure className='image'>
-                <img src={src} alt="mockup for project"/>
-        </figure>
-        <h3 className='title'>{title}</h3>
-          <div className='description'>
-            <p>{description}</p>    
-            <div className='triangle-container'>
-              <div className='triangle'><StyledTriangle /></div>
-              <div className='triangle'><StyledTriangle /></div>
-              <div className='triangle'><StyledTriangle /></div>
-            </div>
-          </div>
-        <figcaption className='links'>
+      <div style={{display: 'flex', flexDirection: 'column', height: 'auto', alignItems: 'center' }}>
+        <StyledProjectContainer className='project-container'>
+          <h3 className='title'>{title}</h3>
+          <figure className='image'>
+            <img src={src} alt="mockup for project"/>
+            <StyledProjectTriangle className='project-triangle'/>
+          </figure>
+          <figcaption className='links'>
             <Button 
                 className='live-site-link' 
-                icon={<FaLink style={{ fontSize: '1.5em', marginRight: '0.5em'}}/>}
+                icon={<FaLink style={{ fontSize: '2em', marginRight: '0.5em'}}/>}
                 text={'Live Site'}
                 href={liveLink}
                 target={target}
@@ -110,7 +64,7 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
             <Button 
                 visibility={visibility}
                 className='github-repo-link' 
-                icon={<FaGithub style={{ fontSize: '1.5em', marginRight: '0.5em'}}/>}
+                icon={<FaGithub style={{ fontSize: '2em', marginRight: '0.5em'}}/>}
                 text={'Github Repo'}
                 href={repoLink}
                 target={target}
@@ -120,21 +74,7 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
                 themeBoxShadow2={themeBoxShadow2}
                 bluRect={themeBluRec}
               />
-        </figcaption>
-    </StyledProjectContainer>
-    </div>
-    )
-  }
-
-  return (
-    <div style={{display: 'flex', flexDirection: 'column', height: 'auto' }}>
-    <StyledRectangle></StyledRectangle>
-    <StyledProjectContainer className='project-container'>
-      
-        <figure className='image'>
-                <img src={src} alt="mockup for project"/>
-        </figure>
-        <h3 className='title'>{title}</h3>
+          </figcaption>
           <div className='description'>
             <p>{description}</p>    
             <div className='triangle-container'>
@@ -143,10 +83,23 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
               <div className='triangle'><StyledTriangle /></div>
             </div>
           </div>
+        </StyledProjectContainer>
+      </div>
+    )
+  }
+
+  return (
+    <div style={{display: 'flex', flexDirection: 'column', height: 'auto', alignItems: 'center' }}>
+      <StyledProjectContainer className='project-container'>
+        <h3 className='title'>{title}</h3>
+        <figure className='image'>
+          <img src={src} alt="mockup for project"/>
+          <StyledProjectTriangle className='project-triangle'/> 
+        </figure>
         <figcaption className='links'>
             <Button 
                 className='live-site-link' 
-                icon={<FaLink style={{ fontSize: '1.5em', marginRight: '0.5em'}}/>}
+                icon={<FaLink style={{ fontSize: '2em', marginRight: '0.5em'}}/>}
                 text={'Live Site'}
                 href={liveLink}
                 target={target}
@@ -157,7 +110,7 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
                 />
             <Button 
                 className='github-repo-link' 
-                icon={<FaGithub style={{ fontSize: '1.5em', marginRight: '0.5em'}}/>}
+                icon={<FaGithub style={{ fontSize: '2em', marginRight: '0.5em'}}/>}
                 text={'Github Repo'}
                 href={repoLink}
                 target={target}
@@ -168,6 +121,14 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
                 bluRect={themeBluRec}
               />
         </figcaption>
+        <div className='description'>
+            <p>{description}</p>    
+            <div className='triangle-container'>
+              <div className='triangle'><StyledTriangle /></div>
+              <div className='triangle'><StyledTriangle /></div>
+              <div className='triangle'><StyledTriangle /></div>
+            </div>
+        </div>
     </StyledProjectContainer>
     </div>
   )

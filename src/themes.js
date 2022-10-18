@@ -31,5 +31,5 @@ export const darkTheme = {
     // bluRectangle: '#00f2ea'
     bluRectangle: '#69C9D0',
     glass: 'rgba(0, 0, 0, 0.5)',
-    glassBorder: '1px solid rgba( 50, 50, 50, 0.5 )'
+    glassBorder: '1px solid rgba( 50, 50, 50, 0.5)'
 }

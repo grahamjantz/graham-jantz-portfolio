@@ -4,7 +4,7 @@ import { fadeInLeftBig, fadeIn } from 'react-animations'
 import styled, { keyframes } from 'styled-components'
 import heroImage from '../../images/Hero_Image.png'
 
-const HomePage = () => {
+const HomePage = ({theme}) => {
 
   const fadeAnimation = keyframes`${fadeIn}`;
   const StyledFadeDiv = styled.div`
