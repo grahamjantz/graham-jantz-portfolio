@@ -54,7 +54,7 @@
     height: 200px;
     z-index: -1;
     right: 0;
-    bottom: calc(100vh + 200px);
+    bottom: calc(100vh + 100px);
 }
 
 .contact-blu-rectangle {

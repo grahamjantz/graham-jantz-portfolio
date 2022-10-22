@@ -5,6 +5,7 @@ import styled from '@emotion/styled'
 import grahamAndMaddyV2 from '../../images/grahamandmaddyV3.png'
 import waterfrontOfficialV2 from '../../images/waterfrontofficialV3.png'
 import pokedexLaptop from '../../images/pokedex.png'
+import inspirationalHomepage from '../../images/homepage.png'
 
 const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, themeBluRec, themeOrgSqu }) => {
   const StyledProjects = styled.span`
@@ -33,6 +34,19 @@ const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, th
     <div className={`${className} portfolio`} id="portfolio">
       <h2 style={{ paddingTop: '5em' }}>Portfolio</h2>
       <StyledProjects>
+        <Project 
+          title='Inspirational Homepage'
+          description={`Created as a final project in a Codecademy course this app is built with React and Redux. The global state managed by Redux contains four main slices, three of which use asynchronous thunks to fetch data from the following API's: OpenWeather API, Pexels API, and QuoteOfTheDay API. This project allowed me to gain an in depth knowledge of Redux, using slices, and dispatching actions.`}
+          src={inspirationalHomepage}
+          liveLink="https://gj-inspirational-homepage.netlify.app"
+          repoLink="https://github.com/grahamjantz/inspirational-homepage"
+          target="_blank"
+          themeColor={themeColor}
+          themeBoxShadow1={themeBoxShadow1}
+          themeBoxShadow2={themeBoxShadow2}
+          themeBluRec={themeBluRec}
+          themeOrgSqu={themeOrgSqu}
+        />
         <Project 
           title='PokeDex'
           description={`This project was created as a way to practice working with the fetch API and the PokeAPI. I initially followed a tutorial which can be found at the GitHub repo. I then built upon this foundation adding the button functionality, all the styling and the photo carousel for the pokemon. I completely rebuilt the app without relying on the tutorial, in order to reinforce what I learnt.`}
