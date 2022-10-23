@@ -1,28 +1,25 @@
 import React from 'react'
-import './Switch.css'
-// import { slideOutLeft, slideOutRight } from 'react-animations'
-import styled/*, { keyframes }*/ from 'styled-components'
+import styled from 'styled-components'
+
+
+const StyledSwitch = styled.div`
+  height: 22px;
+  width: 22px;
+  background-color: #ffffffb2;
+  border-radius: 24px;
+  margin-left: 4px;
+  z-index: 10;
+  transition: all 0.8s ease;
+  `;
 
 const Switch = ({ toggleTheme, themeBoxShadow1, themeBoxShadow2, switchClass, slide }) => {
 
-  // const slideAnimation = keyframes`${slide}`;
-  // const StyledSlideDiv = styled.div`
-  //   animation: ${slideAnimation} .8s;
-  // `;
-
-  const StyledSwitch = styled.div`
-    height: 22px;
-    width: 22px;
-    background-color: #ffffffb2;
-    border-radius: 24px;
-    margin-left: 4px;
-    z-index: 10;
-    transition: all 0.8s ease;
-    
-    &.active{
-      transform: translateX(${slide});
+  const translate = () => {
+    if (switchClass === 'active') {
+      return slide
     }
-  `;
+  }
+
 
   return (
     <div>
@@ -34,13 +31,13 @@ const Switch = ({ toggleTheme, themeBoxShadow1, themeBoxShadow2, switchClass, sl
             backgroundColor: themeBoxShadow2,
             borderRadius: '24px',
             display: 'flex',
-            alignItems: 'center',
-          //   boxShadow: `-3px -3px 7px ${themeBoxShadow1}, 
-          // 3px 3px 5px ${themeBoxShadow2}`
+            alignItems: 'center'
           }}  
         >
           <StyledSwitch
-            className={`switch-button ${switchClass}`}>
+            className={`switch-button ${switchClass}`}
+            style={{ transform: `translateX(${translate()})` }}  
+          >
           </StyledSwitch>
         </div>
     </div>
