@@ -1,9 +1,10 @@
 import styled from '@emotion/styled'
 import React from 'react'
 import './Button.css'
+import { Link } from 'react-scroll'
 
 
-const Button = ({ text, handleClick, themeColor, icon, href, target, visibility, bluRect }) => {
+const NavButton = ({ text, handleClick, themeColor, icon, offset, target, visibility, bluRect, to }) => {
 
   
   const StyledButton = styled.button`
@@ -18,11 +19,11 @@ const Button = ({ text, handleClick, themeColor, icon, href, target, visibility,
   }
   `;
   
-  const  StyledLink = styled.a`
-  color: ${themeColor};
-  height: 100%;
-  }
-  `;
+  // const  StyledLink = styled.a`
+  // color: ${themeColor};
+  // height: 100%;
+  // }
+  // `;
   
   // box-shadow: -3px -3px 7px ${themeBoxShadow1}, 
   // 3px 3px 5px ${themeBoxShadow2};
@@ -36,10 +37,14 @@ const Button = ({ text, handleClick, themeColor, icon, href, target, visibility,
       <StyledButton 
       className='nav-btn'
       >
-        <StyledLink 
-          href={href}
+        <Link 
           onClick={handleClick}
           target={target}
+          to={`${to}`} 
+          spy={true} 
+          smooth={true} 
+          offset={offset} 
+          duration={500}
           activeClass='active'
           style={{
             color: themeColor,
@@ -48,9 +53,9 @@ const Button = ({ text, handleClick, themeColor, icon, href, target, visibility,
         >
         {icon}
         {text}
-        </StyledLink>
+        </Link>
       </StyledButton>
   )
 }
 
-export default Button
+export default NavButton

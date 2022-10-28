@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../Button/Button'
+import NavButton from '../Button/NavButton'
 import './SideNavbarList.css'
 
 const SideNavbarList = ({ themeBody, themeColor,themeBoxShadow1, themeBoxShadow2, themeBoxShadow3, sideNavClass , slideIn}) => {
@@ -40,7 +40,7 @@ const SideNavbarList = ({ themeBody, themeColor,themeBoxShadow1, themeBoxShadow2
 	const navbarMap = navButtonArr.map((arrItem) => {
 		return (
 			<li key={arrItem.id} style={{height: '100%', display: 'flex', alignItems: 'center'}}>
-					<Button 
+					<NavButton 
 						text={arrItem.text}
 						to={arrItem.text}
 						offset={arrItem.offset}

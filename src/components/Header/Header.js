@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Header.css'
 import NavbarList from '../NavbarList/NavbarList'
-import Button from '../Button/Button'
+import NavButton from '../Button/NavButton'
 import SideSwitch from '../SideSwitch/SideSwitch'
 import SideNavbarList from '../SideNavbarList/SideNavbarList'
 
@@ -27,7 +27,7 @@ const Header = ({ toggleTheme, themeBody, themeColor, themeBoxShadow1, themeBoxS
           </div>
         <header className='nav' style={{background: glass, border: glassBorder}}>
           <nav className='navbar'>
-            <Button 
+            <NavButton 
               text='GJ' 
               to="home"
               themeColor={themeColor}
