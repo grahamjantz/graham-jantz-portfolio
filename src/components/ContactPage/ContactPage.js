@@ -4,12 +4,12 @@ import Button from '../Button/Button';
 import './ContactPage.css'
 
 
-const ContactPage = ({ themeColor, themeBoxShadow1, themeBoxShadow2, themeBody, bluRect, themeOrgSqu, themeBluRec }) => {
+const ContactPage = ({ themeColor, themeBoxShadow1, themeBoxShadow2, themeBody, bluRect, themeOrgSqu, themeBluRec, glass }) => {
   const StyledInput = styled.input`
   width: 100%;
   background-color: transparent;
   color: ${themeColor};
-  border: 1px solid ${themeBoxShadow1};
+  border: 1px solid ${themeColor};
   `;
   // taken from styled component above
   // box-shadow: inset 3px 3px 5px ${themeBoxShadow1},
@@ -19,7 +19,7 @@ const ContactPage = ({ themeColor, themeBoxShadow1, themeBoxShadow2, themeBody, 
   width: 100%;
   background-color: transparent;
   color: ${themeColor};
-  border: 1px solid ${themeBoxShadow1};
+  border: 1px solid ${themeColor};
   `;
   // Taken from styled component above
   // box-shadow: inset 3px 3px 5px ${themeBoxShadow1},
@@ -32,9 +32,8 @@ const ContactPage = ({ themeColor, themeBoxShadow1, themeBoxShadow2, themeBody, 
   background: linear-gradient(to top right, transparent 50%, ${themeBluRec} 50%); 
   `;
 
-
   return (
-    <div className='contact-container' id="contact" style={{color: 'black'}}>
+    <div className='contact-container' id="contact" style={{color: themeColor, backgroundColor: glass}}>
       <div className='contact-org-squ-container'>
           <StyledOrgSqu className='contact-org-square'/>
         </div>

@@ -80,6 +80,7 @@ function App() {
             themeBluRec={theme.bluRectangle}
             themeOrgSqu={theme.orgSquare}
             bluRect={theme.bluRectangle}
+            glass={theme.glass}
           />
           <Footer 
             className='comp'
