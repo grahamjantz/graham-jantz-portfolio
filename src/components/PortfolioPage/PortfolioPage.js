@@ -35,11 +35,24 @@ const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, th
       <h2 style={{ paddingTop: '5em' }}>Portfolio</h2>
       <StyledProjects>
         <Project 
-          title='Inspirational Homepage'
-          description={`Created as a final project in a Codecademy course this app is built with React and Redux. The global state managed by Redux contains four main slices, three of which use asynchronous thunks to fetch data from the following API's: OpenWeather API, Pexels API, and QuoteOfTheDay API. This project allowed me to gain an in depth knowledge of Redux, using slices, and dispatching actions.`}
-          src={inspirationalHomepage}
-          liveLink="https://gj-inspirational-homepage.netlify.app"
-          repoLink="https://github.com/grahamjantz/inspirational-homepage"
+          title='Waterfront Official Band Website'
+          description={`This website was built using React for the band Waterfront. This website is intended to be a landing page for fans to get information about the band such as new music, press releases, and more.`}
+          src={waterfrontOfficialV2}
+          target="_blank"
+          liveLink="https://waterfrontofficial-clone.netlify.app/"
+          repoLink="https://github.com/grahamjantz/waterfrontofficial-clone"
+          themeColor={themeColor}
+          themeBoxShadow1={themeBoxShadow1}
+          themeBoxShadow2={themeBoxShadow2}
+          themeBluRec={themeBluRec}
+          themeOrgSqu={themeOrgSqu}
+        />
+        <Project 
+          title='G&M Wedding Website'
+          description="I originally built this site using simple HTML, CSS, and JavaScript, I have since fully rebuilt the site using React. This was due to long load times between pages. By utilizing React Router I was able to only rerender the information on each page without reloading the entire site, making it much faster and more efficient."
+          src={grahamAndMaddyV2}
+          liveLink="https://grahamandmaddy.com"
+          repoLink="https://github.com/grahamandmaddy/grahamandmaddy.github.io"
           target="_blank"
           themeColor={themeColor}
           themeBoxShadow1={themeBoxShadow1}
@@ -61,33 +74,18 @@ const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, th
           themeOrgSqu={themeOrgSqu}
         />
         <Project 
-            title='G&M Wedding Website'
-            description="I originally built this site using simple HTML, CSS, and JavaScript, I have since fully rebuilt the site using React. This was due to long load times between pages. By utilizing React Router I was able to only rerender the information on each page without reloading the entire site, making it much faster and more efficient."
-            src={grahamAndMaddyV2}
-            liveLink="https://grahamandmaddy.com"
-            repoLink="https://github.com/grahamandmaddy/grahamandmaddy.github.io"
-            target="_blank"
-            themeColor={themeColor}
-            themeBoxShadow1={themeBoxShadow1}
-            themeBoxShadow2={themeBoxShadow2}
-            themeBluRec={themeBluRec}
-            themeOrgSqu={themeOrgSqu}
-          />
-        <Project 
-            title='Waterfront Official Band Website'
-            description={`This website was built for the band Waterfront using Wix. I built this site before I began learning to code and although I did not code this site I still learned a lot about site layout, button hover/active states and background images. This site is currently being rebuilt using React.`}
-            src={waterfrontOfficialV2}
-            target="_blank"
-            liveLink="https://waterfrontofficial-clone.netlify.app/"
-            repoLink="https://waterfrontofficial-clone.netlify.app/"
-            display='hidden'
-            visibility='hidden'
-            themeColor={themeColor}
-            themeBoxShadow1={themeBoxShadow1}
-            themeBoxShadow2={themeBoxShadow2}
-            themeBluRec={themeBluRec}
-            themeOrgSqu={themeOrgSqu}
-          />
+          title='Inspirational Homepage'
+          description={`Created as a final project in a Codecademy course this app is built with React and Redux. The global state managed by Redux contains four main slices, three of which use asynchronous thunks to fetch data from the following API's: OpenWeather API, Pexels API, and QuoteOfTheDay API. This project allowed me to gain an in depth knowledge of Redux, using slices, and dispatching actions.`}
+          src={inspirationalHomepage}
+          liveLink="https://gj-inspirational-homepage.netlify.app"
+          repoLink="https://github.com/grahamjantz/inspirational-homepage"
+          target="_blank"
+          themeColor={themeColor}
+          themeBoxShadow1={themeBoxShadow1}
+          themeBoxShadow2={themeBoxShadow2}
+          themeBluRec={themeBluRec}
+          themeOrgSqu={themeOrgSqu}
+        />
         {/* <Project 
           title='React Playground'
           description="This project was created as a practice exercise in React. Each 'app' builds in complexity and functionality. This project was really helpful in learning how to use and pass props and the useState() hook."

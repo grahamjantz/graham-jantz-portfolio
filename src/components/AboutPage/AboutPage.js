@@ -19,7 +19,7 @@ const AboutPage = ({ themeBluRec, themeOrgSqu, themeBody }) => {
   `;
 
   return (
-      <div className="about-container" id="about">
+      <div className="about-container about" id="about">
         <h2 className="about-hero-section-title about-margin">About Me</h2>
         <StyledAboutHeroImage className="about-hero-image" src={heroDrums}/>
         <div className="about-bio">

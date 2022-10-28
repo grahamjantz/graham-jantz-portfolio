@@ -34,7 +34,7 @@ const ContactPage = ({ themeColor, themeBoxShadow1, themeBoxShadow2, themeBody, 
 
 
   return (
-    <div className='contact-container' id="contact">
+    <div className='contact-container' id="contact" style={{color: 'black'}}>
       <div className='contact-org-squ-container'>
           <StyledOrgSqu className='contact-org-square'/>
         </div>

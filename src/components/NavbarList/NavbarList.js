@@ -12,22 +12,22 @@ const NavbarList = ({ toggleTheme, themeColor,themeBoxShadow1, themeBoxShadow2, 
 	const navButtonArr = [
 		{
 			text: 'home',
-			href: '#home',
+			offset: 50,
 			id: ranNum()
 		},
 		{
 			text: 'about',
-			href: '#about',
+			offset: -150,
 			id: ranNum()
 		},
 		{
 			text: 'portfolio',
-			href: '#portfolio',
+			offset: -50,
 			id: ranNum()
 		},
 		{
 			text: 'contact',
-			href: '#contact',
+			offset: 0,
 			id: ranNum()
 		}
 	];
@@ -36,8 +36,9 @@ const NavbarList = ({ toggleTheme, themeColor,themeBoxShadow1, themeBoxShadow2, 
 		return (
 			<li key={arrItem.id} style={{height: '100%', display: 'flex', alignItems: 'center'}}>
 					<Button 
-						text={arrItem.text }
-						href={arrItem.href}
+						text={arrItem.text}
+						to={arrItem.text}
+						offset={arrItem.offset}
 						themeColor={themeColor}
 						themeBoxShadow1={themeBoxShadow1}
 						themeBoxShadow2={themeBoxShadow2}

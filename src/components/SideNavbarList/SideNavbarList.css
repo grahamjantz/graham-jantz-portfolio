@@ -2,6 +2,7 @@
     width: 300px;
     list-style: none;
     display: flex;
+    flex-direction: column;
     gap: 2em;
     align-items: center;
     flex-wrap: wrap;
@@ -10,11 +11,19 @@
 
 .side-navbar-list.active {
     transform: translateX(0px);
-    
 }
 
 .side-navbar-list.inactive {
     transform: translateX(-400px);
+}
+
+.side-nav-bar-list-buttons {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes slideIn {

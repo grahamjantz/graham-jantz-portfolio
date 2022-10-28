@@ -29,7 +29,7 @@ const Header = ({ toggleTheme, themeBody, themeColor, themeBoxShadow1, themeBoxS
           <nav className='navbar'>
             <Button 
               text='GJ' 
-              href="#"
+              to="home"
               themeColor={themeColor}
               themeBoxShadow1={themeBoxShadow1}
               themeBoxShadow2={themeBoxShadow2}

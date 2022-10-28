@@ -1,11 +1,16 @@
 .contact-container {
     margin: 4em 0;
+    padding: 2em;
     align-self: center;
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1em;
+    /* backdrop-filter: blur(16px); */
+    background-color: rgba(253, 253, 253, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .contact {
@@ -27,6 +32,7 @@
     padding: 0.5em;
     font-size: 1em;
     border-radius: 20px;
+    font-family: 'Open Sans';
 }
 
 .contact textarea {
