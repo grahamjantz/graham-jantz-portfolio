@@ -52,6 +52,7 @@ const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, th
     <div className={`${className} portfolio`} id="portfolio">
       <h2 style={{ paddingTop: '5em' }}>Portfolio</h2>
       <h3 style={{ margin: '2em 0' }}>Recent Commits: </h3>
+      <a href='https://github.com/grahamjantz' target='_blank' style={{color: themeColor}} rel="noreferrer">
       <GitHubCalendar 
         username='grahamjantz'
         // This transform data function is selecting only the last six months of contributions from GitHub as there is no activity before that. As the year progesses this can be deleted so that an entire year is shown
@@ -63,6 +64,7 @@ const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, th
           textAlign: 'center',
         }}
       />
+      </a>
       <StyledProjects>
         <Project 
           title='Waterfront Official Band Website'
