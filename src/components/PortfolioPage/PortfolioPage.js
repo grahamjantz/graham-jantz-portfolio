@@ -9,6 +9,7 @@ import grahamAndMaddyV2 from '../../images/grahamandmaddyV3.png'
 import waterfrontOfficialV2 from '../../images/waterfrontofficialV3.png'
 import pokedexLaptop from '../../images/pokedex.png'
 import inspirationalHomepage from '../../images/homepage.png'
+import redditMinimal from '../../images/redditMinimal.png'
 
 const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, themeBluRec, themeOrgSqu }) => {
   const StyledProjects = styled.span`
@@ -111,6 +112,19 @@ const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, th
           src={inspirationalHomepage}
           liveLink="https://gj-inspirational-homepage.netlify.app"
           repoLink="https://github.com/grahamjantz/inspirational-homepage"
+          target="_blank"
+          themeColor={themeColor}
+          themeBoxShadow1={themeBoxShadow1}
+          themeBoxShadow2={themeBoxShadow2}
+          themeBluRec={themeBluRec}
+          themeOrgSqu={themeOrgSqu}
+        />
+        <Project 
+          title='Reddit Minimal'
+          description={`Reddit Minimal was built as the capstone project in the Front End Development unit of Codecademy's Full Stack Development Career Path. The site is built in React and uses Redux to manage the state of posts fetched using the Reddit JSON API. Users can select and view posts from certain subreddits, search for posts, view comments, and are shown a modal view of posts when clicking on the title of each post.`}
+          src={redditMinimal}
+          liveLink="https://gj-reddit-minimal.netlify.app/"
+          repoLink="https://github.com/grahamjantz/reddit-minimal"
           target="_blank"
           themeColor={themeColor}
           themeBoxShadow1={themeBoxShadow1}

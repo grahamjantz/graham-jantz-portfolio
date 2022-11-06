@@ -38,7 +38,7 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
   return (
     <div style={{display: 'flex', flexDirection: 'column', height: 'auto', alignItems: 'center' }}>
       <StyledProjectContainer className='project-container'>
-        <h3 className='title'>{title}</h3>
+        {/* <h3 className='title'></h3> */}
         <figure className='image'>
           <img src={src} alt="mockup for project"/>
           {/* <StyledProjectTriangle className='project-triangle'/>  */}
@@ -69,6 +69,7 @@ const Project = ({ title, src, liveLink, repoLink, target, description, themeCol
               />
         </figcaption>
         <div className='description'>
+            <h3 className=''>{title}</h3>
             <p>{description}</p>    
             <div className='triangle-container'>
               <div className='triangle'><StyledTriangle /></div>
