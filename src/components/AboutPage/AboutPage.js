@@ -4,7 +4,7 @@ import './AboutPage.css'
 // import SkillList from '../SkillList/SkillList'
 import { FaHtml5, FaCss3Alt, FaReact, FaGitAlt } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb"
-import { FiDatabase } from "react-icons/fi";
+// import { FiDatabase } from "react-icons/fi";
 import { SiRedux } from "react-icons/si";
 import heroDrums from '../../images/Drums-Graham.jpg'
 
@@ -76,12 +76,12 @@ const AboutPage = ({ themeBluRec, themeOrgSqu, themeBody }) => {
             </StyledList>
             Git / GitHub
           </li>
-          <li id="SQL">
+          {/* <li id="SQL">
             <StyledList>
               <FiDatabase className='skill-icon' />
             </StyledList>
             SQL
-          </li>
+          </li> */}
         </ul>
       </div>
   )
