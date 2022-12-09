@@ -10,6 +10,7 @@ import waterfrontOfficialV2 from '../../images/waterfrontofficialV3.png'
 import pokedexLaptop from '../../images/pokedex.png'
 import inspirationalHomepage from '../../images/homepage.png'
 import redditMinimal from '../../images/redditMinimal.png'
+import monopolymoney from '../../images/monopolymoney.png'
 
 const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, themeBluRec, themeOrgSqu }) => {
   const StyledProjects = styled.span`
@@ -67,6 +68,19 @@ const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, th
       />
       </a>
       <StyledProjects>
+        <Project 
+          title='Monopoly Money Tracker Web App'
+          description={`This web app was built as a solution to a problem I had: unorganized Monopoly money! This app uses React and Redux to allow players to disregard the paper Monopoly money and keep track of bank accounts, property value, and net worth all within the app.`}
+          src={monopolymoney}
+          target="_blank"
+          liveLink="https://monopoly-money.netlify.app"
+          repoLink="https://github.com/grahamjantz/monopoly-money"
+          themeColor={themeColor}
+          themeBoxShadow1={themeBoxShadow1}
+          themeBoxShadow2={themeBoxShadow2}
+          themeBluRec={themeBluRec}
+          themeOrgSqu={themeOrgSqu}
+        />
         <Project 
           title='Waterfront Official Band Website'
           description={`This website was built using React for the band Waterfront. This website is intended to be a landing page for fans to get information about the band such as new music, press releases, and more.`}
