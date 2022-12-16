@@ -26,7 +26,7 @@ const AboutPage = ({ themeBluRec, themeOrgSqu, themeBody }) => {
           <p className="bio about-margin">I am a Front End Developer specializing in React, Redux, and JavaScript. Using these skills, I have created several projects such as: a Monopoly money tracking web app, the official website for the band Waterfront, a PokeDex using the PokeAPI, a static wedding website acting as a landing page for guests to get info, view the registry, and rsvp, as well as several smaller projects intended as practice opportunities for learning new skills. 
           {/*I am a trained musician looking to change careers and become a Front-End Web Developer! I have a degree in music from the University of Lethbridge and Diploma in Percussion Studies from Red Deer College.*/}</p> 
           <p className="bio about-margin">
-          In addition to my main focuses, I have explored additional topics including: Node.js, SQL, PostgreSQL, Express.js, C, Vue.js, Phaser.js, and Cyber Security to name a few. 
+          In addition to my main focuses, I have explored additional topics including: Firebase/Firestore, Node.js, SQL, PostgreSQL, Express.js, C, Vue.js, Phaser.js, and Cyber Security to name a few. 
           </p>
           <p className="bio about-margin">My previous professional experience has given me invaluable administration skills such as: scheduling, communication, and customer service. 
             

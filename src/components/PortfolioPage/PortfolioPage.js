@@ -70,11 +70,11 @@ const Portfolio = ({ className, themeColor, themeBoxShadow1, themeBoxShadow2, th
       <StyledProjects>
         <Project 
           title='Monopoly Money Tracker Web App'
-          description={`This web app was built as a solution to a problem I had: unorganized Monopoly money! This app uses React and Redux to allow players to disregard the paper Monopoly money and keep track of bank accounts, property value, and net worth all within the app.`}
+          description={`This web app was built as a solution to a problem I had: unorganized Monopoly money! This app uses React and a firestore database to allow players to disregard the paper Monopoly money and keep track of bank accounts, property value, and net worth all within the app. Players can either host or join a room and control their money from their own device. Players will get real time updates from the database in order to collect or spend money and keep track of who is winning!`}
           src={monopolymoney}
           target="_blank"
-          liveLink="https://monopoly-money.netlify.app"
-          repoLink="https://github.com/grahamjantz/monopoly-money"
+          liveLink="https://monopoly-money-60c8d.web.app/"
+          repoLink="https://github.com/grahamjantz/monopoly-money-v2.1"
           themeColor={themeColor}
           themeBoxShadow1={themeBoxShadow1}
           themeBoxShadow2={themeBoxShadow2}
