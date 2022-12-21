@@ -6,7 +6,7 @@ import Footer from './components/Footer/Footer'
 import HomePage from './components/HomePage/HomePage';
 import PortfolioPage from './components/PortfolioPage/PortfolioPage';
 import AboutPage from './components/AboutPage/AboutPage';
-import ContactPage from './components/ContactPage/ContactPage';
+// import ContactPage from './components/ContactPage/ContactPage';
 import Shapes from './components/Shapes/Shapes'
 import { lightTheme, darkTheme } from './themes'
 
@@ -71,7 +71,7 @@ function App() {
             themeBluRec={theme.bluRectangle}
             themeOrgSqu={theme.orgSquare}
           />
-          <ContactPage 
+          {/* <ContactPage 
             className='comp' 
             themeBody={theme.body}
             themeColor={theme.color}
@@ -81,7 +81,7 @@ function App() {
             themeOrgSqu={theme.orgSquare}
             bluRect={theme.bluRectangle}
             glass={theme.glass}
-          />
+          /> */}
           <Footer 
             className='comp'
             themeBoxShadow1={theme.boxShadow1}

@@ -25,11 +25,11 @@ const NavbarList = ({ toggleTheme, themeColor,themeBoxShadow1, themeBoxShadow2, 
 			offset: -50,
 			id: ranNum()
 		},
-		{
-			text: 'contact',
-			offset: 0,
-			id: ranNum()
-		}
+		// {
+		// 	text: 'contact',
+		// 	offset: 0,
+		// 	id: ranNum()
+		// }
 	];
 
 	const navbarMap = navButtonArr.map((arrItem) => {

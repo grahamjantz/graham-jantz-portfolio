@@ -30,11 +30,11 @@ const SideNavbarList = ({ themeBody, themeColor,themeBoxShadow1, themeBoxShadow2
 			offset: 0,
 			id: ranNum()
 		},
-		{
-			text: 'contact',
-			offset: -100,
-			id: ranNum()
-		}
+		// {
+		// 	text: 'contact',
+		// 	offset: -100,
+		// 	id: ranNum()
+		// }
 	];
 
 	const navbarMap = navButtonArr.map((arrItem) => {
