@@ -12,7 +12,23 @@ code {
     monospace;
 }
 
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
 #root {
-  /* overflow-x: hidden; */
-  position: absolute;
+  width: 100vw;
+  height: fit-content; 
+  background-color: white;
+}
+
+li {
+  list-style: none;
 }

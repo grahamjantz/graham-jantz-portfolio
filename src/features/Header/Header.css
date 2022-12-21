@@ -1,0 +1,66 @@
+.header-div {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    backdrop-filter: blur(20px);
+    z-index: 2;
+}
+
+.nav-menu {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+}
+
+.nav-menu.active span:first-of-type{
+    transform: 
+        rotate(45deg) 
+        translateY(10px) 
+        translateX(10px);
+}
+
+.nav-menu.active span:nth-of-type(2) {
+    width: 0;
+}
+
+.nav-menu.active span:last-of-type {
+    transform: 
+        rotate(-45deg)
+        translateY(-10px)
+        translateX(10px);
+}
+
+.nav-menu span {
+    width: 100%;
+    height: 5px;
+    background-color: grey;
+    transition: 0.5s;
+}
+
+header {
+    width: 50%;
+    height: 100vh;
+    transform: translateX(-100vw);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    padding-top: 50px;
+}
+
+header.active {
+    transform: translateX(0vw);
+}
+
+header ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
