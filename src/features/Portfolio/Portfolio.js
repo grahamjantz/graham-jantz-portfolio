@@ -97,7 +97,7 @@ const Portfolio = () => {
     }
 
   return (
-    <div className='portfolio'>
+    <div className='portfolio' name='portfolio'>
       <div className='project-square1' style={square1Style}></div>
         <div className='project-square2-container'>
           <span style={square2Style}></span>

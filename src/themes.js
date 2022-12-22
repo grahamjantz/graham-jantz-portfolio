@@ -8,7 +8,9 @@ export const lightTheme = {
     square1: '#40c463',
     square2: 'hsla(136, 53%, 51%, 0.44)', 
     glass: 'rgba(230, 230, 230, 0.5)',
-    glassBorder: '1px solid rgba(255, 255, 255, 0.3)'
+    glassBorder: '1px solid rgba(255, 255, 255, 0.3)',
+    switchColor: 'white',
+    switchBackgroundColor: 'grey'
 }
 
 export const darkTheme = {
@@ -21,5 +23,7 @@ export const darkTheme = {
     square1: '#40c463',
     square2: 'hsla(136, 53%, 51%, 0.44)', 
     glass: 'rgba(0, 0, 0, 0.5)',
-    glassBorder: '1px solid rgba( 50, 50, 50, 0.5)'
+    glassBorder: '1px solid rgba( 50, 50, 50, 0.5)',
+    switchColor: 'rgb(17, 16, 16)',
+    switchBackgroundColor: 'rgb(55, 55, 55)'
 }

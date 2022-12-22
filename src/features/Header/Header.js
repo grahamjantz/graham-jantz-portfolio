@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux'
 import './Header.css'
 
 import Switch from '../Switch/Switch'
+import { Link } from 'react-scroll'
 
 const Header = () => {
 
@@ -62,10 +63,63 @@ const Header = () => {
         className={sideNavActive === true ? 'active' : ''} 
         style={windowSize.innerWidth < 500 ? headerStyle : {}}>
         <ul>
-          <li><button style={headerButtonStyle}>GJ</button></li>
-          <li><button style={headerButtonStyle}>Home</button></li>
-          <li><button style={headerButtonStyle}>About</button></li>
-          <li><button style={headerButtonStyle}>Portfolio</button></li>
+          <li>
+            <Link
+              to='home' 
+              spy={true} 
+              smooth={true} 
+              offset={0} 
+              duration={500}
+              activeClass='active'
+              onClick={handleClickNavMenu}
+            >
+              <button style={headerButtonStyle}>GJ</button>
+            </Link>
+          </li>
+          <li>
+            <Link
+              to='home' 
+              spy={true} 
+              smooth={true} 
+              offset={0} 
+              duration={500}
+              activeClass='active'
+              onClick={handleClickNavMenu}
+            >
+              <button style={headerButtonStyle}>Home</button>
+            </Link>
+          </li>
+          <li>
+            <Link
+              to='about' 
+              spy={true} 
+              smooth={true} 
+              offset={-50} 
+              duration={500}
+              activeClass='active'
+              onClick={handleClickNavMenu}
+            >
+              <button style={headerButtonStyle}>About</button>
+            </Link>
+          </li>
+          <li>
+            <Link
+              to='portfolio' 
+              spy={true} 
+              smooth={true} 
+              offset={-50} 
+              duration={500}
+              activeClass='active'
+              onClick={handleClickNavMenu}
+            >
+              <button 
+                style={headerButtonStyle}
+                
+              >
+                  Portfolio
+              </button>
+            </Link>
+          </li>
         </ul>
       </header>
       <Switch />

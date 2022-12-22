@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { useDispatch } from 'react-redux'
-import { toggleTheme } from '../../AppSlice.js'
+import { useDispatch, useSelector } from 'react-redux'
+import { selectTheme, toggleTheme } from '../../AppSlice.js'
 
 import { lightTheme, darkTheme } from '../../themes.js'
 
@@ -10,11 +10,12 @@ const Switch = () => {
 
   const dispatch = useDispatch()
 
+  const theme = useSelector(selectTheme)
+
   const [switchActive, setSwitchActive] = useState(false);
   
   useEffect(() => {
     const active = localStorage.getItem('switch-active')
-    console.log(active)
     if (active === 'dark-theme') {
       setSwitchActive(true)
       dispatch(toggleTheme(darkTheme))
@@ -36,9 +37,17 @@ const Switch = () => {
     }
   }
 
+  const switchStyle = {
+    backgroundColor: theme.switchBackgroundColor
+  }
+
+  const spanStyle = {
+    backgroundColor: theme.switchColor
+  }
+
   return (
-    <div className={`switch ${switchActive === true ? 'active' : ''}`} onClick={handleClickSwitch}>
-      <span></span>
+    <div className={`switch ${switchActive === true ? 'active' : ''}`} onClick={handleClickSwitch} style={switchStyle}>
+      <span style={spanStyle}></span>
     </div>
   )
 }

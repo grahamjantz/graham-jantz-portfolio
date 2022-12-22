@@ -98,5 +98,10 @@ header button:hover {
     header ul {
         flex-direction: row;
         justify-content: flex-end;
+    } 
+    header ul li:first-of-type {
+        position: absolute;
+        left: 0;
+        display: flex;
     }
 }
