@@ -62,7 +62,7 @@ const Portfolio = () => {
           title: "PokeDex",
           description: 'This project was created as a way to practice working with the fetch API and the PokeAPI. I initially followed a tutorial which can be found at the GitHub repo. I then built upon this foundation adding the button functionality, all the styling and the photo carousel for the pokemon. I completely rebuilt the app without relying on the tutorial, in order to reinforce what I learnt.',
           src: pokedexLaptop,
-          liveLink: "https://grahamjantz-pokedex.netlify.app/",
+          liveLink: "https://pokedex.grahamjantz.com",
           repoLink: "https://github.com/grahamjantz/pokedex",
       },
       {
