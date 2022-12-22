@@ -69,14 +69,14 @@ const Portfolio = () => {
           title: "Inspirational Homepage",
           description: 'Created as a final project in a Codecademy course this app is built with React and Redux. The global state managed by Redux contains four main slices, three of which use asynchronous thunks to fetch data from the following API\'s: OpenWeather API, Pexels API, and QuoteOfTheDay API. This project allowed me to gain an in depth knowledge of Redux, using slices, and dispatching actions.',
           src: inspirationalHomepage,
-          liveLink: "https://gj-inspirational-homepage.netlify.app",
+          liveLink: "https://inspirational-homepage.grahamjantz.com/",
           repoLink: "https://github.com/grahamjantz/inspirational-homepage",
       },
       {
           title: "Reddit Minimal",
           description: 'Reddit Minimal was built as the capstone project in the Front End Development unit of Codecademy\'s Full Stack Development Career Path. The site is built in React and uses Redux to manage the state of posts fetched using the Reddit JSON API. Users can select and view posts from certain subreddits, search for posts, view comments, and are shown a modal view of posts when clicking on the title of each post.',
           src: redditMinimal,
-          liveLink: "https://gj-reddit-minimal.netlify.app/",
+          liveLink: "https://reddit.grahamjantz.com/",
           repoLink: "https://github.com/grahamjantz/reddit-minimal",
       },
     ]
