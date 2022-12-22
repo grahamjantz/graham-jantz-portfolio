@@ -15,20 +15,15 @@ const Footer = () => {
 
   return (
     <footer>
-        <button 
-        href="https://www.linkedin.com/in/graham-jantz-b87921145/"
-        target="_blank"
-        style={buttonStyle}
-        ><FaLinkedinIn/></button>
-        <button 
-        href="mailto:grahammrjantz@gmail.com"
-        style={buttonStyle}
-        ><FaEnvelope/></button>
-        <button 
-        href="https://github.com/grahamjantz"
-        target="_blank"
-        style={buttonStyle}
-        ><FaGithub/></button>
+        <button style={buttonStyle}>
+          <a href="https://www.linkedin.com/in/graham-jantz-b87921145/" target="_blank"><FaLinkedinIn/></a>
+        </button>
+        <button style={buttonStyle}>
+          <a href="mailto:grahammrjantz@gmail.com" ><FaEnvelope/></a>
+        </button>
+        <button style={buttonStyle}>
+          <a href="https://github.com/grahamjantz" target="_blank" ><FaGithub/></a>
+        </button>
     </footer>
   )
 }
