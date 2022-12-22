@@ -125,7 +125,7 @@ const Portfolio = () => {
                   <img src={project.src} alt='project'/>
                   <div className='project-buttons'>
                       <button>
-                        <a href={project.liveLink} rel="noreferrer" target='_blank' style={aStyle}>Link Link<FaExternalLinkAlt /></a>
+                        <a href={project.liveLink} rel="noreferrer" target='_blank' style={aStyle}>Live Link<FaExternalLinkAlt /></a>
                       </button>
                       <button>
                         <a href={project.repoLink} rel="noreferrer" target='_blank' style={aStyle}>Repo Link<FaExternalLinkAlt /></a>
