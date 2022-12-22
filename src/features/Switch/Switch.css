@@ -1,6 +1,6 @@
 .switch {
-    width: 80px;
-    height: 40px;
+    width: 60px;
+    height: 30px;
     background-color: grey;
     border-radius: 50px;
     display: flex;
@@ -9,14 +9,14 @@
 
 .switch span {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     background-color: white;
     border-radius: 25px;
-    margin-left: 5px;
-    transition: 0.5s;
+    margin-left: 3px;
+    transition: 0.3s;
 }
 
 .switch.active span {
-    transform: translateX(40px);
+    transform: translateX(30px);
 }

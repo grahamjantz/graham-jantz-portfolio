@@ -1,0 +1,11 @@
+.footer {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    z-index: 1;
+}
+
+.footer button {
+    font-size: 2rem;
+}

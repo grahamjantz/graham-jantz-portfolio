@@ -32,13 +32,24 @@ const Home = () => {
     backgroundColor: theme.square1
   }
 
+  const square2Style = {
+    // backgroundColor: theme.square2,
+    background: `linear-gradient(to bottom right, transparent 50%, ${theme.square2} 50%)`
+  }
+
   return (
     <div className='home'>
         <div className='square1' style={square1Style}></div>
+        <div className='square2-container'>
+          <span style={square2Style}></span>
+          <span style={square2Style}></span>
+        </div>
       <main>
-          <img src={heroImage} alt='hero' className='hero-image'/>
-          <h1 style={h1Style}>Hi, I'm Graham Jantz</h1>
-          <h3 style={h3Style}><code>{'<'}</code><em>front end developer</em><code>{'/>'}</code></h3>
+          <img src={heroImage} alt='hero' />
+          <div>
+            <h1 style={h1Style}>Hi, I'm Graham Jantz</h1>
+            <h3 style={h3Style}><code>{'<'}</code><em>front end developer</em><code>{'/>'}</code></h3>
+          </div>
       </main>
     </div>
   )

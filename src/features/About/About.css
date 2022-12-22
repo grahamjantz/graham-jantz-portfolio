@@ -1,0 +1,86 @@
+.about-container {
+	padding-top: 3em;
+	align-self: center;
+	width: 100%;
+	max-width: 1000px;
+	height: fit-content;
+	display: grid;
+	justify-items: center;
+	gap: 2em;
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas:
+					"title"
+					"image"
+					"skills"
+					"bio";
+}
+
+.about h2 {
+	grid-area: title;
+}
+
+.about img{
+	grid-area: image;
+	padding: 0;
+	border-radius: 500px;
+	width: 200px;
+	height: 200px;
+}
+
+.about-bio {
+	grid-area: bio;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+    font-size: 1.5rem;
+}
+
+.about-section-skills {
+	grid-area: skills;
+	width: 250px;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+}
+.about-section-skills li{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	gap: 1em;
+	font-size: 2rem;
+	font-weight: bold;
+}
+.skill-icon {
+	font-size: 3.5rem;
+}
+
+@media only screen and (min-width: 750px) {
+	.about-container {
+		grid-template-columns: auto 1fr;
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas:
+					"image title" 
+					"image bio"
+					"skills bio"
+					"skills bio";
+	}
+	.about-section-skills {
+		justify-content: space-around;
+	}
+	.bio {
+		font-size: 0.9em;
+	}
+	.about-bio {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 500px) {
+	.about-bio {
+		font-size: 2rem;
+	}
+}

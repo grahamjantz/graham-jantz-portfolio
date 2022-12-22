@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { selectTheme } from '../../AppSlice'
 import { useSelector } from 'react-redux'
 
@@ -7,6 +7,26 @@ import './Header.css'
 import Switch from '../Switch/Switch'
 
 const Header = () => {
+
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
+
+
+  function getWindowSize() {
+    const {innerWidth, innerHeight} = window;
+    return {innerWidth, innerHeight};
+  }
 
   const theme = useSelector(selectTheme)
 
@@ -24,6 +44,11 @@ const Header = () => {
   const headerDivStyle = {
     backgroundColor: theme.glass,
     borderColor: theme.glassBorder,
+    boxShadow: `0 0 5px ${theme.boxShadow1}`
+  }
+
+  const headerButtonStyle = {
+    color: theme.color,
   }
 
   return (
@@ -33,12 +58,14 @@ const Header = () => {
         <span></span>
         <span></span>
       </div>
-      <header className={sideNavActive === true ? 'active' : ''} style={headerStyle}>
+      <header 
+        className={sideNavActive === true ? 'active' : ''} 
+        style={windowSize.innerWidth < 500 ? headerStyle : {}}>
         <ul>
-          <li>GJ</li>
-          <li>Home</li>
-          <li>About</li>
-          <li>Portfolio</li>
+          <li><button style={headerButtonStyle}>GJ</button></li>
+          <li><button style={headerButtonStyle}>Home</button></li>
+          <li><button style={headerButtonStyle}>About</button></li>
+          <li><button style={headerButtonStyle}>Portfolio</button></li>
         </ul>
       </header>
       <Switch />

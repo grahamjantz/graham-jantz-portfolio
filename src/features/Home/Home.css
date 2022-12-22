@@ -1,10 +1,10 @@
 .home {
     width: 100%;
     height: 100vh;
-    
 }
 
 main {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,9 +23,24 @@ main {
     top: 25vh;
     z-index: 0;
     transform: rotate(45deg);
+    opacity: 0.5;
 }
 
-.hero-image {
+.square2-container span {
+    width: 80px;
+    height: 250px;
+    position: absolute;
+    right: 0;
+    top: 70vh;
+    z-index: 0;
+}
+
+.square2-container span:last-of-type {
+    transform: rotateX(180deg);
+    top: calc(70vh + 250px)
+}
+
+main img {
     width: 250px;
     height: auto;
 }
@@ -36,4 +51,29 @@ main h1 {
 
 main h3 {
     transition: 4s;
+    font-weight: 300;
+}
+
+@media only screen and (min-width: 500px) {
+    main {
+        flex-direction: row-reverse;
+        justify-content: center;
+        height: 80vh;
+        gap: 5rem;
+    }
+    main img {
+        width: 350px;
+    }
+    .square1 {
+        width: 400px;
+        height: 400px;
+        left: -200px;
+    }
+    .square2-container span {
+        height: 400px;
+        width: 150px;
+    }
+    .square2-container span:last-of-type  {
+        top: calc(70vh + 400px)
+    }
 }

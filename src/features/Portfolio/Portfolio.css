@@ -1,0 +1,94 @@
+.portfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.project-square1 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: -150px;
+    bottom: -150px;
+    z-index: 0;
+    transform: rotate(45deg);
+    opacity: 0.5;
+}
+
+.project-square2-container span {
+    width: 80px;
+    height: 250px;
+    position: absolute;
+    right: 0;
+    bottom: 500px;
+    z-index: 0;
+}
+
+.project-square2-container span:last-of-type {
+    transform: rotateX(180deg);
+    bottom: 250px;
+}
+
+.projects {
+    width: 90%;
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3rem;
+    z-index: 1;
+}
+
+.project {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    border-radius: 7px;;
+}
+
+.project h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.project img {
+    width: 300px;
+}
+
+.project p {
+    width: 90%;
+}
+
+.project-buttons {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.project-buttons button {
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background-color: #40c463;
+}
+
+.project-buttons button:hover {
+    cursor: pointer;
+    background-color: hsla(136, 53%, 51%, 0.44);
+}
+
+@media only screen and (min-width: 500px) {
+    .project-square2-container span {
+        height: 400px;
+        width: 150px;
+    }
+    .project-square2-container span:last-of-type  {
+        bottom: 100px
+    }
+}

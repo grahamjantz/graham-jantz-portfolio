@@ -7,6 +7,9 @@ import './App.css';
 
 import Header from './features/Header/Header'
 import Home from './features/Home/Home';
+import About from './features/About/About.js';
+import Portfolio from './features/Portfolio/Portfolio.js';
+import Footer from './features/Footer/Footer.js';
 
 function App() {
 
@@ -21,6 +24,9 @@ function App() {
     <div className="App" style={appStyle}>
       <Header/>
       <Home />
+      <About />
+      <Portfolio />
+      <Footer />
       {/* <Routes>
         <Route to='/' element={<Home />}>Home</Route>
         <Route to='/about'>About</Route>

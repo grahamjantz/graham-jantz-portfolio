@@ -1,13 +1,13 @@
 export const lightTheme = {
     backgroundColor: '#ffffff',
-    color: '#1c1c1c',
+    color: '#282828',
     boxShadow1: '#ffffffb2',
     boxShadow2: '#bebebe',
     boxShadow3: '#9d9d9d',
     boxShadow4: '#ededed',
     square1: '#40c463',
-    orgSquare: 'hsla(136, 53%, 51%, 0.44)', 
-    glass: 'rgba(255, 255, 255, 0.2)',
+    square2: 'hsla(136, 53%, 51%, 0.44)', 
+    glass: 'rgba(230, 230, 230, 0.5)',
     glassBorder: '1px solid rgba(255, 255, 255, 0.3)'
 }
 
@@ -19,7 +19,7 @@ export const darkTheme = {
     boxShadow3: '#121212',
     boxShadow4: '#262626',
     square1: '#40c463',
-    orgSquare: 'hsla(136, 53%, 51%, 0.44)', 
+    square2: 'hsla(136, 53%, 51%, 0.44)', 
     glass: 'rgba(0, 0, 0, 0.5)',
     glassBorder: '1px solid rgba( 50, 50, 50, 0.5)'
 }
