@@ -83,6 +83,12 @@
     background-color: hsla(136, 53%, 51%, 0.44);
 }
 
+.project-buttons button a {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 @media only screen and (min-width: 500px) {
     .project-square2-container span {
         height: 400px;

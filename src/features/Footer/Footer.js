@@ -14,7 +14,7 @@ const Footer = () => {
     }
 
   return (
-    <div className='footer'>
+    <footer>
         <button 
         href="https://www.linkedin.com/in/graham-jantz-b87921145/"
         target="_blank"
@@ -29,7 +29,7 @@ const Footer = () => {
         target="_blank"
         style={buttonStyle}
         ><FaGithub/></button>
-    </div>
+    </footer>
   )
 }
 

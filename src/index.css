@@ -47,3 +47,9 @@ button {
 a {
   text-decoration: none;
 }
+
+@media only screen and (min-width: 500px) {
+  button {
+    width: 150px;
+  }
+}

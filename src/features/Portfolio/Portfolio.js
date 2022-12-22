@@ -5,6 +5,8 @@ import GitHubCalendar from 'react-github-calendar'
 import { useSelector } from 'react-redux'
 import { selectTheme } from '../../AppSlice'
 
+import { FaExternalLinkAlt } from 'react-icons/fa'
+
 import grahamAndMaddyV2 from '../../images/grahamandmaddyV3.jpeg'
 import waterfrontOfficialV2 from '../../images/waterfrontofficialV3.png'
 import pokedexLaptop from '../../images/pokedex.png'
@@ -123,10 +125,10 @@ const Portfolio = () => {
                   <img src={project.src} alt='project'/>
                   <div className='project-buttons'>
                       <button>
-                        <a href={project.liveLink} rel="noreferrer" target='_blank' style={aStyle}>Link Link</a>
+                        <a href={project.liveLink} rel="noreferrer" target='_blank' style={aStyle}>Link Link<FaExternalLinkAlt /></a>
                       </button>
                       <button>
-                        <a href={project.repoLink} rel="noreferrer" target='_blank' style={aStyle}>Repo Link</a>
+                        <a href={project.repoLink} rel="noreferrer" target='_blank' style={aStyle}>Repo Link<FaExternalLinkAlt /></a>
                       </button>
                   </div>
                   <p>{project.description}</p>
