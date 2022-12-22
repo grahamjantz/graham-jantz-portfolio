@@ -15,14 +15,14 @@ const Footer = () => {
 
   return (
     <footer>
-        <button style={buttonStyle}>
-          <a href="https://www.linkedin.com/in/graham-jantz-b87921145/" target="_blank"><FaLinkedinIn/></a>
+        <button>
+          <a style={buttonStyle} href="https://www.linkedin.com/in/graham-jantz-b87921145/" target="_blank"><FaLinkedinIn/></a>
         </button>
-        <button style={buttonStyle}>
-          <a href="mailto:grahammrjantz@gmail.com" ><FaEnvelope/></a>
+        <button>
+          <a style={buttonStyle} href="mailto:grahammrjantz@gmail.com" ><FaEnvelope/></a>
         </button>
-        <button style={buttonStyle}>
-          <a href="https://github.com/grahamjantz" target="_blank" ><FaGithub/></a>
+        <button>
+          <a style={buttonStyle} href="https://github.com/grahamjantz" target="_blank" ><FaGithub/></a>
         </button>
     </footer>
   )
