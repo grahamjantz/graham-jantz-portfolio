@@ -43,7 +43,7 @@ const Portfolio = () => {
           repoLink: "https://github.com/grahamjantz/monopoly-money-v2.1",
       },
       {
-          title: "Waterfront Official Band Website",
+          title: "Waterfront Band Website",
           description: 'This website was built using React for the band Waterfront. This website is intended to be a landing page for fans to get information about the band such as new music, press releases, and more.',
           src: waterfrontOfficialV2,
           liveLink: "https://waterfrontofficial.com",
