@@ -45,14 +45,14 @@ const Portfolio = () => {
           repoLink: "https://github.com/grahamjantz/monopoly-money-v2.1",
       },
       {
-          title: "Waterfront Band Website",
+          title: "Waterfront Band",
           description: 'This website was built using React for the band Waterfront. This website is intended to be a landing page for fans to get information about the band such as new music, press releases, and more.',
           src: waterfrontOfficialV2,
           liveLink: "https://waterfrontofficial.com",
           repoLink: "https://github.com/grahamjantz/waterfrontofficial-clone",
       },
       {
-          title: "G&M Wedding Website",
+          title: "G&M Wedding",
           description: 'I originally built this site using simple HTML, CSS, and JavaScript, I have since fully rebuilt the site using React. This was due to long load times between pages. By utilizing React Router I was able to only rerender the information on each page without reloading the entire site, making it much faster and more efficient.',
           src: grahamAndMaddyV2,
           liveLink: "https://grahamandmaddy.com",
