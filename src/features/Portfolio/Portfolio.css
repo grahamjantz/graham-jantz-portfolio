@@ -89,7 +89,7 @@
     gap: 1rem;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 1000px) {
     .project-square2-container span {
         height: 400px;
         width: 150px;

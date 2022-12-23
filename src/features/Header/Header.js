@@ -61,7 +61,7 @@ const Header = () => {
       </div>
       <header 
         className={sideNavActive === true ? 'active' : ''} 
-        style={windowSize.innerWidth < 500 ? headerStyle : {}}>
+        style={windowSize.innerWidth < 1000 ? headerStyle : {}}>
         <ul>
           <li>
             <Link
