@@ -13,6 +13,7 @@ import pokedexLaptop from '../../images/pokedex.png'
 import inspirationalHomepage from '../../images/homepage.png'
 import redditMinimal from '../../images/redditMinimal.png'
 import monopolymoney from '../../images/monopolymoney.png'
+import catan from '../../images/catan.png'
 
 const Portfolio = () => {
 
@@ -45,7 +46,18 @@ const Portfolio = () => {
           repoLink: "https://github.com/grahamjantz/monopoly-money-v2.1",
       },
       {
+<<<<<<< Updated upstream
           title: "Waterfront Band",
+=======
+        title: 'Catan Calulator',
+        description: 'Catan Calculator is designed to replace the need for the provided Catan resource cards. The caculator can be used with either the base game or the Cities & Knights expansion. To begin either host or join a room, you can set the victory points need to win, then enter player info and use the calculator to collect and spend resources while playing Catan! Players will get real time updates on their inventory and who is currently in the lead with victory points.',
+        src: catan,
+        liveLink: 'https://catan.grahamjantz.com',
+        repoLink: 'https://github.com/grahamjantz/catan'
+      },
+      {
+          title: "Waterfront Band Website",
+>>>>>>> Stashed changes
           description: 'This website was built using React for the band Waterfront. This website is intended to be a landing page for fans to get information about the band such as new music, press releases, and more.',
           src: waterfrontOfficialV2,
           liveLink: "https://waterfrontofficial.com",
