@@ -42,7 +42,7 @@ const Portfolio = () => {
           title: "Monopoly Money",
           description: 'This web app was built as a solution to a problem I had: unorganized Monopoly money! This app uses React and a firestore database to allow players to disregard the paper Monopoly money and keep track of bank accounts, property value, and net worth all within the app. Players can either host or join a room and control their money from their own device. Players will get real time updates from the database in order to collect or spend money and keep track of who is winning!',
           src: monopolymoney,
-          liveLink: "https://monopoly-money.grahamjantz.com/",
+          liveLink: "https://monopolymoney.grahamjantz.com/",
           repoLink: "https://github.com/grahamjantz/monopoly-money-v2.1",
       },
       {
