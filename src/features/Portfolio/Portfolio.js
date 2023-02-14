@@ -20,22 +20,22 @@ const Portfolio = () => {
   
   const theme = useSelector(selectTheme)
 
-  const selectLastHalfYear = contributions => {
-      const currentYear = new Date().getFullYear();
-      const currentMonth = new Date().getMonth();
-      const shownMonths = 6;
+  // const selectLastHalfYear = contributions => {
+  //     const currentYear = new Date().getFullYear();
+  //     const currentMonth = new Date().getMonth();
+  //     const shownMonths = 6;
     
-      return contributions.filter(day => {
-        const date = new Date(day.date);
-        const monthOfDay = date.getMonth();
+  //     return contributions.filter(day => {
+  //       const date = new Date(day.date);
+  //       const monthOfDay = date.getMonth();
     
-        return (
-          date.getFullYear() === currentYear &&
-          monthOfDay > currentMonth - shownMonths &&
-          monthOfDay <= currentMonth
-        );
-      });
-    };
+  //       return (
+  //         date.getFullYear() === currentYear &&
+  //         monthOfDay > currentMonth - shownMonths &&
+  //         monthOfDay <= currentMonth
+  //       );
+  //     });
+  //   };
 
     const projects = [
       {
@@ -47,7 +47,7 @@ const Portfolio = () => {
       },
       {
         title: 'Catan Calulator',
-        description: 'Catan Calculator is designed to replace the need for the provided Catan resource cards. The caculator can be used with either the base game or the Cities & Knights expansion. To begin either host or join a room, you can set the victory points need to win, then enter player info and use the calculator to collect and spend resources while playing Catan! Players will get real time updates on their inventory and who is currently in the lead with victory points.',
+        description: 'Catan Calculator is designed to replace the need for the provided Catan resource cards. The calculator can be used with either the base game or the Cities & Knights expansion. To begin either host or join a room, you can set the victory points needed to win, then enter player info and use the calculator to collect and spend resources while playing Catan! Players will get real time updates on their inventory and who is currently in the lead with victory points.',
         src: catan,
         liveLink: 'https://catan.grahamjantz.com',
         repoLink: 'https://github.com/grahamjantz/catan'
@@ -75,7 +75,7 @@ const Portfolio = () => {
       },
       {
           title: "Inspirational Homepage",
-          description: 'Created as a final project in a Codecademy course this app is built with React and Redux. The global state managed by Redux contains four main slices, three of which use asynchronous thunks to fetch data from the following API\'s: OpenWeather API, Pexels API, and QuoteOfTheDay API. This project allowed me to gain an in depth knowledge of Redux, using slices, and dispatching actions.',
+          description: 'Created as a final project in a Codecademy course, this app is built with React and Redux. The global state managed by Redux contains four main slices, three of which use asynchronous thunks to fetch data from the following API\'s: OpenWeather API, Pexels API, and QuoteOfTheDay API. This project allowed me to gain an in depth knowledge of Redux, using slices, and dispatching actions.',
           src: inspirationalHomepage,
           liveLink: "https://inspirational-homepage.grahamjantz.com/",
           repoLink: "https://github.com/grahamjantz/inspirational-homepage",
@@ -117,12 +117,13 @@ const Portfolio = () => {
         <GitHubCalendar 
         username='grahamjantz'
         // This transform data function is selecting only the last six months of contributions from GitHub as there is no activity before that. As the year progesses this can be deleted so that an entire year is shown
-        transformData={selectLastHalfYear}
+        // transformData={selectLastHalfYear}
         hideColorLegend
         color={theme.square2}
         style={{
           padding: '2em',
           textAlign: 'center',
+          maxWidth: '300px'
         }}
       />
       <div className='projects'>

@@ -6,6 +6,10 @@
     gap: 5rem;
 }
 
+.portfolio article {
+    max-width: 1000px !important;
+}
+
 .project-square1 {
     width: 300px;
     height: 300px;
