@@ -46,7 +46,7 @@ const Portfolio = () => {
           repoLink: "https://github.com/grahamjantz/monopoly-money-v2.1",
       },
       {
-        title: 'Catan Calulator',
+        title: 'Catan Calculator',
         description: 'Catan Calculator is designed to replace the need for the provided Catan resource cards. The calculator can be used with either the base game or the Cities & Knights expansion. To begin either host or join a room, you can set the victory points needed to win, then enter player info and use the calculator to collect and spend resources while playing Catan! Players will get real time updates on their inventory and who is currently in the lead with victory points.',
         src: catan,
         liveLink: 'https://catan.grahamjantz.com',
@@ -61,7 +61,7 @@ const Portfolio = () => {
       },
       {
           title: "G&M Wedding",
-          description: 'I originally built this site using simple HTML, CSS, and JavaScript, I have since fully rebuilt the site using React. This was due to long load times between pages. By utilizing React Router I was able to only rerender the information on each page without reloading the entire site, making it much faster and more efficient.',
+          description: 'I originally built this site using simple HTML, CSS, and JavaScript, I have since fully rebuilt the site using React. This was due to long load times between pages. By utilizing React Router I was able to only re-render the information on each page without reloading the entire site, making it much faster and more efficient.',
           src: grahamAndMaddyV2,
           liveLink: "https://grahamandmaddy.com",
           repoLink: "https://github.com/grahamandmaddy/grahamandmaddy.github.io",
