@@ -63,7 +63,7 @@ const Portfolio = () => {
           title: "G&M Wedding",
           description: 'I originally built this site using simple HTML, CSS, and JavaScript, I have since fully rebuilt the site using React. This was due to long load times between pages. By utilizing React Router I was able to only re-render the information on each page without reloading the entire site, making it much faster and more efficient.',
           src: grahamAndMaddyV2,
-          liveLink: "https://grahamandmaddy.com",
+          liveLink: "https://gm.grahamjantz.com",
           repoLink: "https://github.com/grahamandmaddy/grahamandmaddy.github.io",
       },
       {
