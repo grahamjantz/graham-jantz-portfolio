@@ -48,7 +48,7 @@ const Home = () => {
           <img src={heroImage} alt='hero' />
           <div>
             <h1 style={h1Style}>Hi, I'm Graham Jantz</h1>
-            <h3 style={h3Style}><code>{'<'}</code><em>a front end developer</em><code>{'/>'}</code></h3>
+            <h3 style={h3Style}><code>{'<'}</code><em>Passionate for front end technology, <br/> eager to make an impact</em><code>{'/>'}</code></h3>
           </div>
       </main>
     </div>

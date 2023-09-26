@@ -1,8 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { lightTheme } from './themes';
+import { darkTheme } from './themes';
 
 const initialState = {
-    theme: lightTheme
+    theme: darkTheme
 }
 
 export const appSlice = createSlice({
