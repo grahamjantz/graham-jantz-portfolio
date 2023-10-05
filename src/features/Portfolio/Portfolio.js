@@ -44,6 +44,26 @@ const Portfolio = () => {
           description: 'This platform is a place for users to keep notes of photos they\'ve taken on film and record the camera settings used for each shot. I was looking for this type of solution and could not find one so I built one myself! Firebase is used for the authentication and database. Users can track multiple cameras with multiple rolls of film.',
           src: film,
           liveLink: "https://film.grahamjantz.com/",
+          techUsed: [
+            {
+              title: 'React'
+            },
+            {
+              title: 'Redux'
+            },
+            {
+              title: 'Firestore'
+            },
+            {
+              title: 'Firebase Auth'
+            },
+            {
+              title: 'Firebase Storage'
+            },
+            {
+              title: 'JavaScript'
+            },
+          ]
       },
       {
           title: "Monopoly Money",
@@ -51,13 +71,23 @@ const Portfolio = () => {
           src: monopolymoney,
           liveLink: "https://monopoly-money-60c8d.web.app/",
           repoLink: "https://github.com/grahamjantz/monopoly-money-v2.1",
+          techUsed: [
+            {
+              title: 'React',
+            }
+          ]
       },
       {
         title: 'Catan Calculator',
         description: 'Catan Calculator is designed to replace the need for the provided Catan resource cards. The calculator can be used with either the base game or the Cities & Knights expansion. To begin either host or join a room, you can set the victory points needed to win, then enter player info and use the calculator to collect and spend resources while playing Catan! Players will get real time updates on their inventory and who is currently in the lead with victory points.',
         src: catan,
         liveLink: 'https://catan.grahamjantz.com',
-        repoLink: 'https://github.com/grahamjantz/catan'
+        repoLink: 'https://github.com/grahamjantz/catan',
+        techUsed: [
+          {
+            title: 'React',
+          }
+        ]
       },
       {
           title: "Waterfront Band Website",
@@ -65,6 +95,11 @@ const Portfolio = () => {
           src: waterfrontOfficialV2,
           liveLink: "https://waterfrontofficial.com",
           repoLink: "https://github.com/grahamjantz/waterfrontofficial-clone",
+          techUsed: [
+            {
+              title: 'React',
+            }
+          ]
       },
       {
           title: "G&M Wedding",
@@ -72,6 +107,11 @@ const Portfolio = () => {
           src: grahamAndMaddyV2,
           liveLink: "https://gm.grahamjantz.com",
           repoLink: "https://github.com/grahamandmaddy/grahamandmaddy.github.io",
+          techUsed: [
+            {
+              title: 'React',
+            }
+          ]
       },
       {
           title: "PokeDex",
@@ -79,6 +119,11 @@ const Portfolio = () => {
           src: pokedexLaptop,
           liveLink: "https://pokedex.grahamjantz.com",
           repoLink: "https://github.com/grahamjantz/pokedex",
+          techUsed: [
+            {
+              title: 'React',
+            }
+          ]
       },
       // {
       //     title: "Inspirational Homepage",
@@ -134,22 +179,56 @@ const Portfolio = () => {
         }}
       />
       <div className='projects'>
-      <div className='project' style={projectStyle} key={projects[0].title}>
-                  <h2>{projects[0].title}</h2>
-                  <img src={projects[0].src} alt='project' style={{width: 'auto', maxHeight: '300px'}}/>
+     
+        {projects.map((project) => {
+          if (!project.repoLink) {
+            return (
+              <div className='project' style={projectStyle} key={project.title}>
+                  <h2>{project.title}</h2>
+                  <img src={project.src} alt='project' style={{width: 'auto', maxHeight: '300px'}}/>
+                  <ul className='pill-list'>
+                    {project.techUsed.map(tech => {
+                      return (
+                        <li key={tech.title}
+                          style={{
+                            border: `2px solid ${theme.square1}`,
+                            color: theme.color,
+                            backgroundColor: theme.square2
+                          }}
+                        >
+                          <p>{tech.title}</p>
+                        </li>
+                      )
+                    })}
+                  </ul>
                   <div className='project-buttons' style={{justifyContent: 'center'}}>
                       <button>
-                        <a href={projects[0].liveLink} rel="noreferrer" target='_blank' style={aStyle}>Live Link<FaExternalLinkAlt /></a>
+                        <a href={project.liveLink} rel="noreferrer" target='_blank' style={aStyle}>Live Link<FaExternalLinkAlt /></a>
                       </button>
                   </div>
-                  <p>{projects[0].description}</p>
+                  <p>{project.description}</p>
               </div>
-        {projects.map((project) => {
-          if (project.title !== 'Film Catalog') {
+            )
+          } else {
             return (
                 <div className='project' style={projectStyle} key={project.title}>
                     <h2>{project.title}</h2>
                     <img src={project.src} alt='project'/>
+                    <ul className='pill-list'>
+                      {project.techUsed.map(tech => {
+                        return (
+                          <li key={tech.title}
+                            style={{
+                              border: `2px solid ${theme.square1}`,
+                              color: theme.color,
+                              backgroundColor: theme.square2
+                            }}
+                          >
+                            <p>{tech.title}</p>
+                          </li>
+                        )
+                      })}
+                    </ul>
                     <div className='project-buttons'>
                         <button>
                           <a href={project.liveLink} rel="noreferrer" target='_blank' style={aStyle}>Live Link<FaExternalLinkAlt /></a>
@@ -161,8 +240,6 @@ const Portfolio = () => {
                     <p>{project.description}</p>
                 </div>
             )
-          } else {
-            return ''
           }
         })}
       </div>
