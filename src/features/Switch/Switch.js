@@ -20,8 +20,8 @@ const Switch = () => {
       setSwitchActive(true)
       dispatch(toggleTheme(darkTheme))
     } else {
-      setSwitchActive(false)
-      dispatch(toggleTheme(lightTheme))
+      setSwitchActive(true)
+      dispatch(toggleTheme(darkTheme))
     }
   }, [dispatch])
   

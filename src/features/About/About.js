@@ -42,14 +42,12 @@ const About = () => {
         
         </div> 
         <ul className="about-section-skills">
-          {/* <SkillList /> */}
           <li id="react"><FaReact className='skill-icon' style={skillStyle}/>React</li>
           <li id="redux"><SiRedux className='skill-icon' style={skillStyle}/>Redux</li>
           <li id="html"><FaHtml5 className='skill-icon' style={skillStyle}/>HTML</li>
           <li id="css"><FaCss3Alt className='skill-icon' style={skillStyle}/>CSS</li>
           <li id="java"><TbBrandJavascript className="skill-icon" style={skillStyle}/>JavaScript</li>
           <li id="git"><FaGitAlt className='skill-icon' style={skillStyle}/>Git / GitHub</li>
-          {/* <li id="SQL"><FiDatabase className='skill-icon' />SQL</li> */}
         </ul>
       </div>
   )
