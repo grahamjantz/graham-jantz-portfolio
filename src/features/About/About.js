@@ -38,7 +38,7 @@ const About = () => {
           <p className='bio'>My commitment to continuous learning extends beyond my primary areas of focus. I've ventured into diverse domains, exploring <strong style={skillStyle}>Node.js</strong>, <strong style={skillStyle}>SQL</strong>, <strong style={skillStyle}>C</strong>, and <strong style={skillStyle}>Cyber Security</strong>, all part of my pursuit of growth and knowledge.</p>
           <p className='bio'>My educational foundation includes a B.A. degree in music from the University of Lethbridge and a Music Diploma in percussion from Red Deer Polytechnic. These academic experiences have instilled invaluable skills such as <strong style={skillStyle}>effective time management</strong>, <strong style={skillStyle}>project coordination</strong>, and <strong style={skillStyle}>adept teamwork</strong>.</p>
           <p className='bio'>You can explore my portfolio and discover more about my work below.</p>
-          <p className='bio'>Reach out to me on<a style={aStyle} href='https://github.com/grahamjantz'>GitHub</a> or connect on <a style={aStyle} href='https://www.linkedin.com/in/graham-jantz-b87921145/'>LinkedIn</a> to chat further about our shared interests and potential collaborations.</p>
+          <p className='bio'>Reach out to me on<a style={aStyle} href='https://github.com/grahamjantz'> GitHub</a> or connect on <a style={aStyle} href='https://www.linkedin.com/in/graham-jantz-b87921145/'>LinkedIn</a> to chat further about our shared interests and potential collaborations.</p>
         
         </div> 
         <ul className="about-section-skills">
