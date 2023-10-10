@@ -19,7 +19,7 @@ const Footer = () => {
           <a style={buttonStyle} href="https://www.linkedin.com/in/graham-jantz-b87921145/" target="_blank" rel="noreferrer"><FaLinkedinIn/></a>
         </button>
         <button>
-          <a style={buttonStyle} href="mailto:grahammrjantz@gmail.com" ><FaEnvelope/></a>
+          <a style={buttonStyle} href="mailto:dev@grahamjantz.com" ><FaEnvelope/></a>
         </button>
         <button>
           <a style={buttonStyle} href="https://github.com/grahamjantz" target="_blank" rel="noreferrer"><FaGithub/></a>
