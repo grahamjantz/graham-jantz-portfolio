@@ -2,6 +2,7 @@ import React from 'react'
 import './About.css'
 
 import { FaHtml5, FaCss3Alt, FaReact, FaGitAlt } from "react-icons/fa";
+import { IoLogoFirebase } from "react-icons/io5";
 import { SiRedux } from "react-icons/si";
 import { TbBrandJavascript } from "react-icons/tb"
 
@@ -44,9 +45,10 @@ const About = () => {
         <ul className="about-section-skills">
           <li id="react"><FaReact className='skill-icon' style={skillStyle}/>React</li>
           <li id="redux"><SiRedux className='skill-icon' style={skillStyle}/>Redux</li>
-          <li id="html"><FaHtml5 className='skill-icon' style={skillStyle}/>HTML</li>
-          <li id="css"><FaCss3Alt className='skill-icon' style={skillStyle}/>CSS</li>
+          <li id="firebase"><IoLogoFirebase className='skill-icon' style={skillStyle}/>Firebase</li>
           <li id="java"><TbBrandJavascript className="skill-icon" style={skillStyle}/>JavaScript</li>
+          <li id="html"><FaHtml5 className='skill-icon' style={skillStyle}/><FaCss3Alt className='skill-icon' style={skillStyle}/> HTML / CSS</li>
+          {/* <li id="css">CSS</li> */}
           <li id="git"><FaGitAlt className='skill-icon' style={skillStyle}/>Git / GitHub</li>
         </ul>
       </div>
