@@ -65,7 +65,7 @@ const Portfolio = () => {
           title: "SnowDebt",
           description: 'This online calculator is used to calculate a debt snowball plan. Users can enter current debts (credit cards, student loans, car loans, etc) and their monthly income / expenses and the app will figure out how long it will take to pay off all debts starting with the smallest and moving to the largest. This web app is built with Vite + React and utilizes Tailwind CSS and Material UI for the styling. Users can choose to create an account and save their plans. Authentication and the database utilizes firebase.',
           src: snowDebt,
-          liveLink: "https://snowdebt.netlify.app",
+          liveLink: "https://snowdebt.grahamjantz.com",
           techUsed: [
             {
               title: 'React'
