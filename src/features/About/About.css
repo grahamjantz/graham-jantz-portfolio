@@ -54,6 +54,12 @@
 	font-size: 2rem;
 	font-weight: bold;
 }
+.about-section-skills #html{
+	gap: 0 !important;
+}
+.about-section-skills #html svg:last-of-type{
+	margin-right: 1rem;
+}
 .skill-icon {
 	font-size: 3.5rem;
 }

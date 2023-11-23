@@ -8,13 +8,15 @@ import { selectTheme } from '../../AppSlice'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 
 import grahamAndMaddyV2 from '../../images/grahamandmaddyV3.jpeg'
-import waterfrontOfficialV2 from '../../images/waterfrontofficialV3.png'
-import pokedexLaptop from '../../images/pokedex.png'
+import waterfrontOfficialV2 from '../../images/wfDesktop.png'
+// import pokedexLaptop from '../../images/pokedex.png'
 // import inspirationalHomepage from '../../images/homepage.png'
 // import redditMinimal from '../../images/redditMinimal.png'
 import monopolymoney from '../../images/monopolymoney.png'
 import catan from '../../images/catan.png'
-import film from '../../images/film-catalog.png'
+import film from '../../images/filmCatalogv2.png'
+import snowDebt from '../../images/showDebtDesktop.png'
+import two from '../../images/2000.png'
 
 const Portfolio = () => {
 
@@ -40,10 +42,10 @@ const Portfolio = () => {
 
     const projects = [
       {
-          title: "Film Catalog",
-          description: 'This platform is a place for users to keep notes of photos they\'ve taken on film and record the camera settings used for each shot. I was looking for this type of solution and could not find one so I built one myself! Firebase is used for the authentication and database. Users can track multiple cameras with multiple rolls of film.',
-          src: film,
-          liveLink: "https://film.grahamjantz.com/",
+        title: "Film Catalog",
+        description: 'This platform is a place for users to keep notes of photos they\'ve taken on film and record the camera settings used for each shot. I was looking for this type of solution and could not find one so I built one myself! Firebase is used for the authentication and database. Users can track multiple cameras with multiple rolls of film.',
+        src: film,
+        liveLink: "https://film.grahamjantz.com/",
           techUsed: [
             {
               title: 'React'
@@ -52,19 +54,56 @@ const Portfolio = () => {
               title: 'Redux'
             },
             {
-              title: 'Firestore'
-            },
-            {
-              title: 'Firebase Auth'
-            },
-            {
-              title: 'Firebase Storage'
+              title: 'Firebase'
             },
             {
               title: 'JavaScript'
             },
           ]
-      },
+        },
+        {
+          title: "SnowDebt",
+          description: 'This online calculator is used to calculate a debt snowball plan. Users can enter current debts (credit cards, student loans, car loans, etc) and their monthly income / expenses and the app will figure out how long it will take to pay off all debts starting with the smallest and moving to the largest. This web app is built with Vite + React and utilizes Tailwind CSS and Material UI for the styling. Users can choose to create an account and save their plans. Authentication and the database utilizes firebase.',
+          src: snowDebt,
+          liveLink: "https://snowdebt.netlify.app",
+          techUsed: [
+            {
+              title: 'React'
+            },
+            {
+              title: 'Redux'
+            },
+            {
+              title: 'Firebase'
+            },
+            {
+              title: 'Tailwind CSS'
+            },
+            {
+              title: 'Material UI'
+            },
+          ]
+        },
+        {
+          title: "2000 Calculator",
+          description: 'This web app was designed for use during a card game known as 2000. A host can open a room and the app will generate a room code to share with other players who want to join in the app. The host can alternatively add players manually and can enter points for all players. This web app utilizes React, Redux, and Firebase.',
+          src: two,
+          liveLink: "https://2000.grahamjantz.com",
+          techUsed: [
+            {
+              title: 'React'
+            },
+            {
+              title: 'Redux'
+            },
+            {
+              title: 'Firebase'
+            },
+            {
+              title: 'JavaScript'
+            },
+          ]
+        },
       {
           title: "Monopoly Money",
           description: 'This web app was built as a solution to a problem I had: unorganized Monopoly money! This app uses React and a firestore database to allow players to disregard the paper Monopoly money and keep track of bank accounts, property value, and net worth all within the app. Players can either host or join a room and control their money from their own device. Players will get real time updates from the database in order to collect or spend money and keep track of who is winning!',
@@ -74,7 +113,16 @@ const Portfolio = () => {
           techUsed: [
             {
               title: 'React',
-            }
+            },
+            {
+              title: 'Redux'
+            },
+            {
+              title: 'Firebase'
+            },
+            {
+              title: 'JavaScript'
+            },
           ]
       },
       {
@@ -86,19 +134,34 @@ const Portfolio = () => {
         techUsed: [
           {
             title: 'React',
-          }
+          },
+          {
+            title: 'Redux'
+          },
+          {
+            title: 'Firebase'
+          },
+          {
+            title: 'JavaScript'
+          },
         ]
       },
       {
-          title: "Waterfront Band Website",
-          description: 'This website was built using React for the band Waterfront. This website is intended to be a landing page for fans to get information about the band such as new music, press releases, and more.',
-          src: waterfrontOfficialV2,
-          liveLink: "https://waterfrontofficial.com",
-          repoLink: "https://github.com/grahamjantz/waterfrontofficial-clone",
-          techUsed: [
-            {
-              title: 'React',
-            }
+        title: "Waterfront Band Website",
+        description: 'This website was built using React for the band Waterfront. This website is intended to be a landing page for fans to get information about the band such as new music, press releases, and more.',
+        src: waterfrontOfficialV2,
+        liveLink: "https://waterfrontofficial.com",
+        repoLink: "https://github.com/grahamjantz/waterfrontofficial-clone",
+        techUsed: [
+          {
+            title: 'React',
+          },
+          {
+            title: 'JavaScript'
+          },
+          {
+              title: 'HTML / CSS',
+            },
           ]
       },
       {
@@ -110,21 +173,27 @@ const Portfolio = () => {
           techUsed: [
             {
               title: 'React',
-            }
-          ]
-      },
-      {
-          title: "PokeDex",
-          description: 'This project was created as a way to practice working with the fetch API and the PokeAPI. I initially followed a tutorial which can be found at the GitHub repo. I then built upon this foundation adding the button functionality, all the styling and the photo carousel for the pokemon. I completely rebuilt the app without relying on the tutorial, in order to reinforce what I learnt.',
-          src: pokedexLaptop,
-          liveLink: "https://pokedex.grahamjantz.com",
-          repoLink: "https://github.com/grahamjantz/pokedex",
-          techUsed: [
+            },
             {
-              title: 'React',
+              title: 'JavaScript'
+            },
+            {
+              title: 'HTML / CSS'
             }
           ]
       },
+      // {
+      //     title: "PokeDex",
+      //     description: 'This project was created as a way to practice working with the fetch API and the PokeAPI. I initially followed a tutorial which can be found at the GitHub repo. I then built upon this foundation adding the button functionality, all the styling and the photo carousel for the pokemon. I completely rebuilt the app without relying on the tutorial, in order to reinforce what I learnt.',
+      //     src: pokedexLaptop,
+      //     liveLink: "https://pokedex.grahamjantz.com",
+      //     repoLink: "https://github.com/grahamjantz/pokedex",
+          // techUsed: [
+          //   {
+          //     title: 'React',
+          //   }
+          // ]
+      // },
       // {
       //     title: "Inspirational Homepage",
       //     description: 'Created as a final project in a Codecademy course, this app is built with React and Redux. The global state managed by Redux contains four main slices, three of which use asynchronous thunks to fetch data from the following API\'s: OpenWeather API, Pexels API, and QuoteOfTheDay API. This project allowed me to gain an in depth knowledge of Redux, using slices, and dispatching actions.',
@@ -179,68 +248,79 @@ const Portfolio = () => {
         }}
       />
       <div className='projects'>
-     
-        {projects.map((project) => {
-          if (!project.repoLink) {
-            return (
-              <div className='project' style={projectStyle} key={project.title}>
-                  <h2>{project.title}</h2>
-                  <img src={project.src} alt='project' style={{width: 'auto', maxHeight: '300px'}}/>
-                  <ul className='pill-list'>
-                    {project.techUsed.map(tech => {
-                      return (
-                        <li key={tech.title}
-                          style={{
-                            border: `2px solid ${theme.square1}`,
-                            color: theme.color,
-                            backgroundColor: theme.square2
-                          }}
-                        >
-                          <p>{tech.title}</p>
-                        </li>
-                      )
-                    })}
-                  </ul>
+      {/* <div className='project' style={projectStyle} key={projects[0].title}>
+                  <h2>{projects[0].title}</h2>
+                  <img src={projects[0].src} alt='project' style={{width: 'auto', maxHeight: '300px'}}/>
                   <div className='project-buttons' style={{justifyContent: 'center'}}>
                       <button>
                         <a href={project.liveLink} rel="noreferrer" target='_blank' style={aStyle}>Live Link<FaExternalLinkAlt /></a>
                       </button>
                   </div>
-                  <p>{project.description}</p>
-              </div>
-            )
-          } else {
-            return (
-                <div className='project' style={projectStyle} key={project.title}>
-                    <h2>{project.title}</h2>
-                    <img src={project.src} alt='project'/>
-                    <ul className='pill-list'>
-                      {project.techUsed.map(tech => {
-                        return (
-                          <li key={tech.title}
-                            style={{
-                              border: `2px solid ${theme.square1}`,
-                              color: theme.color,
-                              backgroundColor: theme.square2
-                            }}
-                          >
-                            <p>{tech.title}</p>
-                          </li>
-                        )
-                      })}
-                    </ul>
-                    <div className='project-buttons'>
-                        <button>
-                          <a href={project.liveLink} rel="noreferrer" target='_blank' style={aStyle}>Live Link<FaExternalLinkAlt /></a>
-                        </button>
-                        <button>
-                          <a href={project.repoLink} rel="noreferrer" target='_blank' style={aStyle}>Repo Link<FaExternalLinkAlt /></a>
-                        </button>
-                    </div>
-                    <p>{project.description}</p>
-                </div>
-            )
-          }
+                  <p>{projects[0].description}</p>
+              </div> */}
+        {projects.map((project) => {
+            if (project.repoLink) {
+              return (
+                  <div className='project' style={projectStyle} key={project.title}>
+                      <h2>{project.title}</h2>
+                      <img src={project.src} alt='project'/>
+                      <ul className='pill-list'>
+                        {project.techUsed.map(tech => {
+                          return (
+                            <li key={tech.title}
+                              style={{
+                                border: `2px solid ${theme.square1}`,
+                                color: theme.color,
+                                backgroundColor: theme.square2
+                              }}
+                            >
+                              <p>{tech.title}</p>
+                            </li>
+                          )
+                        })}
+                      </ul>
+                      <div className='project-buttons'>
+                          <button>
+                            <a href={project.liveLink} rel="noreferrer" target='_blank' style={aStyle}>Live Link<FaExternalLinkAlt /></a>
+                          </button>
+                          <button>
+                            <a href={project.repoLink} rel="noreferrer" target='_blank' style={aStyle}>Repo Link<FaExternalLinkAlt /></a>
+                          </button>
+                      </div>
+                      <p>{project.description}</p>
+                  </div>
+              )
+            } else {
+              return (
+                  <div className='project' style={projectStyle} key={project.title}>
+                      <h2>{project.title}</h2>
+                      <img src={project.src} alt='project'/>
+                      <ul className='pill-list'>
+                        {project.techUsed.map(tech => {
+                          return (
+                            <li key={tech.title}
+                              style={{
+                                border: `2px solid ${theme.square1}`,
+                                color: theme.color,
+                                backgroundColor: theme.square2
+                              }}
+                            >
+                              <p>{tech.title}</p>
+                            </li>
+                          )
+                        })}
+                      </ul>
+                      <div className='project-buttons' style={{justifyContent: 'center',}}>
+                          <button>
+                            <a href={project.liveLink} rel="noreferrer" target='_blank' style={aStyle}>Live Link<FaExternalLinkAlt /></a>
+                          </button>
+                      </div>
+                      <p>{project.description}</p>
+                  </div>
+              )
+              
+            }
+          
         })}
       </div>
     </div>
